@@ -287,8 +287,8 @@ GameObject:
   - component: {fileID: 629805084}
   - component: {fileID: 629805083}
   m_Layer: 5
-  m_Name: Next (1)
-  m_TagString: Valid
+  m_Name: Back
+  m_TagString: Back
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

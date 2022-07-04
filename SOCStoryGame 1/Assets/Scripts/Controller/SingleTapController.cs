@@ -22,6 +22,9 @@ public class SingleTapController : MonoBehaviour {
 			case "Exit":
 				executor.Enqueue(new ExitCommand());
 				break;
+			case "Back":
+				executor.Enqueue(new BackCommand());
+				break;
 		}
 	}
 }

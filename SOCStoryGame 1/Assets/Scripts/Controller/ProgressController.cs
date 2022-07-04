@@ -2,16 +2,17 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class ProgressController : MonoBehaviour{
-	private int sceneNumber = 1;
+	
+	// SCENE MANAGER BREAKS WHEN MULTIPLE PLAYERS ARE LOADED. DISABLE PLAYER BEFORE TESTING
 	private void Awake(){
 		Broker.Subscribe<SuccessMessage>(OnSuccessMessageReceived);
 		Broker.Subscribe<FailureMessage>(OnFailureMessageReceived);
 		Broker.Subscribe<ExitMessage>(OnExitMessageReceived);
+		Broker.Subscribe<BackMessage>(OnBackMessageReceived);
 	}
 
 	private void OnSuccessMessageReceived(SuccessMessage obj){
-		Debug.Log("Success!");
-		SceneManager.LoadScene(sceneNumber++);
+		SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
 	}
 	
 	private void OnFailureMessageReceived(FailureMessage obj){
@@ -21,5 +22,9 @@ public class ProgressController : MonoBehaviour{
 	private void OnExitMessageReceived(ExitMessage obj){
 		Debug.Log("Quit Level");
 	}
-
+	
+	private void OnBackMessageReceived(BackMessage obj){
+		Debug.Log("Back");
+		SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex - 1);
+	}
 }
