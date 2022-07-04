@@ -8,6 +8,7 @@ TagManager:
   - Invalid
   - Exit
   - Back
+  - Sound
   layers:
   - Default
   - TransparentFX

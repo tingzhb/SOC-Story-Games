@@ -25,6 +25,9 @@ public class SingleTapController : MonoBehaviour {
 			case "Back":
 				executor.Enqueue(new BackCommand());
 				break;
+			case "Sound":
+				executor.Enqueue(new PlaySoundCommand());
+				break;
 		}
 	}
 }
