@@ -3,8 +3,8 @@ using UnityEngine;
 public class OnTap : MonoBehaviour {
 	
 	public void Tap() {
-		var onj = gameObject.tag;
-		SingleTapMessage singleTapMessage = new(){ TappedObject = onj};
+		var selfTag = gameObject.tag;
+		SingleTapMessage singleTapMessage = new(){TappedObject = selfTag};
 		Broker.InvokeSubscribers(typeof(SingleTapMessage), singleTapMessage);
 	}
 }
