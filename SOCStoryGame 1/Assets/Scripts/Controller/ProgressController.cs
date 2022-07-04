@@ -12,6 +12,7 @@ public class ProgressController : MonoBehaviour{
 	}
 
 	private void OnSuccessMessageReceived(SuccessMessage obj){
+		Debug.Log("Success!");
 		SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
 	}
 	
