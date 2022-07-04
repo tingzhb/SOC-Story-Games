@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Valid
   - Invalid
+  - Exit
   layers:
   - Default
   - TransparentFX

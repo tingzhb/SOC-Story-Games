@@ -8,11 +8,15 @@ public class SingleTapController : MonoBehaviour {
 		Broker.Subscribe<SingleTapMessage>(OnSingleTapMessageReceived);
 	}
 	private void OnSingleTapMessageReceived(SingleTapMessage obj){
-		if (ValidateTap(obj.TappedObject)){
+		// Consider Sending String
+		if (obj.TappedObject.CompareTag("Valid")) {
 			executor.Enqueue(new ValidAnswerCommand());
 		}
-		else {
+		if (obj.TappedObject.CompareTag("Invalid")) {
 			executor.Enqueue(new InvalidAnswerCommand());
+		}
+		if (obj.TappedObject.CompareTag("Exit")){
+			executor.Enqueue(new ExitCommand());
 		}
 	}
 	private bool ValidateTap(GameObject tappedObject){
