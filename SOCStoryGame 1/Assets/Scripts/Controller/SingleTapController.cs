@@ -7,19 +7,21 @@ public class SingleTapController : MonoBehaviour {
 		executor = FindObjectOfType<Executor>();
 		Broker.Subscribe<SingleTapMessage>(OnSingleTapMessageReceived);
 	}
-	private void OnSingleTapMessageReceived(SingleTapMessage obj){
-		// Consider Sending String
-		if (obj.TappedObject.CompareTag("Valid")) {
-			executor.Enqueue(new ValidAnswerCommand());
-		}
-		if (obj.TappedObject.CompareTag("Invalid")) {
-			executor.Enqueue(new InvalidAnswerCommand());
-		}
-		if (obj.TappedObject.CompareTag("Exit")){
-			executor.Enqueue(new ExitCommand());
-		}
+	private void OnSingleTapMessageReceived(SingleTapMessage obj) {
+		ValidateTap(obj.TappedObject);
 	}
-	private bool ValidateTap(GameObject tappedObject){
-		return tappedObject.CompareTag("Valid");
+	private void ValidateTap(string tappedObject){
+		switch (tappedObject){
+			// Consider Sending String
+			case "Valid":
+				executor.Enqueue(new ValidAnswerCommand());
+				break;
+			case "Invalid":
+				executor.Enqueue(new InvalidAnswerCommand());
+				break;
+			case "Exit":
+				executor.Enqueue(new ExitCommand());
+				break;
+		}
 	}
 }

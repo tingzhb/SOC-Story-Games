@@ -1,5 +1,4 @@
-using UnityEngine;
 
 public class SingleTapMessage : IMessage{
-	public GameObject TappedObject { get; set; }
+	public string TappedObject { get; set; }
 }
