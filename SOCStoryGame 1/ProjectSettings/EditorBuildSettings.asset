@@ -14,4 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/A2.unity
     guid: a2fa4fa2da09ad441b490dd9a259a566
+  - enabled: 1
+    path: Assets/Scenes/A3.unity
+    guid: 3fb62f4f060ccca47a4a3d41e60e02ca
+  - enabled: 1
+    path: Assets/Scenes/A4.unity
+    guid: 23e3490e0335a834aaf8d30154427a3e
   m_configObjects: {}
