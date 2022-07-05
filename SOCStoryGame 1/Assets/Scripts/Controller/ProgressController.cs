@@ -27,6 +27,7 @@ public class ProgressController : MonoBehaviour{
 	
 	private void OnExitMessageReceived(ExitMessage obj){
 		Debug.Log("Quit Level");
+		Application.Quit();
 	}
 	
 	private void OnBackMessageReceived(BackMessage obj){
