@@ -647,11 +647,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2501395245903202724, guid: c09612094c4d85847930fc30264ea45b, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2501395245903202724, guid: c09612094c4d85847930fc30264ea45b, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 2501395245903202724, guid: c09612094c4d85847930fc30264ea45b, type: 3}
       propertyPath: m_LocalRotation.z
@@ -663,7 +663,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2501395245903202724, guid: c09612094c4d85847930fc30264ea45b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 53.1
+      value: 53.100033
       objectReference: {fileID: 0}
     - target: {fileID: 2501395245903202724, guid: c09612094c4d85847930fc30264ea45b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1369,8 +1369,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1180065c6b344f58bd43d05490d411f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleDuration: 0.05
-  scaleSpeed: 0.02
+  maxScaleDuration: 1
+  scaleSpeed: 0.25
 --- !u!1 &1721982237
 GameObject:
   m_ObjectHideFlags: 0

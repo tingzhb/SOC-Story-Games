@@ -432,8 +432,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1180065c6b344f58bd43d05490d411f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scaleDuration: 0.1
-  scaleSpeed: 0.1
+  maxScaleDuration: 1
+  scaleSpeed: 0.7
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
