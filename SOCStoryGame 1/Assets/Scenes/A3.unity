@@ -306,7 +306,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1914568406}
-  m_RootOrder: 6
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -453,7 +453,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &615690909
 RectTransform:
   m_ObjectHideFlags: 0
@@ -471,7 +471,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -671.02, y: -470.3}
+  m_AnchoredPosition: {x: -765, y: -470.3}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &615690910
@@ -613,7 +613,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1914568406}
-  m_RootOrder: 4
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -936,12 +936,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1914568406}
-  m_RootOrder: 5
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 516, y: 266}
-  m_SizeDelta: {x: 506, y: 395}
+  m_AnchoredPosition: {x: 684, y: 264.5}
+  m_SizeDelta: {x: 512, y: 512}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1289164682
 MonoBehaviour:
@@ -956,12 +956,62 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 21300000, guid: 9b7842688ee98ea4fa7ad42416f79dae, type: 3}
-  - {fileID: 21300000, guid: e23816dceb96dfd458f3c670d8c564ea, type: 3}
-  - {fileID: 21300000, guid: 64a0cb621aaffe0419ece94dc9c734f7, type: 3}
-  - {fileID: 21300000, guid: bc2f56c5431c50e4695716cddbee556f, type: 3}
-  - {fileID: 21300000, guid: 78314e9db595c46439c4bcfbc447edc0, type: 3}
-  - {fileID: 21300000, guid: 9f775b69322b65c49adbdb20fc3b49e4, type: 3}
+  - {fileID: 21300000, guid: d5eead0fab90a1c4a949a157ee848fec, type: 3}
+  - {fileID: 21300000, guid: 30ae12776835d7549bf52cdf7a3454bb, type: 3}
+  - {fileID: 21300000, guid: 3cc614bdf3c6ec64b85625da6bb4ed0d, type: 3}
+  - {fileID: 21300000, guid: 4f83b20956b97834d8d7fca880bb128b, type: 3}
+  - {fileID: 21300000, guid: 6696711fe5e56ba4280dfe1f2d7ccee1, type: 3}
+  - {fileID: 21300000, guid: 5565e9f083301c94c8ba05b9e784b1ca, type: 3}
+  - {fileID: 21300000, guid: d358607ebdc904843a061f295e141b2d, type: 3}
+  - {fileID: 21300000, guid: 529913012d0a1fc46950daa374dc4127, type: 3}
+  - {fileID: 21300000, guid: ce5111654fda01f438c32455323ad2c1, type: 3}
+  - {fileID: 21300000, guid: 30299e8fa687ec2438fa1cec3e3a0fb7, type: 3}
+  - {fileID: 21300000, guid: 30299e8fa687ec2438fa1cec3e3a0fb7, type: 3}
+  - {fileID: 21300000, guid: 9033c0de64aa7c9468d4ac755829d051, type: 3}
+  - {fileID: 21300000, guid: 29793ec7ad4e98d41aa279f517bad98b, type: 3}
+  - {fileID: 21300000, guid: 1424edf616838c440b84739ac09f7f5f, type: 3}
+  - {fileID: 21300000, guid: bd6bb45f5f9315e4f97d1006a9342310, type: 3}
+  - {fileID: 21300000, guid: 6c74fba6dc558ca47b593ddb60c11246, type: 3}
+  - {fileID: 21300000, guid: 158347a564c4f1e4c8cfa5df8c7c11f1, type: 3}
+  - {fileID: 21300000, guid: d4e019dde9d396745bb6c051cc1617b0, type: 3}
+  - {fileID: 21300000, guid: 83bc0592ec1eb664fbcf26b5cd79d501, type: 3}
+  - {fileID: 21300000, guid: 0249135da19c6ab4ab60711d87dacef0, type: 3}
+  - {fileID: 21300000, guid: 54e25c1a85a737e488b05b6fed59b607, type: 3}
+  - {fileID: 21300000, guid: 0412007228755664395d088acbea1012, type: 3}
+  - {fileID: 21300000, guid: 34614cfaa917df14695fa51ad051f00c, type: 3}
+  - {fileID: 21300000, guid: 609cc2483408ccc4e9dbe064ee92f92c, type: 3}
+  - {fileID: 21300000, guid: 57886b90ceb2996458c57dede2638c4a, type: 3}
+  - {fileID: 21300000, guid: c5d7dd47e3b48b4448c02abdd8a958db, type: 3}
+  - {fileID: 21300000, guid: 9bd5d126c4064ae49bfe62131b7cc1e8, type: 3}
+  - {fileID: 21300000, guid: b2fc09993c548f045aacfb6f551ad8c0, type: 3}
+  - {fileID: 21300000, guid: d57a57859f8366b458a9657d64171f24, type: 3}
+  - {fileID: 21300000, guid: f10fff5ec35e5d04dae9cc1084c2bea3, type: 3}
+  - {fileID: 21300000, guid: 9a5256d4b9f36384387c05c213a5eb70, type: 3}
+  - {fileID: 21300000, guid: d7d62741092b69a4a801ea4fe4925ac2, type: 3}
+  - {fileID: 21300000, guid: d1d2d27f1fc9d46498ffa5986362ae63, type: 3}
+  - {fileID: 21300000, guid: ca8695aed63f6c74f84308aab8bae38d, type: 3}
+  - {fileID: 21300000, guid: 9e5f8e2d7cf502b479f90193ab7c6d0b, type: 3}
+  - {fileID: 21300000, guid: 748fae17c7a267943adfac2d7a3fc2f7, type: 3}
+  - {fileID: 21300000, guid: 828e4c0db5037ef41a752807a516c7b4, type: 3}
+  - {fileID: 21300000, guid: 3c224bb8cc01d59449ebc2224c868b8a, type: 3}
+  - {fileID: 21300000, guid: a2da0af7f012cd44a96882dcd24c373d, type: 3}
+  - {fileID: 21300000, guid: d65fd980f9988da4aab9dee694618f64, type: 3}
+  - {fileID: 21300000, guid: eaa10ad257b422841a0b1baa3453cbd8, type: 3}
+  - {fileID: 21300000, guid: d1d761584cbbbf34fb175c1c73278c44, type: 3}
+  - {fileID: 21300000, guid: cba0660a5e0818243a4367939ac9175e, type: 3}
+  - {fileID: 21300000, guid: 925454434fc0e1c478b7223ffc1dd3b8, type: 3}
+  - {fileID: 21300000, guid: e41c217da83617e4c9b94ed88a2ec892, type: 3}
+  - {fileID: 21300000, guid: a50d80fcdbaf6b34daaa7f2ae21c802a, type: 3}
+  - {fileID: 21300000, guid: 3b871500b62579048a0064b82469faff, type: 3}
+  - {fileID: 21300000, guid: 7a331d30ddea64745a70dd00d709a0f6, type: 3}
+  - {fileID: 21300000, guid: 397002b58bf1eae4296a8e19f6cffd93, type: 3}
+  - {fileID: 21300000, guid: 100217486df72ea4db92146dfa29a09d, type: 3}
+  - {fileID: 21300000, guid: cd32d5c04ec94d149aec965b2cb0ad74, type: 3}
+  - {fileID: 21300000, guid: e91435a98b3811547be9043fb8d6e688, type: 3}
+  - {fileID: 21300000, guid: 192d7005fa686374dbebc84cc25c0617, type: 3}
+  - {fileID: 21300000, guid: f52634fed40bd4c40ab155ff149e47d1, type: 3}
+  - {fileID: 21300000, guid: c17fea4be7b0bda42b233384c9880e92, type: 3}
+  - {fileID: 21300000, guid: 36b3139658e8056499707545c89eab7f, type: 3}
   image: {fileID: 1289164683}
   animationDelay: 0.05
 --- !u!114 &1289164683
@@ -984,7 +1034,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 9b7842688ee98ea4fa7ad42416f79dae, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d5eead0fab90a1c4a949a157ee848fec, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1035,7 +1085,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1914568406}
-  m_RootOrder: 3
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1159,8 +1209,9 @@ GameObject:
   - component: {fileID: 1671951935}
   - component: {fileID: 1671951937}
   - component: {fileID: 1671951936}
+  - component: {fileID: 1671951938}
   m_Layer: 5
-  m_Name: Subtitle
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1179,12 +1230,12 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1914568406}
-  m_RootOrder: 8
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -470.1}
-  m_SizeDelta: {x: 1242.044, y: 100.4}
+  m_AnchoredPosition: {x: 0, y: 334.2}
+  m_SizeDelta: {x: 178.142, y: 22.396}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1671951936
 MonoBehaviour:
@@ -1206,17 +1257,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Can you help Ollie find the ant?
+  m_text: WELL DONE!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: acf45b273c6d9ba46a8d846072fe4bc8, type: 2}
-  m_sharedMaterial: {fileID: -8083954808632157445, guid: acf45b273c6d9ba46a8d846072fe4bc8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: de125a3584630654fa1902d04ca479d1, type: 2}
+  m_sharedMaterial: {fileID: -4250312772447910757, guid: de125a3584630654fa1902d04ca479d1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4278190335
+  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1233,12 +1284,12 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 18.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 122.56
   m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 256
@@ -1283,6 +1334,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671951934}
   m_CullTransparentMesh: 1
+--- !u!114 &1671951938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671951934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1180065c6b344f58bd43d05490d411f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleDuration: 0.032
+  scaleSpeed: 0.02
 --- !u!1 &1721982237
 GameObject:
   m_ObjectHideFlags: 0
@@ -1460,7 +1525,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1914568406}
-  m_RootOrder: 7
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1599,13 +1664,13 @@ RectTransform:
   m_Children:
   - {fileID: 2062490275}
   - {fileID: 1721982238}
-  - {fileID: 2075743287}
-  - {fileID: 1647573702}
-  - {fileID: 629805082}
   - {fileID: 1289164681}
   - {fileID: 157888398}
   - {fileID: 1774693113}
   - {fileID: 1671951935}
+  - {fileID: 2075743287}
+  - {fileID: 1647573702}
+  - {fileID: 629805082}
   - {fileID: 615690909}
   m_Father: {fileID: 0}
   m_RootOrder: 2
@@ -1710,7 +1775,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2075743287
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1724,7 +1789,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1914568406}
-  m_RootOrder: 2
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
