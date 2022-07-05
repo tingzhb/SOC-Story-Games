@@ -29,7 +29,7 @@ public class SingleTapController : MonoBehaviour {
 				executor.Enqueue(new BackCommand());
 				break;
 			case "Sound":
-				executor.Enqueue(new PlaySoundCommand());
+				executor.Enqueue(new PlayVOCommand());
 				break;
 		}
 	}
