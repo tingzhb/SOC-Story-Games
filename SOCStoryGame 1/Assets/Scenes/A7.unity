@@ -202,8 +202,8 @@ GameObject:
   - component: {fileID: 157888402}
   - component: {fileID: 157888401}
   - component: {fileID: 157888400}
-  - component: {fileID: 157888405}
   - component: {fileID: 157888404}
+  - component: {fileID: 157888405}
   m_Layer: 5
   m_Name: AppleCorrect
   m_TagString: Valid
@@ -228,8 +228,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000031471, y: 234.27}
-  m_SizeDelta: {x: 372.469, y: 372.469}
+  m_AnchoredPosition: {x: -0.000031471, y: 186.23}
+  m_SizeDelta: {x: 509.963, y: 509.963}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &157888400
 MonoBehaviour:
@@ -274,31 +274,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 157888401}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 157888404}
-        m_TargetAssemblyTypeName: OnTap, Assembly-CSharp
-        m_MethodName: Tap
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 157888405}
-        m_TargetAssemblyTypeName: AnimateOnce, Assembly-CSharp
-        m_MethodName: StartAnimation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &157888401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -358,7 +334,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 157888397}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d30e5b725ec479698f863716b531ebe, type: 3}
+  m_Script: {fileID: 11500000, guid: 37acb0583bdd53940b2dc557e8d6fd3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
@@ -543,7 +519,6 @@ GameObject:
   - component: {fileID: 509552299}
   - component: {fileID: 509552298}
   - component: {fileID: 509552301}
-  - component: {fileID: 509552302}
   m_Layer: 5
   m_Name: AppleWrong
   m_TagString: Failure
@@ -614,31 +589,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 509552299}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 509552301}
-        m_TargetAssemblyTypeName: OnTap, Assembly-CSharp
-        m_MethodName: Tap
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 509552302}
-        m_TargetAssemblyTypeName: AnimateOnce, Assembly-CSharp
-        m_MethodName: StartAnimation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &509552299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -689,29 +640,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &509552302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 509552295}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d30e5b725ec479698f863716b531ebe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: 21300000, guid: 68e7047d6dbf4b14bae718438bac75e7, type: 3}
-  - {fileID: 21300000, guid: 68b95873974d39d48beb188697c39fb0, type: 3}
-  - {fileID: 21300000, guid: 0b59e59d0b99625429350931ad882270, type: 3}
-  - {fileID: 21300000, guid: 552ff448da099cc4698483753533c1cd, type: 3}
-  - {fileID: 21300000, guid: 4f233697d922ea144b474aae911ebb29, type: 3}
-  - {fileID: 21300000, guid: 43049aa30c40bce498509ebe87b1611d, type: 3}
-  - {fileID: 21300000, guid: de5471859ec9f484ab1a7a637153d7a1, type: 3}
-  - {fileID: 21300000, guid: 5966ea5cdb2df004da808e2ffd027123, type: 3}
-  image: {fileID: 509552299}
-  animationDelay: 0.05
 --- !u!1 &615690908
 GameObject:
   m_ObjectHideFlags: 0
@@ -731,7 +659,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &615690909
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1111,7 +1039,6 @@ GameObject:
   - component: {fileID: 792506977}
   - component: {fileID: 792506976}
   - component: {fileID: 792506979}
-  - component: {fileID: 792506980}
   m_Layer: 5
   m_Name: AppleWrong
   m_TagString: Failure
@@ -1182,31 +1109,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 792506977}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 792506979}
-        m_TargetAssemblyTypeName: OnTap, Assembly-CSharp
-        m_MethodName: Tap
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 792506980}
-        m_TargetAssemblyTypeName: AnimateOnce, Assembly-CSharp
-        m_MethodName: StartAnimation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &792506977
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1257,29 +1160,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &792506980
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 792506973}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d30e5b725ec479698f863716b531ebe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: 21300000, guid: 68e7047d6dbf4b14bae718438bac75e7, type: 3}
-  - {fileID: 21300000, guid: 68b95873974d39d48beb188697c39fb0, type: 3}
-  - {fileID: 21300000, guid: 0b59e59d0b99625429350931ad882270, type: 3}
-  - {fileID: 21300000, guid: 552ff448da099cc4698483753533c1cd, type: 3}
-  - {fileID: 21300000, guid: 4f233697d922ea144b474aae911ebb29, type: 3}
-  - {fileID: 21300000, guid: 43049aa30c40bce498509ebe87b1611d, type: 3}
-  - {fileID: 21300000, guid: de5471859ec9f484ab1a7a637153d7a1, type: 3}
-  - {fileID: 21300000, guid: 5966ea5cdb2df004da808e2ffd027123, type: 3}
-  image: {fileID: 792506977}
-  animationDelay: 0.05
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1390,7 +1270,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1523314368858194417, guid: 7aebc305c9d3607419daeea6d9273929, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1523314368858194421, guid: 7aebc305c9d3607419daeea6d9273929, type: 3}
       propertyPath: m_RootOrder
@@ -1595,8 +1475,9 @@ GameObject:
   - component: {fileID: 1671951935}
   - component: {fileID: 1671951937}
   - component: {fileID: 1671951936}
+  - component: {fileID: 1671951938}
   m_Layer: 5
-  m_Name: Subtitle
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1609,18 +1490,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671951934}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1914568406}
-  m_RootOrder: 3
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -470.1}
-  m_SizeDelta: {x: 1320.752, y: 100.4}
+  m_AnchoredPosition: {x: 0, y: 409.31}
+  m_SizeDelta: {x: 178.142, y: 22.396}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1671951936
 MonoBehaviour:
@@ -1642,17 +1523,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Which is the biggest apple? Tap on it!
+  m_text: WELL DONE!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: acf45b273c6d9ba46a8d846072fe4bc8, type: 2}
-  m_sharedMaterial: {fileID: -8083954808632157445, guid: acf45b273c6d9ba46a8d846072fe4bc8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: de125a3584630654fa1902d04ca479d1, type: 2}
+  m_sharedMaterial: {fileID: -4250312772447910757, guid: de125a3584630654fa1902d04ca479d1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+    rgba: 4278190335
+  m_fontColor: {r: 1, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1669,15 +1550,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
+  m_fontSize: 18.65
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
-  m_fontSizeMax: 72
+  m_fontSizeMax: 122.56
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1719,6 +1600,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1671951934}
   m_CullTransparentMesh: 1
+--- !u!114 &1671951938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671951934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1180065c6b344f58bd43d05490d411f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scaleDuration: 0.025
+  scaleSpeed: 0.02
 --- !u!1 &1679977741
 GameObject:
   m_ObjectHideFlags: 0
@@ -1732,7 +1627,6 @@ GameObject:
   - component: {fileID: 1679977745}
   - component: {fileID: 1679977744}
   - component: {fileID: 1679977747}
-  - component: {fileID: 1679977748}
   m_Layer: 5
   m_Name: AppleWrong
   m_TagString: Failure
@@ -1803,31 +1697,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1679977745}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1679977747}
-        m_TargetAssemblyTypeName: OnTap, Assembly-CSharp
-        m_MethodName: Tap
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1679977748}
-        m_TargetAssemblyTypeName: AnimateOnce, Assembly-CSharp
-        m_MethodName: StartAnimation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1679977745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1878,29 +1748,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1679977748
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1679977741}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d30e5b725ec479698f863716b531ebe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprites:
-  - {fileID: 21300000, guid: 68e7047d6dbf4b14bae718438bac75e7, type: 3}
-  - {fileID: 21300000, guid: 68b95873974d39d48beb188697c39fb0, type: 3}
-  - {fileID: 21300000, guid: 0b59e59d0b99625429350931ad882270, type: 3}
-  - {fileID: 21300000, guid: 552ff448da099cc4698483753533c1cd, type: 3}
-  - {fileID: 21300000, guid: 4f233697d922ea144b474aae911ebb29, type: 3}
-  - {fileID: 21300000, guid: 43049aa30c40bce498509ebe87b1611d, type: 3}
-  - {fileID: 21300000, guid: de5471859ec9f484ab1a7a637153d7a1, type: 3}
-  - {fileID: 21300000, guid: 5966ea5cdb2df004da808e2ffd027123, type: 3}
-  image: {fileID: 1679977745}
-  animationDelay: 0.05
 --- !u!1 &1721982237
 GameObject:
   m_ObjectHideFlags: 0
@@ -2142,7 +1989,7 @@ RectTransform:
   - {fileID: 2062490275}
   - {fileID: 1721982238}
   - {fileID: 353296636}
-  - {fileID: 1671951935}
+  - {fileID: 1973509264}
   - {fileID: 157888398}
   - {fileID: 509552296}
   - {fileID: 1679977742}
@@ -2151,6 +1998,7 @@ RectTransform:
   - {fileID: 2075743287}
   - {fileID: 629805082}
   - {fileID: 615690909}
+  - {fileID: 1671951935}
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2159,6 +2007,141 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1973509263
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1973509264}
+  - component: {fileID: 1973509266}
+  - component: {fileID: 1973509265}
+  m_Layer: 5
+  m_Name: Subtitle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1973509264
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973509263}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1914568406}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -470.1}
+  m_SizeDelta: {x: 1320.752, y: 100.4}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1973509265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973509263}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Which is the biggest apple? Tap on it!
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: acf45b273c6d9ba46a8d846072fe4bc8, type: 2}
+  m_sharedMaterial: {fileID: -8083954808632157445, guid: acf45b273c6d9ba46a8d846072fe4bc8, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 72
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 1
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1973509266
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973509263}
+  m_CullTransparentMesh: 1
 --- !u!1 &2062490274
 GameObject:
   m_ObjectHideFlags: 0
@@ -2254,7 +2237,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2075743287
 RectTransform:
   m_ObjectHideFlags: 0
