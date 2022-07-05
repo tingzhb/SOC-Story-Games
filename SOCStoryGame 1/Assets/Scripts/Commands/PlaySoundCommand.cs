@@ -11,7 +11,9 @@ public class PlaySoundCommand : ICommand {
 		throw new System.NotImplementedException();
 	}
 	private void PlaySound(){
-		SoundMessage soundMessage = new(){ };
+		SoundMessage soundMessage = new(){
+			SoundType = 2
+		};
 		Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
 	}
 }

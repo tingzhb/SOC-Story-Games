@@ -19,6 +19,9 @@ public class SingleTapController : MonoBehaviour {
 			case "Invalid":
 				executor.Enqueue(new InvalidAnswerCommand());
 				break;
+			case "Failure":
+				executor.Enqueue(new FailureCommand());
+				break;
 			case "Exit":
 				executor.Enqueue(new ExitCommand());
 				break;

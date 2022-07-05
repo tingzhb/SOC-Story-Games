@@ -11,7 +11,7 @@ public class BackCommand : ICommand {
 		throw new System.NotImplementedException();
 	}
 	private void SendBackMessage(){
-		BackMessage backMessage = new() {};
+		BackMessage backMessage = new();
 		Broker.InvokeSubscribers(typeof(BackMessage), backMessage);
 	}
 }

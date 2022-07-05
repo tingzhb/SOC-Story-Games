@@ -9,6 +9,7 @@ TagManager:
   - Exit
   - Back
   - Sound
+  - Failure
   layers:
   - Default
   - TransparentFX

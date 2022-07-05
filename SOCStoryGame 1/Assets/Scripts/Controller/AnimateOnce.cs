@@ -2,10 +2,10 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class SpriteSwitcher : MonoBehaviour{
+public class AnimateOnce : MonoBehaviour{
 	[SerializeField] private Sprite[] sprites;
 	[SerializeField] private Image image;
-	[SerializeField] private float animationDelay;
+	[SerializeField] private float animationDelay; 
 	private bool canChangeSprite;
 	private int currentSprite;
 	private void Update(){
@@ -18,9 +18,13 @@ public class SpriteSwitcher : MonoBehaviour{
 		canChangeSprite = false;
 		yield return new WaitForSeconds(animationDelay);
 		currentSprite++;
+		canChangeSprite = true;
 		if (currentSprite == sprites.Length){
 			currentSprite = 0;
+			canChangeSprite = false;
 		}
+	}
+	public void StartAnimation(){
 		canChangeSprite = true;
 	}
 }

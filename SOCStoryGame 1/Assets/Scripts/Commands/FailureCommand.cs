@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
 using UnityEngine;
 
-public class InvalidAnswerCommand : ICommand {
+public class FailureCommand : ICommand {
 
 	public Task ExecuteAsync(){
 		SendFailureMessage();
@@ -11,7 +11,7 @@ public class InvalidAnswerCommand : ICommand {
 		throw new System.NotImplementedException();
 	}
 	private void SendFailureMessage(){
-		InvalidMessage invalidMessage = new(){ };
-		Broker.InvokeSubscribers(typeof(InvalidMessage), invalidMessage);
+		FailureMessage failureMessage = new(){ };
+		Broker.InvokeSubscribers(typeof(FailureMessage), failureMessage);
 	}
 }
