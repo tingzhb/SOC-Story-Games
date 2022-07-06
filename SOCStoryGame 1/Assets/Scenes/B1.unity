@@ -523,7 +523,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 39c7ff5bd4589a440900c86ab4d71b55, type: 3}
   - {fileID: 21300000, guid: 39c7ff5bd4589a440900c86ab4d71b55, type: 3}
   image: {fileID: 1289164683}
-  animationDelay: 0.05
+  animationDelay: 0.04166667
   startOnAwake: 1
 --- !u!1001 &1542433217
 PrefabInstance:
@@ -694,8 +694,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

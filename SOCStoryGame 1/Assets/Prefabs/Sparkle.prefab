@@ -121,4 +121,4 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b857450e8c534dc46b4e424022d2c4a2, type: 3}
   - {fileID: 21300000, guid: 60c7b9bd225022d4fa2456537ee8764a, type: 3}
   image: {fileID: 2501395245903202722}
-  animationDelay: 0.05
+  animationDelay: 0.04166667

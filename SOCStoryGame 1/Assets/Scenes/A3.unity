@@ -255,7 +255,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6c607e971b73b944d9d4a28613d8c15a, type: 3}
   - {fileID: 21300000, guid: 1f56c3d54a3900e4983970d1835a1cd7, type: 3}
   image: {fileID: 157888401}
-  animationDelay: 0.05
+  animationDelay: 0.04166667
 --- !u!114 &157888401
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -683,7 +683,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c17fea4be7b0bda42b233384c9880e92, type: 3}
   - {fileID: 21300000, guid: 36b3139658e8056499707545c89eab7f, type: 3}
   image: {fileID: 1289164683}
-  animationDelay: 0.05
+  animationDelay: 0.04166667
 --- !u!114 &1289164683
 MonoBehaviour:
   m_ObjectHideFlags: 0

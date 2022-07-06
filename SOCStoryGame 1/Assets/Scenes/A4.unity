@@ -265,7 +265,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 1327f7c13af5c2f48803e6f5ac634c08, type: 3}
   - {fileID: 21300000, guid: e4685b4dfbbb6af4b8727174611745ac, type: 3}
   image: {fileID: 157888401}
-  animationDelay: 0.05
+  animationDelay: 0.04166667
 --- !u!114 &157888400
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -615,7 +615,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 8c5fc635429efa647b60e88af198159e, type: 3}
   - {fileID: 21300000, guid: b24225311f222e24291afe81c32bf730, type: 3}
   image: {fileID: 1289164683}
-  animationDelay: 0.05
+  animationDelay: 0.04166667
 --- !u!114 &1289164683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -721,8 +721,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

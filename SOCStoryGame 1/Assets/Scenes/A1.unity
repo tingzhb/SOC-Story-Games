@@ -440,7 +440,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 78314e9db595c46439c4bcfbc447edc0, type: 3}
   - {fileID: 21300000, guid: 9f775b69322b65c49adbdb20fc3b49e4, type: 3}
   image: {fileID: 1289164683}
-  animationDelay: 0.05
+  animationDelay: 0.04166667
 --- !u!114 &1289164683
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -382,8 +382,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f6e251a0fe267a8468209f44776e478a, type: 3}
   - {fileID: 21300000, guid: efac5053365708243aaea8f85a82bd9c, type: 3}
   - {fileID: 21300000, guid: f6de14cfdd9282744819010b616d6021, type: 3}
+  - {fileID: 21300000, guid: f6de14cfdd9282744819010b616d6021, type: 3}
   image: {fileID: 157888401}
-  animationDelay: 0.05
+  animationDelay: 0.04166667
+  startOnAwake: 0
 --- !u!1 &353296635
 GameObject:
   m_ObjectHideFlags: 0
@@ -710,8 +712,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 43049aa30c40bce498509ebe87b1611d, type: 3}
   - {fileID: 21300000, guid: de5471859ec9f484ab1a7a637153d7a1, type: 3}
   - {fileID: 21300000, guid: 5966ea5cdb2df004da808e2ffd027123, type: 3}
+  - {fileID: 21300000, guid: 5966ea5cdb2df004da808e2ffd027123, type: 3}
   image: {fileID: 509552299}
-  animationDelay: 0.05
+  animationDelay: 0.04166667
+  startOnAwake: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -986,8 +990,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 43049aa30c40bce498509ebe87b1611d, type: 3}
   - {fileID: 21300000, guid: de5471859ec9f484ab1a7a637153d7a1, type: 3}
   - {fileID: 21300000, guid: 5966ea5cdb2df004da808e2ffd027123, type: 3}
+  - {fileID: 21300000, guid: 5966ea5cdb2df004da808e2ffd027123, type: 3}
   image: {fileID: 792506977}
-  animationDelay: 0.05
+  animationDelay: 0.04166667
+  startOnAwake: 0
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -1567,8 +1573,10 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 43049aa30c40bce498509ebe87b1611d, type: 3}
   - {fileID: 21300000, guid: de5471859ec9f484ab1a7a637153d7a1, type: 3}
   - {fileID: 21300000, guid: 5966ea5cdb2df004da808e2ffd027123, type: 3}
+  - {fileID: 21300000, guid: 5966ea5cdb2df004da808e2ffd027123, type: 3}
   image: {fileID: 1679977745}
-  animationDelay: 0.05
+  animationDelay: 0.04166667
+  startOnAwake: 0
 --- !u!1 &1721982237
 GameObject:
   m_ObjectHideFlags: 0

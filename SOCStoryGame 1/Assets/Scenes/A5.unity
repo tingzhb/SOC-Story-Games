@@ -390,7 +390,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d7151ffeeb37ec8469c3cdd3833c0fe0, type: 3}
   - {fileID: 21300000, guid: d7151ffeeb37ec8469c3cdd3833c0fe0, type: 3}
   image: {fileID: 157888401}
-  animationDelay: 0.05
+  animationDelay: 0.04166667
 --- !u!1001 &292727356
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -702,7 +702,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 19ae4ab6eecc7c84185ab5f8f7254033, type: 3}
   - {fileID: 21300000, guid: 251dd975da8645f4790f56a9035ed9fd, type: 3}
   image: {fileID: 1289164683}
-  animationDelay: 0.05
+  animationDelay: 0.04166667
 --- !u!114 &1289164683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -910,8 +910,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
