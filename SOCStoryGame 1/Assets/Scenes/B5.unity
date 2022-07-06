@@ -392,7 +392,7 @@ GameObject:
   - component: {fileID: 1289164681}
   - component: {fileID: 1289164684}
   - component: {fileID: 1289164683}
-  - component: {fileID: 1289164685}
+  - component: {fileID: 1289164686}
   m_Layer: 5
   m_Name: Chloe
   m_TagString: Untagged
@@ -417,8 +417,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000046674, y: -154}
-  m_SizeDelta: {x: 512, y: 600}
+  m_AnchoredPosition: {x: 30, y: -156}
+  m_SizeDelta: {x: 701.959, y: 701.959}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1289164683
 MonoBehaviour:
@@ -440,7 +440,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 62ba6ecac5c9a7542bac1f4bb9e01b17, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e20c41d2a49daac46b1f74e7b7f19d8d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -458,7 +458,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1289164680}
   m_CullTransparentMesh: 1
---- !u!114 &1289164685
+--- !u!114 &1289164686
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -467,36 +467,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 1289164680}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d30e5b725ec479698f863716b531ebe, type: 3}
+  m_Script: {fileID: 11500000, guid: 37acb0583bdd53940b2dc557e8d6fd3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
-  - {fileID: 21300000, guid: 62ba6ecac5c9a7542bac1f4bb9e01b17, type: 3}
-  - {fileID: 21300000, guid: 61458bd04b074f3448b203ba1dd83230, type: 3}
-  - {fileID: 21300000, guid: 3e42fd2f016473145b4d9c5d8178dfe3, type: 3}
-  - {fileID: 21300000, guid: a2a81fbf97d48fc45b8f744563cfe072, type: 3}
-  - {fileID: 21300000, guid: 4ae32a8de76a98344973a59af1cafd85, type: 3}
-  - {fileID: 21300000, guid: c5717e4c9568af7468a39b04c5f57d2e, type: 3}
-  - {fileID: 21300000, guid: 31c7eb1d557c96a4b847e27f066b1e78, type: 3}
-  - {fileID: 21300000, guid: f0520a7d4cf2128418ef865c15046a08, type: 3}
-  - {fileID: 21300000, guid: bbe53dfb87a461a44a81ed76e13c06a2, type: 3}
-  - {fileID: 21300000, guid: f590bbc7dd8c1eb49a102e195b741037, type: 3}
-  - {fileID: 21300000, guid: f826db086b31e3a42b082bbdc4a8b55a, type: 3}
-  - {fileID: 21300000, guid: 3ea5d50a9d7efda4bacdd7bf0afd814a, type: 3}
-  - {fileID: 21300000, guid: bb3375c6a91929c48a30ca38befe41ce, type: 3}
-  - {fileID: 21300000, guid: 8af807f23d1437545828ad58855c78ac, type: 3}
-  - {fileID: 21300000, guid: b97bb469ce9da7c46a2427d4ccdd40f6, type: 3}
-  - {fileID: 21300000, guid: d0e16f08b96404e419d3431809e0a813, type: 3}
-  - {fileID: 21300000, guid: ad0d8a535673b794892d46604feeaf80, type: 3}
-  - {fileID: 21300000, guid: 7728f046fe46c4849a3e4c606563625a, type: 3}
-  - {fileID: 21300000, guid: 14c13a71fc2e28243a2350f37163c616, type: 3}
-  - {fileID: 21300000, guid: 60532cd9abaed4d468776993816b5000, type: 3}
-  - {fileID: 21300000, guid: 2824da1bed01d6042b141e81d2068be3, type: 3}
-  - {fileID: 21300000, guid: bc804f4e3e9921b4cae86f4edf599036, type: 3}
-  - {fileID: 21300000, guid: bc804f4e3e9921b4cae86f4edf599036, type: 3}
+  - {fileID: 21300000, guid: e20c41d2a49daac46b1f74e7b7f19d8d, type: 3}
+  - {fileID: 21300000, guid: 78ada791701a09042aa4c614e6b90057, type: 3}
+  - {fileID: 21300000, guid: bce9eb499372a094f8ce8d42f68f1406, type: 3}
+  - {fileID: 21300000, guid: 95329cb3155a21d44919b18ef51a2060, type: 3}
+  - {fileID: 21300000, guid: 27527a203915473479ed39caa6741877, type: 3}
+  - {fileID: 21300000, guid: 023c776be1a343f468a7afea77292fba, type: 3}
+  - {fileID: 21300000, guid: fec67fd19fe964841a6da9fe2c2a739a, type: 3}
+  - {fileID: 21300000, guid: 1fefe5ec05eddcf48a778d11c4cd0db3, type: 3}
+  - {fileID: 21300000, guid: 066a7403aef966348bdac22f25a4542d, type: 3}
+  - {fileID: 21300000, guid: f42308300b7683f45b2443f01f421c3b, type: 3}
+  - {fileID: 21300000, guid: 4214a614db5a167428103870e025b64d, type: 3}
+  - {fileID: 21300000, guid: 155b0e8f5c1e3e840bcba59872584207, type: 3}
+  - {fileID: 21300000, guid: 7e192398f4f4b534a84391bfe50aa859, type: 3}
+  - {fileID: 21300000, guid: 9474d30c81f960f44ac45f242cdeb77c, type: 3}
+  - {fileID: 21300000, guid: 371fd833285defb42beab4decd74bddc, type: 3}
+  - {fileID: 21300000, guid: e86bfbc598e8deb4ba7c87fab214c163, type: 3}
+  - {fileID: 21300000, guid: b5fff0397cdf79a4d9bee749eccf9e5a, type: 3}
+  - {fileID: 21300000, guid: 10eae31503a35934998fdae1e260db8f, type: 3}
+  - {fileID: 21300000, guid: 450babb2cb4d5fb4d800524f128545f4, type: 3}
+  - {fileID: 21300000, guid: 75030603be0f59344a9468b6c239442b, type: 3}
+  - {fileID: 21300000, guid: 3c137e58ed4bc4d46ba3d903b8b83ca5, type: 3}
+  - {fileID: 21300000, guid: 971194ccdcddfbc429a4526630940dbd, type: 3}
+  - {fileID: 21300000, guid: d0b3d093cfb3c5544970a658197b797d, type: 3}
+  - {fileID: 21300000, guid: ae51ef28f5ecf3e48b9f19f65abee033, type: 3}
+  - {fileID: 21300000, guid: ae51ef28f5ecf3e48b9f19f65abee033, type: 3}
   image: {fileID: 1289164683}
   animationDelay: 0.04166667
-  startOnAwake: 1
 --- !u!1001 &1542433217
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -657,7 +658,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Chloe has a new bag.
+  m_text: Chloe is excited to play.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: acf45b273c6d9ba46a8d846072fe4bc8, type: 2}
   m_sharedMaterial: {fileID: -8083954808632157445, guid: acf45b273c6d9ba46a8d846072fe4bc8, type: 2}
