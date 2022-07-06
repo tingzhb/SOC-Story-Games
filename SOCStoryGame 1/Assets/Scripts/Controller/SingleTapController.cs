@@ -12,7 +12,6 @@ public class SingleTapController : MonoBehaviour {
 	}
 	private void ValidateTap(string tappedObject){
 		switch (tappedObject){
-			// Consider Sending String
 			case "Valid":
 				executor.Enqueue(new ValidAnswerCommand());
 				break;
@@ -30,6 +29,10 @@ public class SingleTapController : MonoBehaviour {
 				break;
 			case "Sound":
 				executor.Enqueue(new PlayVOCommand());
+				break;
+			case "Bubble":
+				executor.Enqueue(new BubbleCommand());
+				Debug.Log("Bubble");
 				break;
 		}
 	}
