@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3375218143535316784}
   - component: {fileID: 3375218143535316781}
   - component: {fileID: 2966938324783263949}
+  - component: {fileID: 4919589560120533242}
   m_Layer: 5
   m_Name: Bubble
   m_TagString: Invalid
@@ -136,6 +137,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 3375218143535316781}
+        m_TargetAssemblyTypeName: BubbleRandomizer, Assembly-CSharp
+        m_MethodName: Pop
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &3375218143535316781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,7 +161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 765f0e8691e3bd54b9cf5ad6f8b00578, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characters: 4100420043004400450046004700
+  characters: 41004200430044004500
   movementSpeed: 50
 --- !u!114 &2966938324783263949
 MonoBehaviour:
@@ -162,6 +175,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4919589560120533242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3375218143535316790}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d30e5b725ec479698f863716b531ebe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: e7c40c74dea97be489f356e2af7b21c9, type: 3}
+  - {fileID: 21300000, guid: d2a0510bb48092340847417c7628cab3, type: 3}
+  - {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
+  - {fileID: 21300000, guid: 26c88399f72fecf48ba156d9cd9ebe22, type: 3}
+  - {fileID: 21300000, guid: 26c88399f72fecf48ba156d9cd9ebe22, type: 3}
+  image: {fileID: 3375218143535316787}
+  animationDelay: 0.04166667
+  startOnAwake: 0
 --- !u!1 &3375218143682763742
 GameObject:
   m_ObjectHideFlags: 0

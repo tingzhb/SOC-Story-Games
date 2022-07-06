@@ -1,6 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -8,9 +7,13 @@ using Random = UnityEngine.Random;
 public class BubbleRandomizer : MonoBehaviour{
 	[SerializeField] private char[] characters;
 	[SerializeField] private float movementSpeed;
-	private void Awake(){
+	private TextMeshProUGUI textComp;
+
+
+	private void Start(){
+		textComp = GetComponentInChildren<TextMeshProUGUI>();
 		var randomChar = Random.Range(0, characters.Length);
-		GetComponentInChildren<TextMeshProUGUI>().text = characters[randomChar].ToString();
+		textComp.text = characters[randomChar].ToString();
 		if (randomChar == 1){
 			gameObject.tag = "Bubble";
 		}
@@ -21,5 +24,15 @@ public class BubbleRandomizer : MonoBehaviour{
 	}
 	private int RandomDisplacement(){
 		return Random.Range(-40, 40);
+	}
+	public void Pop(){
+		if (gameObject.CompareTag("Bubble")){
+			GetComponent<AnimateOnce>().StartAnimation();
+			StartCoroutine(DelayDestroy());
+		}
+	}
+	private IEnumerator DelayDestroy(){
+		yield return new WaitForSeconds(0.25f);
+		textComp.text = " ";
 	}
 }
