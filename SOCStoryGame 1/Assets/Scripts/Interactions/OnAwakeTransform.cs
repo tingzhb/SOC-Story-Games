@@ -10,7 +10,6 @@ public class OnAwakeTransform : MonoBehaviour{
 			scaleDuration += Time.deltaTime;
 			currentScale += scaleSpeed * Time.deltaTime;
 			transform.localScale += Vector3.one * currentScale;
-			Debug.Log(maxScaleDuration);
 		}
 	}
 }

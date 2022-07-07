@@ -18,20 +18,20 @@ public class BubbleRandomizer : MonoBehaviour{
 			gameObject.tag = "Bubble";
 		}
 	}
-	private void FixedUpdate(){
+	private void FixedUpdate() {
 		transform.Translate(Vector3.up * (Time.deltaTime * (movementSpeed + RandomDisplacement())));
 		transform.Translate(Vector3.left * (Time.deltaTime * (movementSpeed + RandomDisplacement())));
 	}
-	private int RandomDisplacement(){
+	private int RandomDisplacement() {
 		return Random.Range(-40, 40);
 	}
-	public void Pop(){
-		if (gameObject.CompareTag("Bubble")){
+	public void Pop() {
+		if (gameObject.CompareTag("Bubble")) {
 			GetComponent<AnimateOnce>().StartAnimation();
 			StartCoroutine(DelayDestroy());
 		}
 	}
-	private IEnumerator DelayDestroy(){
+	private IEnumerator DelayDestroy() {
 		yield return new WaitForSeconds(0.25f);
 		textComp.text = " ";
 	}

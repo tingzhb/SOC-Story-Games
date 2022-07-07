@@ -4,13 +4,13 @@ using UnityEngine;
 public class BubbleCommand : ICommand {
 
 	public Task ExecuteAsync(){
-		SendBackMessage();
+		SendBubbleMessage();
 		return Task.CompletedTask;
 	}
 	public void Undo(){
 		throw new System.NotImplementedException();
 	}
-	private void SendBackMessage(){
+	private void SendBubbleMessage(){
 		BubbleMessage bubbleMessage = new();
 		Broker.InvokeSubscribers(typeof(BubbleMessage), bubbleMessage);
 	}
