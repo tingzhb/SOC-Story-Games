@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class ProgressController : MonoBehaviour{
 
 	private int invalidCount;
-	
+
 	// SCENE MANAGER BREAKS WHEN MULTIPLE PLAYERS ARE LOADED. DISABLE PLAYER BEFORE TESTING
 	private void Awake(){
 		Broker.Subscribe<SuccessMessage>(OnSuccessMessageReceived);

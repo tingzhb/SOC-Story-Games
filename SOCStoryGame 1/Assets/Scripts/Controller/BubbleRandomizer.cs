@@ -6,7 +6,7 @@ using Random = UnityEngine.Random;
 
 public class BubbleRandomizer : MonoBehaviour{
 	[SerializeField] private char[] characters;
-	[SerializeField] private float movementSpeed;
+	[SerializeField] private int movementSpeed;
 	private TextMeshProUGUI textComp;
 
 
@@ -23,7 +23,7 @@ public class BubbleRandomizer : MonoBehaviour{
 		transform.Translate(Vector3.left * (Time.deltaTime * (movementSpeed + RandomDisplacement())));
 	}
 	private int RandomDisplacement() {
-		return Random.Range(-40, 40);
+		return Random.Range(-movementSpeed/2, movementSpeed/2);
 	}
 	public void Pop() {
 		if (gameObject.CompareTag("Bubble")) {

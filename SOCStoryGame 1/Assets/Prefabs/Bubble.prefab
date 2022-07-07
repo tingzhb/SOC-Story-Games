@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characters: 41004200430044004500
-  movementSpeed: 50
+  movementSpeed: 100
 --- !u!114 &2966938324783263949
 MonoBehaviour:
   m_ObjectHideFlags: 0

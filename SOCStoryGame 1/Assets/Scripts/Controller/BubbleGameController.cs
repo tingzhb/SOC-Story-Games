@@ -29,6 +29,7 @@ public class BubbleGameController : MonoBehaviour {
 		if (bubbleCount == 3) {
 			UI.SetActive(false);
 			wellDone.SetActive(true);
+			Broker.Unsubscribe<BubbleMessage>(OnBubbleMessageReceived);
 			StartCoroutine(DelayEnd());
 		}
 	}
