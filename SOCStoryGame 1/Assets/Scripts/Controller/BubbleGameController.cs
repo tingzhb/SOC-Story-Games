@@ -29,12 +29,15 @@ public class BubbleGameController : MonoBehaviour {
 		if (bubbleCount == 3) {
 			UI.SetActive(false);
 			wellDone.SetActive(true);
-			Broker.Unsubscribe<BubbleMessage>(OnBubbleMessageReceived);
 			StartCoroutine(DelayEnd());
 		}
 	}
 	private IEnumerator DelayEnd() {
-		yield return new WaitForSeconds(2f);
+		yield return new WaitForSeconds(1.5f);
 		Time.timeScale = 0;
+	}
+	private void OnDestroy(){
+		Time.timeScale = 1;
+		Broker.Unsubscribe<BubbleMessage>(OnBubbleMessageReceived);
 	}
 }
