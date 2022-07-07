@@ -27,6 +27,11 @@ public class ProgressController : MonoBehaviour{
 	
 	private void OnExitMessageReceived(ExitMessage obj){
 		Debug.Log("Quit Level");
+		SoundMessage soundMessage = new(){
+			SoundType = 99
+		};
+		Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
+		
 		SceneManager.LoadSceneAsync("LevelSelect");
 		// Application.Quit();
 	}

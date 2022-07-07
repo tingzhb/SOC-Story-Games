@@ -32,7 +32,6 @@ public class SingleTapController : MonoBehaviour {
 				break;
 			case "Bubble":
 				executor.Enqueue(new BubbleCommand());
-				Debug.Log("Bubble");
 				break;
 		}
 	}

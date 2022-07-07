@@ -24,7 +24,7 @@ MonoBehaviour:
   - {fileID: 5650624557612947492}
   StringsBanks:
   - {fileID: 8087226613740356097}
-  cacheTime: 637928049909666500
+  cacheTime: 637928051810086394
   cacheVersion: 131591
 --- !u!114 &4124660489484077743
 MonoBehaviour:
@@ -95,7 +95,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Mobile/Master.bank
   Name: Mobile/Master
   StudioPath: bank:/Master
-  lastModified: 637928049909646547
+  lastModified: 637928051809986371
   FileSizes: []
   Exists: 1
 --- !u!114 &8087226613740356097
@@ -113,7 +113,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Mobile/Master.strings.bank
   Name: Mobile/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637928049909666500
+  lastModified: 637928051810086394
   FileSizes:
   - Name: 
     Value: 844
