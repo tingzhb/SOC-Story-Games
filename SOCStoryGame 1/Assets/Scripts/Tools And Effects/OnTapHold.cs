@@ -13,6 +13,7 @@ public class OnTapHold : MonoBehaviour, IPointerDownHandler, IPointerUpHandler{
 	}
 
 	public void OnPointerDown(PointerEventData eventData){
+		transform.localScale = Vector3.one;
 		if (!locked){
 			DragMessage dragMessage = new(){
 				CanDrag = true,
@@ -22,6 +23,7 @@ public class OnTapHold : MonoBehaviour, IPointerDownHandler, IPointerUpHandler{
 		}
 	}
 	public void OnPointerUp(PointerEventData eventData){
+		transform.localScale = Vector3.one * 0.5f;
 		DragMessage dragMessage = new(){
 			CanDrag = false,
 			DragObject = gameObject,
@@ -30,6 +32,7 @@ public class OnTapHold : MonoBehaviour, IPointerDownHandler, IPointerUpHandler{
 		Broker.InvokeSubscribers(typeof(DragMessage), dragMessage);	
 	}
 	public void Lock(){
+		transform.localScale = Vector3.one;
 		locked = true;
 	}
 	

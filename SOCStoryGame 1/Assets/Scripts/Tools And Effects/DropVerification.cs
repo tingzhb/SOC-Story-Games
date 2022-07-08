@@ -19,7 +19,8 @@ public class DropVerification : MonoBehaviour{
 				dragObjTransform.position = transform.position;
 				obj.DragObject.GetComponent<OnTapHold>().Lock();
 				totalDropped++;
-			} 
+			} else {
+			}
 			if (totalDropped == 6){ 
 				executor.Enqueue(new ValidAnswerCommand()); 
 			} 
