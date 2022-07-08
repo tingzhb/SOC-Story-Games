@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using UnityEngine;
 
 public class DragController : MonoBehaviour{
@@ -18,5 +16,8 @@ public class DragController : MonoBehaviour{
 		if (dragObject is not null && canDrag){
 			dragObject.transform.position = Input.mousePosition;
 		}
+	}
+	private void OnDestroy(){
+		Broker.Unsubscribe<DragMessage>(OnStartDragMessageReceived);
 	}
 }
