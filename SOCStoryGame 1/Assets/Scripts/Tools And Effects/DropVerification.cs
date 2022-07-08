@@ -1,26 +1,29 @@
 using UnityEngine;
 
 public class DropVerification : MonoBehaviour{
-	[SerializeField] private GameObject[] droppedItems;
+	[SerializeField] private string item;
 
 	private int totalDropped;
 	private Executor executor;
+	private BoxCollider2D collider;
 	private void Awake(){
 		executor = FindObjectOfType<Executor>();
 		Broker.Subscribe<DragMessage>(OnDragMessageReceived);
+		collider = GetComponent<BoxCollider2D>();
 	}
 
-	public void OnDragMessageReceived(DragMessage obj){
-		foreach (var item in droppedItems){
-			if (GetComponent<BoxCollider2D>().bounds.Contains(item.transform.position)){
+	private void OnDragMessageReceived(DragMessage obj){
+		if (obj is not null && !obj.CanDrag){
+			var dragObjTransform = obj.DragObject.transform;
+			if (collider.bounds.Contains(dragObjTransform.position) && obj.ItemName == item){
+				dragObjTransform.position = transform.position;
+				obj.DragObject.GetComponent<OnTapHold>().Lock();
 				totalDropped++;
-			}
-		}
-		if (totalDropped == 6){
-			executor.Enqueue(new ValidAnswerCommand());
-		}
-		Debug.Log(totalDropped); 
-		executor.Enqueue(new FailureCommand());
-		totalDropped = 0;
+			} 
+			if (totalDropped == 6){ 
+				executor.Enqueue(new ValidAnswerCommand()); 
+			} 
+			Debug.Log(totalDropped);
+		} 
 	}
 }
