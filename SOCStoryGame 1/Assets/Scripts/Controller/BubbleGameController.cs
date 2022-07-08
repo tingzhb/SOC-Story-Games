@@ -26,6 +26,11 @@ public class BubbleGameController : MonoBehaviour {
 	private void OnBubbleMessageReceived(BubbleMessage obj) {
 		stars[bubbleCount].GetComponent<AnimateOnce>().StartAnimation();
 		bubbleCount++;
+		SoundMessage soundMessage = new(){
+			SoundType = 3
+		};
+		Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
+		
 		if (bubbleCount == 3) {
 			UI.SetActive(false);
 			wellDone.SetActive(true);

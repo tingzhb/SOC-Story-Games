@@ -16,7 +16,6 @@ public class DropVerification : MonoBehaviour{
 			if (boxCollider.bounds.Contains(dragObjTransform.position) && obj.ItemName == item){
 				dragObjTransform.position = transform.position;
 				obj.DragObject.GetComponent<OnTapHold>().Lock();
-				obj.DragObject.transform.localScale = Vector3.one * 0.5f;
 				Broker.Unsubscribe<DragMessage>(OnDragMessageReceived);
 			}
 		} 
