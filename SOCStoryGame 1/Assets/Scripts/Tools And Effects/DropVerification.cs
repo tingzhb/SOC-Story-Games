@@ -18,13 +18,8 @@ public class DropVerification : MonoBehaviour{
 			if (collider.bounds.Contains(dragObjTransform.position) && obj.ItemName == item){
 				dragObjTransform.position = transform.position;
 				obj.DragObject.GetComponent<OnTapHold>().Lock();
-				totalDropped++;
-			} else {
+				Broker.Unsubscribe<DragMessage>(OnDragMessageReceived);
 			}
-			if (totalDropped == 6){ 
-				executor.Enqueue(new ValidAnswerCommand()); 
-			} 
-			Debug.Log(totalDropped);
 		} 
 	}
 }
