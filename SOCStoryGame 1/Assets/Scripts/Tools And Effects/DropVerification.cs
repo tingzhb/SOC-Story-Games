@@ -1,6 +1,4 @@
-using System.Collections.Generic;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 public class DropVerification : MonoBehaviour{
 	[SerializeField] private GameObject[] droppedItems;
