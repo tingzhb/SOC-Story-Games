@@ -6,11 +6,11 @@ public class DropVerification : MonoBehaviour{
 	private int totalDropped;
 	private Executor executor;
 	private void Awake(){
-
 		executor = FindObjectOfType<Executor>();
+		Broker.Subscribe<DragMessage>(OnDragMessageReceived);
 	}
 
-	public void Verify(){
+	public void OnDragMessageReceived(DragMessage obj){
 		foreach (var item in droppedItems){
 			if (GetComponent<BoxCollider2D>().bounds.Contains(item.transform.position)){
 				totalDropped++;
