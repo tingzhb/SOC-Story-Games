@@ -21,7 +21,8 @@ public class DropVerification : MonoBehaviour{
 		if (totalDropped == 6){
 			executor.Enqueue(new ValidAnswerCommand());
 		}
-		Debug.Log(totalDropped);
+		Debug.Log(totalDropped); 
+		executor.Enqueue(new FailureCommand());
 		totalDropped = 0;
 	}
 }
