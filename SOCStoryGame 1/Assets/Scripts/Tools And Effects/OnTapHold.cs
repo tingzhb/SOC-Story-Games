@@ -12,25 +12,37 @@ public class OnTapHold : MonoBehaviour, IPointerDownHandler, IPointerUpHandler{
 		}
 	}
 
+	private void Update(){
+		if (Input.touchCount < 1 && !Input.GetMouseButton(0)){
+			StopDrag();
+		}
+	}
+
 	public void OnPointerDown(PointerEventData eventData){
+		StartDrag();
+	}
+	private void StartDrag(){
 		transform.localScale = Vector3.one;
 		if (!locked){
 			DragMessage dragMessage = new(){
-				CanDrag = true,
+				Dragging = true,
 				DragObject = gameObject
 			};
 			Broker.InvokeSubscribers(typeof(DragMessage), dragMessage);
 		}
 	}
+
 	public void OnPointerUp(PointerEventData eventData){
+		StopDrag();
+	}
+	private void StopDrag(){
 		if (!locked){
-			transform.localScale = Vector3.one * 0.5f;
 			DragMessage dragMessage = new(){
-				CanDrag = false,
+				Dragging = false,
 				DragObject = gameObject,
 				ItemName = item
 			};
-			Broker.InvokeSubscribers(typeof(DragMessage), dragMessage);	
+			Broker.InvokeSubscribers(typeof(DragMessage), dragMessage);
 		}
 	}
 	public void Lock(){

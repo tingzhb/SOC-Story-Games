@@ -4,20 +4,19 @@ public class DropVerification : MonoBehaviour{
 	[SerializeField] private string item;
 
 	private int totalDropped;
-	private Executor executor;
-	private BoxCollider2D collider;
+	private BoxCollider2D boxCollider;
 	private void Awake(){
-		executor = FindObjectOfType<Executor>();
 		Broker.Subscribe<DragMessage>(OnDragMessageReceived);
-		collider = GetComponent<BoxCollider2D>();
+		boxCollider = GetComponent<BoxCollider2D>();
 	}
 
 	private void OnDragMessageReceived(DragMessage obj){
-		if (obj is not null && !obj.CanDrag){
+		if (obj is not null && !obj.Dragging){
 			var dragObjTransform = obj.DragObject.transform;
-			if (collider.bounds.Contains(dragObjTransform.position) && obj.ItemName == item){
+			if (boxCollider.bounds.Contains(dragObjTransform.position) && obj.ItemName == item){
 				dragObjTransform.position = transform.position;
 				obj.DragObject.GetComponent<OnTapHold>().Lock();
+				obj.DragObject.transform.localScale = Vector3.one * 0.5f;
 				Broker.Unsubscribe<DragMessage>(OnDragMessageReceived);
 			}
 		} 

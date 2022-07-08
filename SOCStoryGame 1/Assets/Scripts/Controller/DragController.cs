@@ -9,7 +9,7 @@ public class DragController : MonoBehaviour{
 	private void OnStartDragMessageReceived(DragMessage obj){
 		Debug.Log("draggable");
 		dragObject = obj.DragObject;
-		canDrag = obj.CanDrag;
+		canDrag = obj.Dragging;
 	}
 
 	private void Update(){
