@@ -1227,7 +1227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25ae1321ea5f4f4eae3d2dccb50b913c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  droppedItems:
+  candles:
   - {fileID: 1289164680}
   - {fileID: 1094415494}
   - {fileID: 422605976}
