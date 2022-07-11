@@ -2,11 +2,12 @@
 
  public class DropVerification : MonoBehaviour{
 	 [SerializeField] private GameObject[] candles;
-
+	 private Executor executor;
 	 private int totalDropped;
 	 private BoxCollider2D boxCollider;
 	 private void Awake() {
 		 boxCollider = GetComponent<BoxCollider2D>();
+		 executor = FindObjectOfType<Executor>();
 	 }
 
 	 public void Verify(){
@@ -16,11 +17,10 @@
 			 }
 		 }
 		 if (totalDropped == 6){
-			 Debug.Log("Done!");
-		 } else{
-			Debug.Log("Nope!");
-			Debug.Log(totalDropped);
-			totalDropped = 0;
+			 executor.Enqueue(new ValidAnswerCommand());
+
+		 } else {
+			 totalDropped = 0;
 		 }
 	 }
  }

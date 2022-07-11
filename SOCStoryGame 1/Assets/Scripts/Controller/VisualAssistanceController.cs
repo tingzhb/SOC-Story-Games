@@ -13,7 +13,7 @@ public class VisualAssistanceController : MonoBehaviour{
 		StartCoroutine(DelayDeactivate());
 	}
 	private IEnumerator DelayDeactivate(){
-		yield return new WaitForSeconds(1);
+		yield return new WaitForSeconds(0.5f);
 		assistance.SetActive(false);
 	}
 	private void OnDestroy(){
