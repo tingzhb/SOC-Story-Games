@@ -467,7 +467,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: This is Chloe.
+  m_text: Drew is excited!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: acf45b273c6d9ba46a8d846072fe4bc8, type: 2}
   m_sharedMaterial: {fileID: -8083954808632157445, guid: acf45b273c6d9ba46a8d846072fe4bc8, type: 2}
@@ -660,7 +660,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: bcae6ccbf7d4e604ebecf2e321272adc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2c6422576ca61f444988c0d556d76347, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
