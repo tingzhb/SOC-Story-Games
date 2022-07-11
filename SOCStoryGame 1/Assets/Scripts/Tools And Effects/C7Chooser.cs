@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class C7Chooser : MonoBehaviour{
+public class C7Chooser : MonoBehaviour {
 	[SerializeField] private GameObject choice, crab, cow, cat;
 
 	public void ChooseCrab(){

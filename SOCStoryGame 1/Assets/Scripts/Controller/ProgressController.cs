@@ -55,6 +55,9 @@ public class ProgressController : MonoBehaviour{
 			SoundType = 1
 		};
 		Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
+
+		AssistanceMessage assistanceMessage = new();
+		Broker.InvokeSubscribers(typeof(AssistanceMessage), assistanceMessage);
 		StartCoroutine(WaitToPlayVO());
 	}
 
