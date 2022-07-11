@@ -1,4 +1,4 @@
-using UnityEngine;
+ using UnityEngine;
 
 public class DropVerification : MonoBehaviour{
 	[SerializeField] private string item;
