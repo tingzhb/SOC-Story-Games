@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class DrumGameController : MonoBehaviour{
 	[SerializeField] private GameObject stickL, stickR, dog, tapL, tapR, wellDone, UI;
-	[SerializeField] private int maxProgression, step;
+	[SerializeField] private int maxProgression;
+	[SerializeField] private GameObject[] steps;
 	private AnimateOnce animateL, animateR, animateDog;
 	private int progression;
 	private bool leftTurn = true;
@@ -36,12 +37,13 @@ public class DrumGameController : MonoBehaviour{
 	}
 	
 	private void UpdateProgress(){
-		animateDog.StartAnimation();
 		if (progression == maxProgression){
-			step = 0;
 			StartCoroutine(DelayEnd());
-		} 
-		dog.transform.position += new Vector3(step, 0);
+		}
+		if (progression <= maxProgression){
+			animateDog.StartAnimation();
+		}
+		dog.transform.position = steps[progression].transform.position;
 	}
 	private IEnumerator DelayEnd() {
 		yield return new WaitForSeconds(0.25f);

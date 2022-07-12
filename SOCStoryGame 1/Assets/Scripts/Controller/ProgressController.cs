@@ -44,7 +44,7 @@ public class ProgressController : MonoBehaviour{
 	private void OnInvalidMessageReceived(InvalidMessage obj){
 		Debug.Log("Invalid!");
 		invalidCount++;
-		if (invalidCount == 3){
+		if (invalidCount == 5){
 			FailureFeedback();
 			invalidCount = 0;
 		}
