@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,8 +7,9 @@ public class SpriteSwitcher : MonoBehaviour{
 	[SerializeField] private Sprite[] sprites;
 	[SerializeField] private Image image;
 	[SerializeField] private float animationDelay;
-	private bool canChangeSprite = true;
+	private bool canChangeSprite;
 	private int currentSprite;
+
 	private void Update(){
 		image.sprite = sprites[currentSprite];
 		if (canChangeSprite){
@@ -23,4 +25,7 @@ public class SpriteSwitcher : MonoBehaviour{
 		}
 		canChangeSprite = true;
 	}
+	private void OnDisable(){
+		canChangeSprite = true;
+		currentSprite = 0;	}
 }

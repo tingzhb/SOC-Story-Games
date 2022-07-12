@@ -20,6 +20,7 @@
 			 executor.Enqueue(new ValidAnswerCommand());
 
 		 } else {
+			 executor.Enqueue(new FailureCommand());
 			 totalDropped = 0;
 		 }
 	 }
