@@ -41,7 +41,7 @@ public class DrumGameController : MonoBehaviour{
 			step = 0;
 			StartCoroutine(DelayEnd());
 		} 
-		dog.transform.Translate(new Vector3(step, 0));
+		dog.transform.position += new Vector3(step, 0);
 	}
 	private IEnumerator DelayEnd() {
 		yield return new WaitForSeconds(0.25f);
