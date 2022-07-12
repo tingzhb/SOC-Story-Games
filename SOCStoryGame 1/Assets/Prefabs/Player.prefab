@@ -117,6 +117,12 @@ MonoBehaviour:
       Data3: -1498066274
       Data4: -2104863310
     Path: event:/C/BGM C
+  - Guid:
+      Data1: -2083968075
+      Data2: 1094561853
+      Data3: 138765954
+      Data4: -65454495
+    Path: event:/D/BGM D
 --- !u!114 &806892313856583907
 MonoBehaviour:
   m_ObjectHideFlags: 0
