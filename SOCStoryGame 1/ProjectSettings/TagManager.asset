@@ -12,6 +12,8 @@ TagManager:
   - Failure
   - Bubble
   - Drag
+  - StickL
+  - StickR
   layers:
   - Default
   - TransparentFX

@@ -33,7 +33,12 @@ public class SingleTapController : MonoBehaviour {
 			case "Bubble":
 				executor.Enqueue(new BubbleCommand());
 				break;
-
+			case "StickL":
+				executor.Enqueue(new StickLCommand());
+				break;
+			case "StickR":
+				executor.Enqueue(new StickRCommand());
+				break;
 		}
 	}
 }
