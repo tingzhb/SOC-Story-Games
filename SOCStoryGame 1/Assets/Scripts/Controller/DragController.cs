@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class DragController : MonoBehaviour{
 	private GameObject dragObject;
+	[SerializeField] private bool lockY;
 	private void Start(){
 		Broker.Subscribe<DragMessage>(OnStartDragMessageReceived);
 	}
@@ -12,7 +13,13 @@ public class DragController : MonoBehaviour{
 
 	private void Update(){
 		if (dragObject is not null){
-			dragObject.transform.position = Input.mousePosition;
+			if (lockY){
+				var position = dragObject.transform.position;
+				position = new Vector3(Input.mousePosition.x, position.y, position.z);
+				dragObject.transform.position = position;
+			} else {
+				dragObject.transform.position = Input.mousePosition;
+			}
 		}
 	}
 	private void OnDestroy(){
