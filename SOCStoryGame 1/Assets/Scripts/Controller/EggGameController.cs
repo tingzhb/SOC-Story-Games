@@ -32,10 +32,10 @@ public class EggGameController : MonoBehaviour{
 		if (savedEggs == 5){
 			executor.Enqueue(new ValidAnswerCommand());
 		}
-		if (brokenEggs >= 3){
+		if (brokenEggs >= 4){
 			failureUI.SetActive(true);
 			executor.Enqueue(new FailureCommand());
-			brokenEggs = -3;
+			brokenEggs = -2;
 		}
 	}
 	public void RestartGame(){
