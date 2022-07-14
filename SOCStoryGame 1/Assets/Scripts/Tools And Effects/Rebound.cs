@@ -1,7 +1,4 @@
-using System;
-using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Rebound : MonoBehaviour{
 	private Vector3 originalPosition;
