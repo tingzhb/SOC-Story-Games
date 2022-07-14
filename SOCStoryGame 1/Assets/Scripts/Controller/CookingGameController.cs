@@ -4,7 +4,7 @@ using Random = UnityEngine.Random;
 public class CookingGameController : MonoBehaviour{
 	[SerializeField] private GameObject[] tasks;
 	[SerializeField] private GameObject[] progression;
-	[SerializeField] private GameObject marker;
+	[SerializeField] private GameObject marker, wellDone;
 	private int currentTask, progress;
 	private void Start(){
 		Broker.Subscribe<CorrectMessage>(OnCorrectMessageReceived);
@@ -21,7 +21,7 @@ public class CookingGameController : MonoBehaviour{
 		progress+= 2;
 		Debug.Log(progress);
 		if (progress == 20){
-			Debug.Log("win");
+			wellDone.SetActive(true);
 		}
 	}
 	private void OnDestroy(){
