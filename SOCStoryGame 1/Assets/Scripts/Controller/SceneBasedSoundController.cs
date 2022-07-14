@@ -18,7 +18,7 @@ public class SceneBasedSoundController : MonoBehaviour{
 	}
 
 	private void OnSoundMessageReceived(SoundMessage obj){
-		if (obj.SoundType == 2){
+		if (obj.SoundType == 98){
 			Debug.Log("Replaying VO");
 		}
 	}

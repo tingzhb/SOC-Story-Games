@@ -421,13 +421,42 @@ MonoBehaviour:
   - {fileID: 8186523560399056194}
   - {fileID: 1610066155350730768}
   - {fileID: 7352396734816532608}
+  - {fileID: 6965451358973827027}
+  - {fileID: 296353982139627532}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5650624557612947492}
   StringsBanks:
   - {fileID: 8087226613740356097}
-  cacheTime: 637928942989832981
+  cacheTime: 637933892001630898
   cacheVersion: 131591
+--- !u!114 &296353982139627532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/General/Victory
+  m_EditorClassIdentifier: 
+  Path: event:/General/Victory
+  Guid:
+    Data1: -1135258262
+    Data2: 1238068375
+    Data3: 1924426883
+    Data4: 1373239400
+  Banks:
+  - {fileID: 5650624557612947492}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &1248616646356708975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -578,7 +607,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Mobile/Master.bank
   Name: Mobile/Master
   StudioPath: bank:/Master
-  lastModified: 637928942989792969
+  lastModified: 637933892001570889
   FileSizes: []
   Exists: 1
 --- !u!114 &5872359940018854102
@@ -635,6 +664,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 18634
+--- !u!114 &6965451358973827027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/General/Defeat
+  m_EditorClassIdentifier: 
+  Path: event:/General/Defeat
+  Guid:
+    Data1: 1377860194
+    Data2: 1273906507
+    Data3: 211871410
+    Data4: 1955287795
+  Banks:
+  - {fileID: 5650624557612947492}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &7260193662589043455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -731,10 +787,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Mobile/Master.strings.bank
   Name: Mobile/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637928942989832981
+  lastModified: 637933892001630898
   FileSizes:
   - Name: 
-    Value: 1770
+    Value: 1876
   Exists: 1
 --- !u!114 &8186523560399056194
 MonoBehaviour:

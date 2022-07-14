@@ -16,6 +16,9 @@ public class SoundMessageListener : MonoBehaviour{
 			case 1: 
 				soundManager.PlayErrorSound();
 				break;
+			case 2:
+				soundManager.PlaySuccessSound();
+				break;
 			case 3:
 				soundManager.PlayBubblePopSound();
 				break;

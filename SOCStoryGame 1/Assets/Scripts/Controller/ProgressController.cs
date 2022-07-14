@@ -33,7 +33,6 @@ public class ProgressController : MonoBehaviour{
 		Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
 		
 		SceneManager.LoadSceneAsync("LevelSelect");
-		// Application.Quit();
 	}
 	
 	private void OnBackMessageReceived(BackMessage obj){
@@ -64,7 +63,7 @@ public class ProgressController : MonoBehaviour{
 	private IEnumerator WaitToPlayVO(){
 		yield return new WaitForSeconds(1);
 		SoundMessage soundMessage = new(){
-			SoundType = 2
+			SoundType = 98
 		};
 		Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
 	}

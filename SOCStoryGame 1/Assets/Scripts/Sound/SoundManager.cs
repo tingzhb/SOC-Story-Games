@@ -16,7 +16,10 @@ public class SoundManager : MonoBehaviour {
     }
 
     public void PlayErrorSound(){
-        Debug.Log("Error Sound");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/General/Defeat");
+    }
+    public void PlaySuccessSound(){
+        FMODUnity.RuntimeManager.PlayOneShot("event:/General/Victory");
     }
     public void PlayBubblePopSound(){
         FMODUnity.RuntimeManager.PlayOneShot("event:/B/BubbelBust");
