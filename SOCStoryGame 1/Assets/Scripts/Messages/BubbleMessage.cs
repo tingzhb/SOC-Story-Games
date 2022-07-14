@@ -1,3 +1,0 @@
-public class BubbleMessage : IMessage{
-	
-}

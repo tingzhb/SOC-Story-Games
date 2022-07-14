@@ -11,7 +11,7 @@ public class BubbleCommand : ICommand {
 		throw new System.NotImplementedException();
 	}
 	private void SendBubbleMessage(){
-		BubbleMessage bubbleMessage = new();
-		Broker.InvokeSubscribers(typeof(BubbleMessage), bubbleMessage);
+		CorrectMessage correctMessage = new();
+		Broker.InvokeSubscribers(typeof(CorrectMessage), correctMessage);
 	}
 }

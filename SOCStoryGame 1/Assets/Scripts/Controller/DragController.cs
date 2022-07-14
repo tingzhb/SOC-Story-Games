@@ -3,7 +3,7 @@ using UnityEngine;
 public class DragController : MonoBehaviour{
 	private GameObject dragObject;
 	[SerializeField] private bool lockY, lockX;
-	private void Start(){
+	private void Awake(){
 		Broker.Subscribe<DragMessage>(OnStartDragMessageReceived);
 	}
 	private void OnStartDragMessageReceived(DragMessage obj){

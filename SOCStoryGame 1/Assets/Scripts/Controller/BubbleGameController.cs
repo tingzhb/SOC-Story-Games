@@ -13,7 +13,7 @@ public class BubbleGameController : MonoBehaviour {
 
 	private void Start(){
 		bubbleCount = 0;
-		Broker.Subscribe<BubbleMessage>(OnBubbleMessageReceived);
+		Broker.Subscribe<CorrectMessage>(OnBubbleMessageReceived);
 	}
 
 	private void Update() {
@@ -23,7 +23,7 @@ public class BubbleGameController : MonoBehaviour {
 			currentGameDuration += Time.deltaTime;
 		}
 	}
-	private void OnBubbleMessageReceived(BubbleMessage obj) {
+	private void OnBubbleMessageReceived(CorrectMessage obj) {
 		stars[bubbleCount].GetComponent<AnimateOnce>().StartAnimation();
 		bubbleCount++;
 		SoundMessage soundMessage = new(){
@@ -43,6 +43,6 @@ public class BubbleGameController : MonoBehaviour {
 	}
 	private void OnDestroy(){
 		Time.timeScale = 1;
-		Broker.Unsubscribe<BubbleMessage>(OnBubbleMessageReceived);
+		Broker.Unsubscribe<CorrectMessage>(OnBubbleMessageReceived);
 	}
 }
