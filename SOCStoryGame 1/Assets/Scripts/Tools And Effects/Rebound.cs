@@ -9,7 +9,7 @@ public class Rebound : MonoBehaviour{
 	private void Start(){
 		originalPosition = gameObject.transform.position;
 	}
-	private void Update(){
+	private void FixedUpdate(){
 		gameObject.transform.position = originalPosition;
 	}
 }

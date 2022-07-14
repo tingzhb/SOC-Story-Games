@@ -8,12 +8,14 @@ public class SingleAxisDragController : MonoBehaviour{
 	private bool turn;
 	
 	private void Update(){
-		if (turn && Math.Abs(drag.transform.position.x - bounds[0].transform.position.x) < 7.5f){
+		if (turn && Math.Abs(drag.transform.position.x - bounds[0].transform.position.x) < 7.5f
+		    && Math.Abs(drag.transform.position.y - bounds[0].transform.position.y) < 7.5f){
 			goal++;
 			Debug.Log(goal);
 			turn = true;
 		}
-		if (!turn && Math.Abs(drag.transform.position.x - bounds[1].transform.position.x) < 7.5f){
+		if (!turn && Math.Abs(drag.transform.position.x - bounds[1].transform.position.x) < 7.5f
+		    && Math.Abs(drag.transform.position.y - bounds[1].transform.position.y) < 7.5f){
 			goal++;
 			Debug.Log(goal);
 			turn = false;
