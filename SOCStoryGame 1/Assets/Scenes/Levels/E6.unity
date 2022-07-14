@@ -773,6 +773,10 @@ PrefabInstance:
       propertyPath: safeZone
       value: 
       objectReference: {fileID: 1310989411}
+    - target: {fileID: 637078050348771772, guid: d9a495cd66bcde14d9d68708ceaed492, type: 3}
+      propertyPath: movementSpeed
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 7083633985598129645, guid: d9a495cd66bcde14d9d68708ceaed492, type: 3}
       propertyPath: m_Name
       value: EggF (13)
@@ -916,6 +920,10 @@ PrefabInstance:
       propertyPath: safeZone
       value: 
       objectReference: {fileID: 1310989411}
+    - target: {fileID: 637078050348771772, guid: d9a495cd66bcde14d9d68708ceaed492, type: 3}
+      propertyPath: movementSpeed
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 7083633985598129645, guid: d9a495cd66bcde14d9d68708ceaed492, type: 3}
       propertyPath: m_Name
       value: EggF (19)
@@ -1051,6 +1059,10 @@ PrefabInstance:
       propertyPath: safeZone
       value: 
       objectReference: {fileID: 1310989411}
+    - target: {fileID: 637078050348771772, guid: d9a495cd66bcde14d9d68708ceaed492, type: 3}
+      propertyPath: movementSpeed
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 7083633985598129645, guid: d9a495cd66bcde14d9d68708ceaed492, type: 3}
       propertyPath: m_Name
       value: EggF (11)
@@ -1589,6 +1601,10 @@ PrefabInstance:
       propertyPath: safeZone
       value: 
       objectReference: {fileID: 1310989411}
+    - target: {fileID: 637078050348771772, guid: d9a495cd66bcde14d9d68708ceaed492, type: 3}
+      propertyPath: movementSpeed
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 7083633985598129645, guid: d9a495cd66bcde14d9d68708ceaed492, type: 3}
       propertyPath: m_Name
       value: EggF (3)
@@ -1933,6 +1949,10 @@ PrefabInstance:
       propertyPath: safeZone
       value: 
       objectReference: {fileID: 1310989411}
+    - target: {fileID: 637078050348771772, guid: d9a495cd66bcde14d9d68708ceaed492, type: 3}
+      propertyPath: movementSpeed
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 7083633985598129645, guid: d9a495cd66bcde14d9d68708ceaed492, type: 3}
       propertyPath: m_Name
       value: EggF (4)
@@ -2068,6 +2088,10 @@ PrefabInstance:
       propertyPath: safeZone
       value: 
       objectReference: {fileID: 1310989411}
+    - target: {fileID: 637078050348771772, guid: d9a495cd66bcde14d9d68708ceaed492, type: 3}
+      propertyPath: movementSpeed
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 7083633985598129645, guid: d9a495cd66bcde14d9d68708ceaed492, type: 3}
       propertyPath: m_Name
       value: EggF (12)
@@ -3736,6 +3760,10 @@ PrefabInstance:
       propertyPath: safeZone
       value: 
       objectReference: {fileID: 1310989411}
+    - target: {fileID: 637078050348771772, guid: d9a495cd66bcde14d9d68708ceaed492, type: 3}
+      propertyPath: movementSpeed
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 7083633985598129645, guid: d9a495cd66bcde14d9d68708ceaed492, type: 3}
       propertyPath: m_Name
       value: EggF (10)
@@ -3851,6 +3879,10 @@ PrefabInstance:
       propertyPath: safeZone
       value: 
       objectReference: {fileID: 1310989411}
+    - target: {fileID: 637078050348771772, guid: d9a495cd66bcde14d9d68708ceaed492, type: 3}
+      propertyPath: movementSpeed
+      value: 0.25
+      objectReference: {fileID: 0}
     - target: {fileID: 7083633985598129645, guid: d9a495cd66bcde14d9d68708ceaed492, type: 3}
       propertyPath: m_Name
       value: EggF

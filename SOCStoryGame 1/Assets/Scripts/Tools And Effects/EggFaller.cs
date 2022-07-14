@@ -2,16 +2,21 @@ using System;
 using UnityEngine;
 
 public class EggFaller : MonoBehaviour{
-	[SerializeField] private int movementSpeed;
+	[SerializeField] private float movementSpeed;
 	[SerializeField] private GameObject killZone, safeZone, olle;
 	private bool canFall = true, canAnimate = true;
 	private AnimateOnce animateOnce;
+	private float height;
+
+	private void Awake(){
+		height = Screen.height;
+	}
 	private void Start(){
 		animateOnce = gameObject.GetComponentInChildren<AnimateOnce>();
 	}
 	private void FixedUpdate(){
 		if (canFall){
-			transform.Translate(Vector3.down * (Time.deltaTime * movementSpeed));
+			transform.Translate(Vector3.down * (Time.deltaTime * movementSpeed * height));
 		}
 		TryKillEgg();
 		TrySaveEgg();
