@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class EggGameController : MonoBehaviour{
 	[SerializeField] private GameObject[] eggUI;
+	[SerializeField] private GameObject failureUI;
 	private int savedEggs, brokenEggs;
 	private Executor executor;
 	private void Start(){
@@ -31,9 +32,14 @@ public class EggGameController : MonoBehaviour{
 		if (savedEggs == 5){
 			executor.Enqueue(new ValidAnswerCommand());
 		}
-		if (brokenEggs >= 33){
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		if (brokenEggs >= 3){
+			failureUI.SetActive(true);
+			executor.Enqueue(new FailureCommand());
+			brokenEggs = -3;
 		}
+	}
+	public void RestartGame(){
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 	}
 
 	private void OnDestroy(){
