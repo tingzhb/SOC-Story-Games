@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using UnityEngine;
 
 public class SingleAxisDragController : MonoBehaviour{
@@ -6,7 +7,11 @@ public class SingleAxisDragController : MonoBehaviour{
 	[SerializeField] private GameObject drag;
 	private int goal;
 	private bool turn;
-	
+	private AnimateOnce animateOnce;
+
+	private void Awake(){
+		animateOnce = GetComponentInChildren<AnimateOnce>();
+	}
 	private void Update(){
 		if (turn && Math.Abs(drag.transform.position.x - bounds[0].transform.position.x) < 7.5f
 		    && Math.Abs(drag.transform.position.y - bounds[0].transform.position.y) < 7.5f){
@@ -24,8 +29,14 @@ public class SingleAxisDragController : MonoBehaviour{
 			Debug.Log("win");
 			goal = 0;
 			turn = false;
-			CorrectMessage correctMessage = new();
-			Broker.InvokeSubscribers(typeof(CorrectMessage), correctMessage);
+			animateOnce.StartAnimation();
+			StartCoroutine(Delay());
 		}
+	}
+
+	private IEnumerator Delay(){
+		yield return new WaitForSeconds(2f);
+		CorrectMessage correctMessage = new();
+		Broker.InvokeSubscribers(typeof(CorrectMessage), correctMessage);
 	}
 }

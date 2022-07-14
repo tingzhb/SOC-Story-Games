@@ -7,15 +7,15 @@ public class CookingGameController : MonoBehaviour{
 	private int currentTask;
 	private void Start(){
 		Broker.Subscribe<CorrectMessage>(OnCorrectMessageReceived);
-		GetTask();
+		GetNewTask();
 	}
-	private void GetTask(){
+	private void GetNewTask(){
 		currentTask = Random.Range(0, tasks.Length);
 		tasks[currentTask].SetActive(true);
 	}
 	private void OnCorrectMessageReceived(CorrectMessage obj){
 		tasks[currentTask].SetActive(false);
-		GetTask();
+		GetNewTask();
 	}
 	private void OnDestroy(){
 		Broker.Unsubscribe<CorrectMessage>(OnCorrectMessageReceived);
