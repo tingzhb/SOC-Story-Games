@@ -16,8 +16,8 @@ public class CookingGameController : MonoBehaviour{
 	}
 	private void OnCorrectMessageReceived(CorrectMessage obj){
 		tasks[currentTask].SetActive(false);
-		GetNewTask();
 		marker.transform.position = progression[progress].transform.position;
+		GetNewTask();
 		progress+= 2;
 		Debug.Log(progress);
 		if (progress == 20){
