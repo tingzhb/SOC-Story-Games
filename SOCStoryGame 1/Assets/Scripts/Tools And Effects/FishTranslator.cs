@@ -1,14 +1,18 @@
+using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class FishTranslator : MonoBehaviour{
 	private float timer;
 	[SerializeField] private Transform stopPoint, endPoint;
 	[SerializeField] private float movementSpeed;
-	[SerializeField] private GameObject fish;
+	[SerializeField] private GameObject fish, fishReward;
+	private Image img;
 
 
 	private void Awake(){
 		Broker.Subscribe<SingleTapMessage>(OnSingleTapMessageReceived);
+
 	}
 	private void Update(){
 		timer += Time.deltaTime;
@@ -21,12 +25,23 @@ public class FishTranslator : MonoBehaviour{
 		if (timer > 5){
 			Destroy(gameObject);
 		}
+
+		if (fishReward is not null){
+		}
 	}
 	
 	private void OnSingleTapMessageReceived(SingleTapMessage obj){
 		if (obj.TappedObject == "Bubble"){
-			Destroy(gameObject);
+			fish.GetComponent<Image>().CrossFadeAlpha(0,0,false);
+			fishReward.SetActive(true);
+			fishReward.GetComponent<Image>().CrossFadeAlpha(0, 1, false);
+			StartCoroutine(DelayDestruction());
 		}
+	}
+
+	private IEnumerator DelayDestruction(){
+		yield return new WaitForSeconds(1);
+		Destroy(gameObject);
 	}
 	private void OnDestroy(){
 		Broker.Unsubscribe<SingleTapMessage>(OnSingleTapMessageReceived);

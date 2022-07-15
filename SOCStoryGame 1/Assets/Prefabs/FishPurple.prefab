@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5166418452693632724}
   - component: {fileID: 5166418452693632725}
   - component: {fileID: 5166418452693632298}
+  - component: {fileID: 8784452336815280878}
   m_Layer: 5
   m_Name: FishPurple
   m_TagString: Invalid
@@ -168,6 +169,21 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c1ac0d26dc91cbd488af8a69d57385b8, type: 3}
   - {fileID: 21300000, guid: a41fb295d4c23384fb9406eaca3ee2d0, type: 3}
   - {fileID: 21300000, guid: e12ddbe0b5a29ef4fb171ffec3939953, type: 3}
+  image: {fileID: 5166418452693632727}
+  animationDelay: 0.04166667
+--- !u!114 &8784452336815280878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5166418452693632296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d30e5b725ec479698f863716b531ebe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
   - {fileID: 21300000, guid: 23a9df627c03ef747869782432b2b327, type: 3}
   - {fileID: 21300000, guid: 3cb6ab563c5fc30468dde430d8d38b11, type: 3}
   - {fileID: 21300000, guid: 25ee99f317c3dc64f861442ad3ac2482, type: 3}
@@ -176,5 +192,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e0a7957fe52327a4e8b43014e9c72462, type: 3}
   - {fileID: 21300000, guid: 3a00e970fea1ffc4ea653a770eb975a4, type: 3}
   - {fileID: 21300000, guid: a2ad3b421cab404448711e514f5dbc0d, type: 3}
+  - {fileID: 21300000, guid: a2ad3b421cab404448711e514f5dbc0d, type: 3}
   image: {fileID: 5166418452693632727}
   animationDelay: 0.04166667
+  startOnAwake: 0

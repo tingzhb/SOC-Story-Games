@@ -10,32 +10,58 @@ public class FishGameController : MonoBehaviour{
 	private float timer;
 	[SerializeField] private GameObject[] fishGoals;
 	[SerializeField] private Sprite[] sprites;
+	[SerializeField] private GameObject wellDone;
+	private GameObject wellDoneInstance;
+	private bool canSpawn;
+	
 	private void Start(){
 		Broker.Subscribe<SingleTapMessage>(OnSingleTapMessageReceived);
-		GetNewFish();
+		StartCoroutine(DelayNewFish());
 	}
 
 	private void Update(){
 		timer += Time.deltaTime;
-		if (timer > 5f){
-			GetNewFish();
+		if (timer > 6){
+			StartCoroutine(DelayNewFish());
+		}
+		if (canSpawn) {
+			Instantiate(fishes[fishType], gameObject.transform);
+			canSpawn = false;
 		}
 	}
 	
 	private void OnSingleTapMessageReceived(SingleTapMessage obj){
 		if (obj.TappedObject == "Bubble"){
-			fishGoals[progress].GetComponent<Image>().sprite = sprites[fishType];
-			progress++;
-			GetNewFish();
-			if (progress == 5){
-				
+			
+			wellDoneInstance = Instantiate(wellDone, gameObject.transform);
+			StartCoroutine(DelayFishResult());
+			if (progress < 4){
+				StartCoroutine(DelayNewFish());
+			} else {
+				canSpawn = false;
+				StartCoroutine(DelayEnd());
 			}
+			
 		}
 	}
 
-	private void GetNewFish(){
+	private IEnumerator DelayNewFish(){
+		yield return new WaitForSeconds(1f);
 		fishType = Random.Range(0, fishes.Length);
-		Instantiate(fishes[fishType], gameObject.transform);
 		timer = 0;
+		canSpawn = true;
+	}
+	
+	private IEnumerator DelayFishResult(){
+		yield return new WaitForSeconds(1f);
+		Destroy(wellDoneInstance);
+		fishGoals[progress].GetComponent<Image>().sprite = sprites[fishType];
+		progress++;
+	}
+
+	private IEnumerator DelayEnd(){
+		yield return new WaitForSeconds(1);
+		SuccessMessage successMessage = new();
+		Broker.InvokeSubscribers(typeof(SuccessMessage), successMessage);
 	}
 }

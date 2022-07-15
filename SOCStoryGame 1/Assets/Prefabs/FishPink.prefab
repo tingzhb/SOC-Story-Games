@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 8908084073536424183}
   - component: {fileID: 8908084073536424176}
   - component: {fileID: 8908084073536424177}
+  - component: {fileID: 1701510283792209703}
   m_Layer: 5
   m_Name: FishPink
   m_TagString: Invalid
@@ -168,6 +169,21 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 6356335fdf8202f4f834a9fc3eb36af0, type: 3}
   - {fileID: 21300000, guid: 2767a3ef034c44d43a0c3d30a6cdddea, type: 3}
   - {fileID: 21300000, guid: 4e5e3f3d91a58474c970bd94b0445155, type: 3}
+  image: {fileID: 8908084073536424182}
+  animationDelay: 0.04166667
+--- !u!114 &1701510283792209703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8908084073536424179}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d30e5b725ec479698f863716b531ebe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
   - {fileID: 21300000, guid: 7f7bc7bdf1c409343937b77195e28547, type: 3}
   - {fileID: 21300000, guid: 06b3e430af1d9e44e8a30423a0b8f3e5, type: 3}
   - {fileID: 21300000, guid: 4c045a9e192e27147ba14e4e538516a4, type: 3}
@@ -176,5 +192,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 9583eff6ce84cb444a311d6f20befee3, type: 3}
   - {fileID: 21300000, guid: f823600e8ea324747b82b22ac05e1173, type: 3}
   - {fileID: 21300000, guid: 6b0642e13a6c09a48925be57d2753f31, type: 3}
+  - {fileID: 21300000, guid: 6b0642e13a6c09a48925be57d2753f31, type: 3}
   image: {fileID: 8908084073536424182}
   animationDelay: 0.04166667
+  startOnAwake: 0
