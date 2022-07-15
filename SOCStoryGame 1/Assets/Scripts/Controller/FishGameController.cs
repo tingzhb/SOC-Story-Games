@@ -60,7 +60,7 @@ public class FishGameController : MonoBehaviour{
 	}
 
 	private IEnumerator DelayEnd(){
-		yield return new WaitForSeconds(1);
+		yield return new WaitForSeconds(2);
 		SuccessMessage successMessage = new();
 		Broker.InvokeSubscribers(typeof(SuccessMessage), successMessage);
 	}
