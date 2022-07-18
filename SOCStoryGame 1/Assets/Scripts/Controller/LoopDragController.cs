@@ -15,22 +15,23 @@ public class LoopDragController : MonoBehaviour{
 		CheckLoop();
 	}
 	private void CheckLoop(){
-		if (turn == 0 && Math.Abs(drag.transform.position.x - bounds[0].transform.position.x) < 50f){
+		if (turn == 0 && Math.Abs(drag.transform.position.y - bounds[0].transform.position.y) < 30f){
 			Debug.Log(turn);
 			turn++;
-			DisplaySuccess();
 		}
-		if (turn == 1 && Math.Abs(drag.transform.position.y - bounds[1].transform.position.y) < 50f){
+		if (turn == 1 && Math.Abs(drag.transform.position.x - bounds[1].transform.position.x) < 30f){
 			Debug.Log(turn);
 			turn++;
-			DisplaySuccess();
 		}
-		if (turn == 2 && Math.Abs(drag.transform.position.x - bounds[1].transform.position.x) < 50f){
+		if (turn == 2 && Math.Abs(drag.transform.position.y - bounds[2].transform.position.y) < 30f){
 			Debug.Log(turn);
 			turn++;
-			DisplaySuccess();
 		}
-		if (turn == 3 && Math.Abs(drag.transform.position.y - bounds[1].transform.position.y) < 50f){
+		if (turn == 3 && Math.Abs(drag.transform.position.x - bounds[3].transform.position.x) < 30f){
+			Debug.Log(turn);
+			turn++;
+		}
+		if (turn == 4 && Math.Abs(drag.transform.position.y - bounds[4].transform.position.y) < 30f){
 			Debug.Log(turn);
 			turn++;
 			DisplaySuccess();
@@ -39,17 +40,15 @@ public class LoopDragController : MonoBehaviour{
 	}
 
 	private void DisplaySuccess(){
-		if (turn == 4){
-			Debug.Log("win");
-			turn = 0;
-			animateOnce.StartAnimation();
-			animateOnce.canAnimate = false;
-			StartCoroutine(Delay());
-		}
+		Debug.Log("win");
+		turn = 0;
+		animateOnce.StartAnimation();
+		animateOnce.canAnimate = false;
+		StartCoroutine(Delay());
 	}
 
 	private IEnumerator Delay(){
-		yield return new WaitForSeconds(2f);
+		yield return new WaitForSeconds(3f);
 		CorrectMessage correctMessage = new();
 		Broker.InvokeSubscribers(typeof(CorrectMessage), correctMessage);
 	}

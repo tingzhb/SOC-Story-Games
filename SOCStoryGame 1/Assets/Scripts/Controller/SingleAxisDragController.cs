@@ -62,7 +62,7 @@ public class SingleAxisDragController : MonoBehaviour{
 	}
 
 	private IEnumerator Delay(){
-		yield return new WaitForSeconds(2f);
+		yield return new WaitForSeconds(3f);
 		CorrectMessage correctMessage = new();
 		Broker.InvokeSubscribers(typeof(CorrectMessage), correctMessage);
 	}
