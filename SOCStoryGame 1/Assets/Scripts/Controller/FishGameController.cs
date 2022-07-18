@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -37,6 +36,7 @@ public class FishGameController : MonoBehaviour{
 			wellDoneInstance = Instantiate(wellDone, gameObject.transform);
 			StartCoroutine(DelayFishResult());
 			if (progress < 4){
+				timer = 0;
 				StartCoroutine(DelayNewFish());
 			} else {
 				canSpawn = false;

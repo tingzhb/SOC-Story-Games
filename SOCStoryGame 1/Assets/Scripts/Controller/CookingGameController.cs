@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -21,8 +22,13 @@ public class CookingGameController : MonoBehaviour{
 		progress+= 2;
 		Debug.Log(progress);
 		if (progress == 20){
-			wellDone.SetActive(true);
+			StartCoroutine(DelayEnd());
 		}
+	}
+
+	private IEnumerator DelayEnd(){
+		yield return new WaitForSeconds(0.1f);
+		wellDone.SetActive(true);
 	}
 	private void OnDestroy(){
 		Broker.Unsubscribe<CorrectMessage>(OnCorrectMessageReceived);
