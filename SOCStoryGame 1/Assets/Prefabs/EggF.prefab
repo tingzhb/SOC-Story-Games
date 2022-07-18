@@ -96,6 +96,7 @@ MonoBehaviour:
   image: {fileID: 726596603}
   animationDelay: 0.04166667
   startOnAwake: 0
+  canAnimate: 1
 --- !u!1 &7083633985598129645
 GameObject:
   m_ObjectHideFlags: 0
@@ -157,3 +158,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementSpeed: 75
   killZone: {fileID: 0}
+  safeZone: {fileID: 0}
+  olle: {fileID: 0}

@@ -12,17 +12,16 @@ public class FriFaller : MonoBehaviour{
 	}
 	private void FixedUpdate(){
 		if (canFall){
-			transform.Translate(Vector3.down * (Time.deltaTime * movementSpeed * height));
+			transform.Translate(Vector3.down * (Time.deltaTime * movementSpeed * 0.75f * height));
+			transform.Translate(Vector3.left * (Time.deltaTime * movementSpeed * height));
 		}
-		TrySaveEgg();
+		TrySaveFry();
 	}
 
-	private void TrySaveEgg(){
+	private void TrySaveFry(){
 		if (Math.Abs(transform.position.x - safeZone.transform.position.x) < 10 && Math.Abs(transform.position.y - fish.transform.position.y) < 50){
-			EggMessage eggMessage = new(){
-				Saved = true
-			};
-			Broker.InvokeSubscribers(typeof(EggMessage), eggMessage);
+			CorrectMessage correctMessage = new();
+			Broker.InvokeSubscribers(typeof(CorrectMessage), correctMessage);
 			Destroy(gameObject);
 		}
 	}
