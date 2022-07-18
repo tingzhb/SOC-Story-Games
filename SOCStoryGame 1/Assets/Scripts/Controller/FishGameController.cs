@@ -13,7 +13,7 @@ public class FishGameController : MonoBehaviour{
 	[SerializeField] private GameObject wellDone;
 	private GameObject wellDoneInstance;
 	private bool canSpawn;
-	
+
 	private void Start(){
 		Broker.Subscribe<SingleTapMessage>(OnSingleTapMessageReceived);
 		StartCoroutine(DelayNewFish());
@@ -23,6 +23,7 @@ public class FishGameController : MonoBehaviour{
 		timer += Time.deltaTime;
 		if (timer > 6){
 			StartCoroutine(DelayNewFish());
+			timer = -1;
 		}
 		if (canSpawn) {
 			Instantiate(fishes[fishType], gameObject.transform);
@@ -48,7 +49,6 @@ public class FishGameController : MonoBehaviour{
 	private IEnumerator DelayNewFish(){
 		yield return new WaitForSeconds(1f);
 		fishType = Random.Range(0, fishes.Length);
-		timer = 0;
 		canSpawn = true;
 	}
 	

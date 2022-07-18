@@ -516,7 +516,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stopPoint: {fileID: 8593241889496397123}
   endPoint: {fileID: 2633836438633353890}
-  movementSpeed: 500
+  movementSpeed: 1
   fish: {fileID: 1032129949331280856}
   fishReward: {fileID: 826998112249512666}
 --- !u!1 &5875298756867446641

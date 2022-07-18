@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class FishTranslator : MonoBehaviour{
-	private float timer;
+	private float timer, sWidth;
 	[SerializeField] private Transform stopPoint, endPoint;
 	[SerializeField] private float movementSpeed;
 	[SerializeField] private GameObject fish, fishReward;
@@ -11,16 +11,17 @@ public class FishTranslator : MonoBehaviour{
 
 
 	private void Awake(){
+		sWidth = Screen.width;
 		Broker.Subscribe<SingleTapMessage>(OnSingleTapMessageReceived);
 
 	}
 	private void Update(){
 		timer += Time.deltaTime;
 		if (fish.transform.position.x < stopPoint.transform.position.x && timer < 5){
-			fish.transform.Translate(Vector3.right * (movementSpeed * Time.deltaTime));
+			fish.transform.Translate(Vector3.right * (sWidth * movementSpeed * Time.deltaTime));
 		}
 		if (fish.transform.position.x < endPoint.position.x && timer > 4){
-			fish.transform.Translate(Vector3.right * (movementSpeed * Time.deltaTime));
+			fish.transform.Translate(Vector3.right * (sWidth * movementSpeed * Time.deltaTime));
 		}
 		if (timer > 5){
 			Destroy(gameObject);
