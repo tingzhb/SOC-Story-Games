@@ -7,20 +7,17 @@ public class SingleAxisDragController : MonoBehaviour{
 	[SerializeField] private GameObject drag;
 	[SerializeField] private bool vertical;
 	private int goal;
-	private bool turn, animating;
+	private bool turn;
 	private AnimateOnce animateOnce;
 	private void Awake(){
 		animateOnce = GetComponentInChildren<AnimateOnce>();
 	}
-
-	private void OnEnable(){
-		animating = false;
-	}
+	
 	private void FixedUpdate(){
-		if (vertical && !animating){
+		if (vertical){
 			CheckVertical();
 		}
-		else if (!animating){
+		else {
 			CheckHorizontal();
 		}
 	}
@@ -55,10 +52,10 @@ public class SingleAxisDragController : MonoBehaviour{
 	
 	private void DisplaySuccess(){
 		if (goal == 3){
-			animating = true;
 			Debug.Log("win");
 			turn = false;
 			animateOnce.StartAnimation();
+			animateOnce.canAnimate = false;
 			goal = 0;
 			StartCoroutine(Delay());
 		}
@@ -72,5 +69,6 @@ public class SingleAxisDragController : MonoBehaviour{
 
 	private void OnDisable(){
 		goal = 0;
+		animateOnce.canAnimate = true;
 	}
 }

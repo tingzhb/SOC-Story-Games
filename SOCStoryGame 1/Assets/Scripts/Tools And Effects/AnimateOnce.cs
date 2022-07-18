@@ -9,6 +9,7 @@ public class AnimateOnce : MonoBehaviour{
 	[SerializeField] private bool startOnAwake;
 	private bool canChangeSprite;
 	private int currentSprite;
+	public bool canAnimate = true;
 
 	private void Awake(){
 		if (startOnAwake){
@@ -32,7 +33,9 @@ public class AnimateOnce : MonoBehaviour{
 		}
 	}
 	public void StartAnimation(){
-		currentSprite = 0;
-		canChangeSprite = true;
+		if (canAnimate){
+			currentSprite = 0;
+			canChangeSprite = true;
+		}
 	}
 }
