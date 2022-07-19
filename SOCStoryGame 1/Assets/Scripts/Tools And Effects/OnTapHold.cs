@@ -8,10 +8,11 @@ public class OnTapHold : MonoBehaviour, IPointerDownHandler, IPointerUpHandler{
 		StartDrag();
 	}
 	private void StartDrag(){
-		DragMessage dragMessage = new(){
-			DragObject = gameObject,
-		};
-			Broker.InvokeSubscribers(typeof(DragMessage), dragMessage);
+		DragMessage dragMessage = new(){DragObject = gameObject};
+		Broker.InvokeSubscribers(typeof(DragMessage), dragMessage);
+			
+		SoundMessage soundMessage = new(){SoundType = 5};
+		Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
 	}
 
 	public void OnPointerUp(PointerEventData eventData){

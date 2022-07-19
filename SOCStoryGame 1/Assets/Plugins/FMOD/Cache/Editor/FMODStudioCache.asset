@@ -1,5 +1,32 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8872818092868815822
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/BubblePop
+  m_EditorClassIdentifier: 
+  Path: event:/FX/BubblePop
+  Guid:
+    Data1: -181505883
+    Data2: 1073751382
+    Data3: 138383793
+    Data4: 2013063136
+  Banks:
+  - {fileID: 1744451996052802837}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-8420594377324183803
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,11 +42,38 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Mobile/Master.strings.bank
   Name: Mobile/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637938400618318825
+  lastModified: 637938480724720754
   FileSizes:
   - Name: 
-    Value: 1342
+    Value: 1534
   Exists: 1
+--- !u!114 &-5157674274677391974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/FryingEgg/Stir
+  m_EditorClassIdentifier: 
+  Path: event:/FX/FryingEgg/Stir
+  Guid:
+    Data1: -1556567435
+    Data2: 1106107152
+    Data3: 551931574
+    Data4: -2078053719
+  Banks:
+  - {fileID: 1744451996052802837}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-4156773090543196618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47,6 +101,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6040
+--- !u!114 &-3859196690770780235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/FryingEgg/Frying
+  m_EditorClassIdentifier: 
+  Path: event:/FX/FryingEgg/Frying
+  Guid:
+    Data1: 1217992544
+    Data2: 1194962847
+    Data3: -921001048
+    Data4: -1733757042
+  Banks:
+  - {fileID: 1744451996052802837}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-2936455841159047608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -101,33 +182,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 10484
---- !u!114 &-488621678799887266
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/B/BubbelBust
-  m_EditorClassIdentifier: 
-  Path: event:/B/BubbelBust
-  Guid:
-    Data1: 1453135519
-    Data2: 1110704920
-    Data3: 984783776
-    Data4: -629682485
-  Banks:
-  - {fileID: 1744451996052802837}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1000
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,19 +203,23 @@ MonoBehaviour:
   - {fileID: -2705326652641525587}
   - {fileID: -2936455841159047608}
   - {fileID: -4156773090543196618}
-  - {fileID: -488621678799887266}
   - {fileID: 280693116226823398}
   - {fileID: 1829000923798338099}
   - {fileID: 3852885448584136215}
   - {fileID: 2772392131016661881}
   - {fileID: 7124473032123002354}
   - {fileID: 2159357775976366951}
+  - {fileID: 5400789430853946746}
+  - {fileID: -3859196690770780235}
+  - {fileID: -5157674274677391974}
+  - {fileID: 6604601014540056680}
+  - {fileID: -8872818092868815822}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1744451996052802837}
   StringsBanks:
   - {fileID: -8420594377324183803}
-  cacheTime: 637938400618318825
+  cacheTime: 637938480724720754
   cacheVersion: 131591
 --- !u!114 &280693116226823398
 MonoBehaviour:
@@ -232,7 +290,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Mobile/Master.bank
   Name: Mobile/Master
   StudioPath: bank:/Master
-  lastModified: 637938400618278629
+  lastModified: 637938480724651842
   FileSizes: []
   Exists: 1
 --- !u!114 &1829000923798338099
@@ -343,6 +401,60 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &5400789430853946746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Candle
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Candle
+  Guid:
+    Data1: -1022822640
+    Data2: 1220049622
+    Data3: -1030475603
+    Data4: -1158125084
+  Banks:
+  - {fileID: 1744451996052802837}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &6604601014540056680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/BubbleBust
+  m_EditorClassIdentifier: 
+  Path: event:/FX/BubbleBust
+  Guid:
+    Data1: 1453135519
+    Data2: 1110704920
+    Data3: 984783776
+    Data4: -629682485
+  Banks:
+  - {fileID: 1744451996052802837}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
 --- !u!114 &7097441528316033922
 MonoBehaviour:
   m_ObjectHideFlags: 0

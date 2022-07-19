@@ -30,6 +30,9 @@ public class SoundMessageListener : MonoBehaviour{
 			case 4:
 				soundManager.PlayTapSound();
 				break;
+			case 5:
+				soundManager.PlayDragSound();
+				break;
 			case 99:
 				soundManager.StopMusic();
 				break;

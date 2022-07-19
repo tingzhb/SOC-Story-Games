@@ -24,6 +24,10 @@ public class SoundManager : MonoBehaviour {
         FMODUnity.RuntimeManager.PlayOneShot("event:/General/Click");
     }
 
+    public void PlayDragSound(){
+        FMODUnity.RuntimeManager.PlayOneShot("event:/FX/Candle");
+    }
+
     public void PlayErrorSound(){
         FMODUnity.RuntimeManager.PlayOneShot("event:/General/Defeat");
     }
@@ -31,6 +35,6 @@ public class SoundManager : MonoBehaviour {
         FMODUnity.RuntimeManager.PlayOneShot("event:/General/Victory");
     }
     public void PlayBubblePopSound(){
-        FMODUnity.RuntimeManager.PlayOneShot("event:/B/BubbelBust");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/FX/BubblePop");
     }
 }

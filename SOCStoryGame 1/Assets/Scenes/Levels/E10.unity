@@ -2513,6 +2513,7 @@ GameObject:
   - component: {fileID: 994944095}
   - component: {fileID: 994944096}
   - component: {fileID: 994944097}
+  - component: {fileID: 994944098}
   m_Layer: 5
   m_Name: GamePanel
   m_TagString: Untagged
@@ -2615,6 +2616,36 @@ MonoBehaviour:
   - {fileID: 538419311}
   marker: {fileID: 1101781248}
   wellDone: {fileID: 942260776}
+--- !u!114 &994944098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994944094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 1217992544
+      Data2: 1194962847
+      Data3: -921001048
+      Data4: -1733757042
+    Path: event:/FX/FryingEgg/Frying
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1 &1004955850
 GameObject:
   m_ObjectHideFlags: 0
@@ -7033,7 +7064,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1523314368858194417, guid: 7aebc305c9d3607419daeea6d9273929, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1523314368858194421, guid: 7aebc305c9d3607419daeea6d9273929, type: 3}
       propertyPath: m_RootOrder
