@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class SoundMessageListener : MonoBehaviour{
@@ -6,6 +7,10 @@ public class SoundMessageListener : MonoBehaviour{
 	private void Awake(){
 		Broker.Subscribe<SoundMessage>(OnSoundMessageReceived);
 		soundManager = GetComponent<SoundManager>();
+	}
+
+	private void Start(){
+		soundManager.PlayAmbientMusic();
 	}
 	private void OnSoundMessageReceived(SoundMessage obj){
 		switch (obj.SoundType){
@@ -22,10 +27,12 @@ public class SoundMessageListener : MonoBehaviour{
 			case 3:
 				soundManager.PlayBubblePopSound();
 				break;
+			case 4:
+				soundManager.PlayTapSound();
+				break;
 			case 99:
 				soundManager.StopMusic();
 				break;
 		}
-
 	}
 }

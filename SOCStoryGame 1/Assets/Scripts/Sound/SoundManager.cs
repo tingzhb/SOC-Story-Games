@@ -3,8 +3,13 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour {
     [SerializeField] private FMODUnity.EventReference[] levelMusic;
-
-    private EventInstance levelMuiscInstance;
+    [SerializeField] private FMODUnity.EventReference ambientMusic;
+    private EventInstance levelMuiscInstance, ambientMusicInstance;
+    
+    public void PlayAmbientMusic(){
+        ambientMusicInstance = FMODUnity.RuntimeManager.CreateInstance(ambientMusic);
+        ambientMusicInstance.start();
+    }
 
     public void PlayMusic(int levelNumber){
         levelMuiscInstance = FMODUnity.RuntimeManager.CreateInstance(levelMusic[levelNumber]);
@@ -13,6 +18,10 @@ public class SoundManager : MonoBehaviour {
 
     public void StopMusic(){
         levelMuiscInstance.stop(STOP_MODE.ALLOWFADEOUT);
+    }
+
+    public void PlayTapSound(){
+        FMODUnity.RuntimeManager.PlayOneShot("event:/General/Click");
     }
 
     public void PlayErrorSound(){

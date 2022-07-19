@@ -15,10 +15,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Mobile/Master.strings.bank
   Name: Mobile/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637938320742845557
+  lastModified: 637938400618318825
   FileSizes:
   - Name: 
-    Value: 1048
+    Value: 1342
   Exists: 1
 --- !u!114 &-4156773090543196618
 MonoBehaviour:
@@ -152,12 +152,16 @@ MonoBehaviour:
   - {fileID: -488621678799887266}
   - {fileID: 280693116226823398}
   - {fileID: 1829000923798338099}
+  - {fileID: 3852885448584136215}
+  - {fileID: 2772392131016661881}
+  - {fileID: 7124473032123002354}
+  - {fileID: 2159357775976366951}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1744451996052802837}
   StringsBanks:
   - {fileID: -8420594377324183803}
-  cacheTime: 637938320742845557
+  cacheTime: 637938400618318825
   cacheVersion: 131591
 --- !u!114 &280693116226823398
 MonoBehaviour:
@@ -228,7 +232,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Mobile/Master.bank
   Name: Mobile/Master
   StudioPath: bank:/Master
-  lastModified: 637938320742835605
+  lastModified: 637938400618278629
   FileSizes: []
   Exists: 1
 --- !u!114 &1829000923798338099
@@ -258,6 +262,87 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 14021
+--- !u!114 &2159357775976366951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/General/Victory
+  m_EditorClassIdentifier: 
+  Path: event:/General/Victory
+  Guid:
+    Data1: -1054570241
+    Data2: 1083447466
+    Data3: 1639190166
+    Data4: 705309672
+  Banks:
+  - {fileID: 1744451996052802837}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2772392131016661881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/General/Ambience
+  m_EditorClassIdentifier: 
+  Path: event:/General/Ambience
+  Guid:
+    Data1: -2123291270
+    Data2: 1268289761
+    Data3: -183026003
+    Data4: -1291940262
+  Banks:
+  - {fileID: 1744451996052802837}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3852885448584136215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/General/Click
+  m_EditorClassIdentifier: 
+  Path: event:/General/Click
+  Guid:
+    Data1: 120131603
+    Data2: 1091562673
+    Data3: -1191742030
+    Data4: -277153272
+  Banks:
+  - {fileID: 1744451996052802837}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &7097441528316033922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -285,3 +370,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 16761
+--- !u!114 &7124473032123002354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/General/Defeat
+  m_EditorClassIdentifier: 
+  Path: event:/General/Defeat
+  Guid:
+    Data1: 1426299121
+    Data2: 1324855431
+    Data3: -1328112508
+    Data4: -984367138
+  Banks:
+  - {fileID: 1744451996052802837}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
