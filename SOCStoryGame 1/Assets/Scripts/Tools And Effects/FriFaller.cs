@@ -12,7 +12,7 @@ public class FriFaller : MonoBehaviour{
 	}
 	private void FixedUpdate(){
 		if (canFall){
-			transform.Translate(Vector3.down * (Time.deltaTime * movementSpeed * 0.75f * height));
+			transform.Translate(Vector3.down * (Time.deltaTime * movementSpeed * height));
 			transform.Translate(Vector3.left * (Time.deltaTime * movementSpeed * height));
 		}
 		TrySaveFry();

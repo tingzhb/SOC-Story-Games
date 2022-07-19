@@ -15,7 +15,7 @@ public class FryGameController : MonoBehaviour{
 
 	private void Update(){
 		timer += Time.deltaTime;
-		if (timer >= 30){
+		if (timer >= 25){
 			RestartGame();
 		}
 	}
