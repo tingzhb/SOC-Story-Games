@@ -716,6 +716,14 @@ PrefabInstance:
       propertyPath: startOnAwake
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8784452336815280878, guid: 222d612452cd51c468b9ee97951ef91f, type: 3}
+      propertyPath: sprites.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8784452336815280878, guid: 222d612452cd51c468b9ee97951ef91f, type: 3}
+      propertyPath: sprites.Array.data[9]
+      value: 
+      objectReference: {fileID: 21300000, guid: a2ad3b421cab404448711e514f5dbc0d, type: 3}
     m_RemovedComponents:
     - {fileID: 5166418452693632298, guid: 222d612452cd51c468b9ee97951ef91f, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 222d612452cd51c468b9ee97951ef91f, type: 3}

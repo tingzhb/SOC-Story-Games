@@ -620,6 +620,14 @@ PrefabInstance:
       propertyPath: startOnAwake
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1701510283792209703, guid: a05d43fa8f8d8d9478255fd80ead72d7, type: 3}
+      propertyPath: sprites.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1701510283792209703, guid: a05d43fa8f8d8d9478255fd80ead72d7, type: 3}
+      propertyPath: sprites.Array.data[9]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6b0642e13a6c09a48925be57d2753f31, type: 3}
     - target: {fileID: 8908084073536424178, guid: a05d43fa8f8d8d9478255fd80ead72d7, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
