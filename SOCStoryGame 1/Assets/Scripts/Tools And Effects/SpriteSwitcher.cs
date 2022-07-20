@@ -27,5 +27,6 @@ public class SpriteSwitcher : MonoBehaviour{
 	}
 	private void OnDisable(){
 		canChangeSprite = true;
-		currentSprite = 0;	}
+		currentSprite = 0;
+	}
 }
