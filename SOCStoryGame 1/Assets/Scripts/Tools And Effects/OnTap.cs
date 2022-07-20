@@ -6,6 +6,7 @@ public class OnTap : MonoBehaviour {
 		var selfTag = gameObject.tag;
 		SingleTapMessage singleTapMessage = new(){TappedObject = selfTag};
 		Broker.InvokeSubscribers(typeof(SingleTapMessage), singleTapMessage);
+		
 		SoundMessage soundMessage = new(){SoundType = 4};
 		Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
 	}

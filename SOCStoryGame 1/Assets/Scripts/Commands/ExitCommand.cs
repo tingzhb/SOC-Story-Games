@@ -4,13 +4,13 @@ using UnityEngine;
 public class ExitCommand : ICommand {
 
 	public Task ExecuteAsync(){
-		SendFailureMessage();
+		SendExitMessage();
 		return Task.CompletedTask;
 	}
 	public void Undo(){
 		throw new System.NotImplementedException();
 	}
-	private void SendFailureMessage(){
+	private void SendExitMessage(){
 		ExitMessage exitMessage = new(){ };
 		Broker.InvokeSubscribers(typeof(ExitMessage), exitMessage);
 	}

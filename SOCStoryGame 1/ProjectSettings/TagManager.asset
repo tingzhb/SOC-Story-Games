@@ -14,6 +14,7 @@ TagManager:
   - Drag
   - StickL
   - StickR
+  - Quit
   layers:
   - Default
   - TransparentFX
