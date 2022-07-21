@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -63,5 +64,9 @@ public class FishGameController : MonoBehaviour{
 		yield return new WaitForSeconds(2);
 		SuccessMessage successMessage = new();
 		Broker.InvokeSubscribers(typeof(SuccessMessage), successMessage);
+	}
+
+	private void OnDestroy(){
+		Broker.Unsubscribe<SingleTapMessage>(OnSingleTapMessageReceived);
 	}
 }
