@@ -7,7 +7,6 @@ public class DragController : MonoBehaviour{
 		Broker.Subscribe<DragMessage>(OnStartDragMessageReceived);
 	}
 	private void OnStartDragMessageReceived(DragMessage obj){
-		Debug.Log("draggable");
 		dragObject = obj.DragObject;
 	}
 

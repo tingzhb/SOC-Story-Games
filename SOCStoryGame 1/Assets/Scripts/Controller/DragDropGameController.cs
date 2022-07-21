@@ -4,7 +4,6 @@ using UnityEngine;
 public class DragDropGameController : MonoBehaviour {
 
 	private int itemCount;
-	// [SerializeField] private GameObject wellDone;
 	private Executor executor;
 
 	private void Start(){
@@ -13,9 +12,7 @@ public class DragDropGameController : MonoBehaviour {
 	}
 	private void OnInPlaceMessageReceived(InPlaceMessage obj){
 		itemCount++;
-		Debug.Log(itemCount);
 		if (itemCount == 17){
-			// wellDone.SetActive(true);
 			StartCoroutine(DelayEnd());
 		}
 	}

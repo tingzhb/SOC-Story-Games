@@ -21,12 +21,10 @@ public class ProgressController : MonoBehaviour{
 	}
 	
 	private void OnFailureMessageReceived(FailureMessage obj){
-		Debug.Log("Failure!");
 		FailureFeedback();
 	}
 	
 	private void OnExitMessageReceived(ExitMessage obj){
-		Debug.Log("Quit Level");
 		SoundMessage soundMessage = new(){
 			SoundType = 99
 		};
@@ -36,12 +34,10 @@ public class ProgressController : MonoBehaviour{
 	}
 	
 	private void OnBackMessageReceived(BackMessage obj){
-		Debug.Log("Back");
 		SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex - 1);
 	}
 
 	private void OnInvalidMessageReceived(InvalidMessage obj){
-		Debug.Log("Invalid!");
 		invalidCount++;
 		if (invalidCount == 5){
 			FailureFeedback();
