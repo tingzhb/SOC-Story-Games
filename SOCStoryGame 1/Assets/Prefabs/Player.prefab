@@ -135,6 +135,12 @@ MonoBehaviour:
       Data3: 1893526434
       Data4: 809691751
     Path: event:/F/BGM F
+  - Guid:
+      Data1: 1874493560
+      Data2: 1189456905
+      Data3: -536997465
+      Data4: -935782337
+    Path: event:/G/BGM G
   ambientMusic:
     Guid:
       Data1: -2123291270
