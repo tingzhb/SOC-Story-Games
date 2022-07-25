@@ -52,7 +52,7 @@ public class ButtonRevealHide : MonoBehaviour{
 	}
 	
 	private IEnumerator DelayReveal(){
-		yield return new WaitForSeconds(0.125f);
+		yield return new WaitForSeconds(0.15f);
 		Destroy(openInstance);
 	}
 
