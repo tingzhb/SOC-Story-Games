@@ -1,14 +1,17 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ButtonRevealHide : MonoBehaviour{ 
 	[SerializeField] private GameObject button, img, close, open;
 	[SerializeField] private string objectName;
+	[SerializeField] private Sprite cardSprite, buttonSprite;
 	private bool hidden = true;
-	private AnimateOnce animateOpen;
-	private AnimateOnce animateClose;
+	private AnimateOnce animateOpen, animateClose;
+	private Image cardImage;
 
 	private void Start(){
+		cardImage = GetComponent<Image>();
 		animateClose = close.GetComponent<AnimateOnce>();
 		animateOpen = open.GetComponent<AnimateOnce>();
 		Broker.Subscribe<CorrectMessage>(OnCorrectMessageReceived);
@@ -27,15 +30,16 @@ public class ButtonRevealHide : MonoBehaviour{
 	}
 
 	private void LockButton(){
-		GetComponent<UnityEngine.UI.Button>().interactable = false;
+		GetComponent<Button>().interactable = false;
 	}
 
 	private void Hide(){
-		GetComponent<UnityEngine.UI.Button>().interactable = true;
+		GetComponent<Button>().interactable = true;
 		close.SetActive(true);
 		animateClose.canAnimate = true;
 		animateClose.StartAnimation();
 		StartCoroutine(DelayHide());
+		hidden = true;
 	}
 
 	public void Reveal(){
@@ -45,8 +49,7 @@ public class ButtonRevealHide : MonoBehaviour{
 		};
 		Broker.InvokeSubscribers(typeof(CardMessage), cardMessage);
 		LockButton(); 
-		button.SetActive(false);
-		img.SetActive(true);
+		cardImage.sprite = cardSprite;
 		open.SetActive(true);
 		animateOpen.canAnimate = true;
 		animateOpen.StartAnimation();
@@ -61,8 +64,7 @@ public class ButtonRevealHide : MonoBehaviour{
 	
 	private IEnumerator DelayHide(){
 		yield return new WaitForSeconds(0.5f);
-		img.SetActive(false);
-		button.SetActive(true);
+		cardImage.sprite = buttonSprite;
 		animateClose.canAnimate = false;
 		close.SetActive(false);
 	}
