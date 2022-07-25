@@ -21,24 +21,15 @@ public class PairChecker : MonoBehaviour{
 				turn--;
 				newCardName = obj.CardName;
 				if (previousCardName == newCardName){
-					progress++;
-					Debug.Log(progress);
-					CorrectMessage correctMessage = new(){
-						Name = previousCardName
-					};
-					Broker.InvokeSubscribers(typeof(CorrectMessage), correctMessage);
-					if (progress == 6){
-						executor.Enqueue(new ValidAnswerCommand());
-					}
-				} else {
-					StartCoroutine(DelayHide());
+					SendCorrectMessage();
+					CheckForCompletion();
+				} else{
+					HideCards();
 				}
 				break;
 		}
 	}
-	
-	private IEnumerator DelayHide(){
-		yield return new WaitForSeconds(0.75f);
+	private void HideCards(){
 		InvalidMessage invalidMessage = new(){
 			Type = newCardName
 		};
@@ -47,5 +38,23 @@ public class PairChecker : MonoBehaviour{
 			Type = previousCardName
 		};
 		Broker.InvokeSubscribers(typeof(InvalidMessage), invalidMessage2);
+	}
+	
+	private void CheckForCompletion(){
+		if (progress == 6){
+			executor.Enqueue(new ValidAnswerCommand());
+		}
+	}
+
+	private void SendCorrectMessage(){
+		progress++;
+		CorrectMessage correctMessage = new(){
+			Name = previousCardName
+		};
+		Broker.InvokeSubscribers(typeof(CorrectMessage), correctMessage);
+	}
+
+	private void OnDestroy(){
+		Broker.Unsubscribe<CardMessage>(OnCardMessageReceived);
 	}
 }

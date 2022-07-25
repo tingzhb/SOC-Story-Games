@@ -13,10 +13,14 @@ public class ProgressController : MonoBehaviour{
 		Broker.Subscribe<ExitMessage>(OnExitMessageReceived);
 		Broker.Subscribe<BackMessage>(OnBackMessageReceived);
 		Broker.Subscribe<InvalidMessage>(OnInvalidMessageReceived);
+		Broker.Subscribe<CorrectMessage>(OnCorrectMessageReceived);
+	}
+	private void OnCorrectMessageReceived(CorrectMessage obj){
+		invalidCount = 0;
 	}
 
 	private void OnSuccessMessageReceived(SuccessMessage obj){
-		Debug.Log("Success!");
+		invalidCount = 0;
 		SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().buildIndex + 1);
 	}
 	
@@ -25,6 +29,7 @@ public class ProgressController : MonoBehaviour{
 	}
 	
 	private void OnExitMessageReceived(ExitMessage obj){
+		invalidCount = 0;
 		SoundMessage soundMessage = new(){
 			SoundType = 99
 		};
