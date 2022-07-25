@@ -675,7 +675,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The goat wants to try something new. It walks up the hill.
+  m_text: The goat wants to try something new. It walks up the hill,
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: acf45b273c6d9ba46a8d846072fe4bc8, type: 2}
   m_sharedMaterial: {fileID: -8083954808632157445, guid: acf45b273c6d9ba46a8d846072fe4bc8, type: 2}
@@ -702,7 +702,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 49.05
+  m_fontSize: 49
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1119,6 +1119,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   assistance: {fileID: 230280179}
+  canAssist: 1
 --- !u!1001 &2097215080
 PrefabInstance:
   m_ObjectHideFlags: 0

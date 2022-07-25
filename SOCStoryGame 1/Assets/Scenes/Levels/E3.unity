@@ -511,6 +511,7 @@ MonoBehaviour:
   image: {fileID: 1289164683}
   animationDelay: 0.04166667
   startOnAwake: 1
+  canAnimate: 1
 --- !u!1001 &1542433217
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -676,7 +677,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: He flies out of bed to wash up.
+  m_text: He flies out of bed to wash up,
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: acf45b273c6d9ba46a8d846072fe4bc8, type: 2}
   m_sharedMaterial: {fileID: -8083954808632157445, guid: acf45b273c6d9ba46a8d846072fe4bc8, type: 2}
@@ -1120,6 +1121,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   assistance: {fileID: 230280179}
+  canAssist: 1
 --- !u!1001 &2097215080
 PrefabInstance:
   m_ObjectHideFlags: 0
