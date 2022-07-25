@@ -1,8 +1,8 @@
-using System;
 using System.Collections;
 using UnityEngine;
 
 public class PairChecker : MonoBehaviour{
+	[SerializeField] private GameObject wellDone;
 	private string previousCardName, newCardName;
 	private int progress, turn;
 	private Executor executor;
@@ -42,7 +42,8 @@ public class PairChecker : MonoBehaviour{
 	
 	private void CheckForCompletion(){
 		if (progress == 6){
-			executor.Enqueue(new ValidAnswerCommand());
+			wellDone.SetActive(true);
+			StartCoroutine(DelayEnd());
 		}
 	}
 
@@ -52,6 +53,12 @@ public class PairChecker : MonoBehaviour{
 			Name = previousCardName
 		};
 		Broker.InvokeSubscribers(typeof(CorrectMessage), correctMessage);
+	}
+
+	private IEnumerator DelayEnd(){
+		yield return new WaitForSeconds(0.5f);
+		executor.Enqueue(new ValidAnswerCommand());
+
 	}
 
 	private void OnDestroy(){
