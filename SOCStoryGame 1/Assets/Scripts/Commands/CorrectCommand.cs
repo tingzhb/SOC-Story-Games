@@ -4,13 +4,13 @@ using UnityEngine;
 public class CorrectCommand : ICommand {
 
 	public Task ExecuteAsync(){
-		SendBubbleMessage();
+		SendCorrectMessage();
 		return Task.CompletedTask;
 	}
 	public void Undo(){
 		throw new System.NotImplementedException();
 	}
-	private void SendBubbleMessage(){
+	private void SendCorrectMessage(){
 		CorrectMessage correctMessage = new();
 		Broker.InvokeSubscribers(typeof(CorrectMessage), correctMessage);
 	}
