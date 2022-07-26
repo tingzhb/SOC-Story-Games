@@ -8,23 +8,38 @@ public class WormGameController : MonoBehaviour {
 
 	[SerializeField] private GameObject[] slots;
 	[SerializeField] private GameObject wormPrefab;
-	private int wormCount;
+	private bool[] occupied;
+	private int totalWormCount, currentWorms, spawnableWorms;
 	private Executor executor;
-
-	private void Start(){
-		wormCount = 0;
-		Broker.Subscribe<CorrectMessage>(OnCorrectMessageReceived);
-		SpawnWorm();
+	public WormGameController(){
+		occupied = new[] {false, false, false, false, false, false, false, false, false};
 	}
 
-	private void Update() {
-		
+	private void Start(){
+		totalWormCount = 0;
+		Broker.Subscribe<CorrectMessage>(OnCorrectMessageReceived);
+		ChangeSpawnableWorms();
+	}
+
+	private void Update(){
+		if (currentWorms < spawnableWorms){
+			SpawnWorm();
+		}
+	}
+
+	private void ChangeSpawnableWorms(){
+		spawnableWorms = Random.Range(1, 4);
 	}
 
 	private void SpawnWorm(){
-		var wormLocation = slots[Random.Range(0, 9)].transform;
-		var wormInstance = Instantiate(wormPrefab, wormLocation.position, Quaternion.identity, wormLocation);
-		StartCoroutine(DespawnWorm(wormInstance));
+		var slotNumber = Random.Range(0, 9);
+		var wormLocation = slots[slotNumber].transform;
+		if (!occupied[slotNumber]){
+			currentWorms++;
+			occupied[slotNumber] = true;
+			var wormInstance = Instantiate(wormPrefab, wormLocation.position, Quaternion.identity, wormLocation);
+			StartCoroutine(DespawnWorm(wormInstance, slotNumber));
+		}
 	}
 	
 	private void OnCorrectMessageReceived(CorrectMessage obj) {
@@ -33,14 +48,17 @@ public class WormGameController : MonoBehaviour {
 		// };
 		// Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
 		
-		if (wormCount == 3) {
+		if (totalWormCount == 3) {
 			StartCoroutine(DelayEnd());
 		}
 	}
 
-	private IEnumerator DespawnWorm(GameObject wormInstance){
+	private IEnumerator DespawnWorm(GameObject wormInstance, int slotNumber){
 		yield return new WaitForSeconds(2.2f);
 		Destroy(wormInstance);
+		occupied[slotNumber] = false;
+		currentWorms--;
+		ChangeSpawnableWorms();
 	}
 	private IEnumerator DelayEnd() {
 		yield return new WaitForSeconds(1f);
