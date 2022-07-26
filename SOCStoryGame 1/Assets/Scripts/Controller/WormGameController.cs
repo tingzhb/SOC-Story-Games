@@ -7,22 +7,24 @@ using Random = UnityEngine.Random;
 public class WormGameController : MonoBehaviour {
 
 	[SerializeField] private GameObject[] slots;
-	[SerializeField] private GameObject wormPrefab;
+	[SerializeField] private GameObject wormPrefab, apple;
+	[SerializeField] private GameObject[] steps;
 	private bool[] occupied;
-	private int totalWormCount, currentWorms, spawnableWorms;
+	private int wormScore, currentWorms, spawnableWorms;
 	private Executor executor;
 	public WormGameController(){
 		occupied = new[] {false, false, false, false, false, false, false, false, false};
 	}
 
 	private void Start(){
-		totalWormCount = 0;
+		executor = FindObjectOfType<Executor>();
+		wormScore = 0;
 		Broker.Subscribe<CorrectMessage>(OnCorrectMessageReceived);
 		ChangeSpawnableWorms();
 	}
 
 	private void Update(){
-		if (currentWorms < spawnableWorms){
+		if (currentWorms < spawnableWorms && wormScore < steps.Length){
 			SpawnWorm();
 		}
 	}
@@ -43,12 +45,16 @@ public class WormGameController : MonoBehaviour {
 	}
 	
 	private void OnCorrectMessageReceived(CorrectMessage obj) {
-		// SoundMessage soundMessage = new(){
-		// 	SoundType = 3
-		// };
-		// Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
-		
-		if (totalWormCount == 3) {
+		SoundMessage soundMessage = new(){
+			SoundType = 3
+		};
+		Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
+		wormScore++;
+
+		if (wormScore < steps.Length){
+			apple.transform.position = steps[wormScore].transform.position;
+		}
+		if (wormScore == steps.Length - 1) {
 			StartCoroutine(DelayEnd());
 		}
 	}
