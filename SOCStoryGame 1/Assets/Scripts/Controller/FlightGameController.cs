@@ -3,11 +3,9 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class FlightGameController : MonoBehaviour {
-
-	[SerializeField] private Transform[] steps;
-	[SerializeField] private GameObject planeIcon;
-	private int stepCount, failureCount;
+public class FlightGameController : MonoBehaviour{
+	[SerializeField] private int steps;
+	private int failureCount;
 	private Executor executor;
 	
 	private void Start(){
@@ -21,12 +19,8 @@ public class FlightGameController : MonoBehaviour {
 		}
 	}
 	private void OnCorrectMessageReceived(CorrectMessage obj){
-		if (stepCount < steps.Length){
-			planeIcon.transform.position = steps[stepCount].transform.position;
-		}
-		stepCount++;
-		
-		if (stepCount == steps.Length - 1) {
+		steps--;
+		if (steps == 0) {
 			StartCoroutine(DelayEnd());
 		}
 	}

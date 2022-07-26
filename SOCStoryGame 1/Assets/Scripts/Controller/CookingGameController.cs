@@ -4,9 +4,9 @@ using Random = UnityEngine.Random;
 
 public class CookingGameController : MonoBehaviour{
 	[SerializeField] private GameObject[] tasks;
-	[SerializeField] private GameObject[] progression;
-	[SerializeField] private GameObject marker, wellDone;
-	private int currentTask, progress;
+	[SerializeField] private GameObject wellDone;
+	[SerializeField] private int steps;
+	private int currentTask;
 	private void Start(){
 		Broker.Subscribe<CorrectMessage>(OnCorrectMessageReceived);
 		GetNewTask();
@@ -17,11 +17,10 @@ public class CookingGameController : MonoBehaviour{
 	}
 	private void OnCorrectMessageReceived(CorrectMessage obj){
 		tasks[currentTask].SetActive(false);
-		marker.transform.position = progression[progress].transform.position;
 		GetNewTask();
-		progress+= 2;
-		Debug.Log(progress);
-		if (progress == 20){
+
+		steps--;
+		if (steps == 0){
 			StartCoroutine(DelayEnd());
 		}
 	}

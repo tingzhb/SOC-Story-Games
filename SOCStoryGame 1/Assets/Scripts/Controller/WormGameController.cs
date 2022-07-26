@@ -7,10 +7,10 @@ using Random = UnityEngine.Random;
 public class WormGameController : MonoBehaviour {
 
 	[SerializeField] private GameObject[] slots;
-	[SerializeField] private GameObject wormPrefab, apple;
-	[SerializeField] private GameObject[] steps;
+	[SerializeField] private GameObject wormPrefab;
+	[SerializeField] private int steps;
 	private bool[] occupied;
-	private int wormScore, currentWorms, spawnableWorms;
+	private int currentWorms, spawnableWorms;
 	private Executor executor;
 	public WormGameController(){
 		occupied = new[] {false, false, false, false, false, false, false, false, false};
@@ -18,13 +18,12 @@ public class WormGameController : MonoBehaviour {
 
 	private void Start(){
 		executor = FindObjectOfType<Executor>();
-		wormScore = 0;
 		Broker.Subscribe<CorrectMessage>(OnCorrectMessageReceived);
 		ChangeSpawnableWorms();
 	}
 
 	private void Update(){
-		if (currentWorms < spawnableWorms && wormScore < steps.Length){
+		if (currentWorms < spawnableWorms && steps > 0){
 			SpawnWorm();
 		}
 	}
@@ -49,12 +48,9 @@ public class WormGameController : MonoBehaviour {
 			SoundType = 6
 		};
 		Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
-		wormScore++;
-
-		if (wormScore < steps.Length){
-			apple.transform.position = steps[wormScore].transform.position;
-		}
-		if (wormScore == steps.Length - 1) {
+		steps--;
+		
+		if (steps == 0) {
 			StartCoroutine(DelayEnd());
 		}
 	}

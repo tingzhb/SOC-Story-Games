@@ -9355,7 +9355,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1523314368858194417, guid: 7aebc305c9d3607419daeea6d9273929, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1523314368858194421, guid: 7aebc305c9d3607419daeea6d9273929, type: 3}
       propertyPath: m_RootOrder
@@ -10123,6 +10123,7 @@ GameObject:
   - component: {fileID: 1521171642}
   - component: {fileID: 1521171644}
   - component: {fileID: 1521171645}
+  - component: {fileID: 1521171646}
   m_Layer: 5
   m_Name: GamePanel
   m_TagString: Untagged
@@ -10250,6 +10251,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46600220df194adf8a2d3f8d8bc28c07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  steps: 20
+--- !u!114 &1521171646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1521171640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6ea9a70fad34c1a9f6e939ffb168e6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   steps:
   - {fileID: 1743804145}
   - {fileID: 2139394934}
@@ -10271,7 +10285,7 @@ MonoBehaviour:
   - {fileID: 1484379578}
   - {fileID: 958947077}
   - {fileID: 538419312}
-  planeIcon: {fileID: 1101781248}
+  icon: {fileID: 1101781248}
 --- !u!1001 &1539516143
 PrefabInstance:
   m_ObjectHideFlags: 0
