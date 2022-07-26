@@ -32,7 +32,7 @@ public class SingleTapController : MonoBehaviour {
 				executor.Enqueue(new PlayVOCommand());
 				break;
 			case "Bubble":
-				executor.Enqueue(new BubbleCommand());
+				executor.Enqueue(new CorrectCommand());
 				break;
 			case "StickL":
 				executor.Enqueue(new StickLCommand());

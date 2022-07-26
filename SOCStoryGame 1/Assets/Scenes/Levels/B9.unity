@@ -218,6 +218,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &4570234 stripped
@@ -325,6 +333,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (58)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &42159620
@@ -422,6 +438,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &51099737
@@ -519,6 +543,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (80)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &55567671 stripped
@@ -698,6 +730,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &137098624
@@ -795,6 +835,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (74)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &143772992
@@ -892,6 +940,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (111)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &143772993 stripped
@@ -1004,6 +1060,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (124)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &211164038 stripped
@@ -1106,6 +1170,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (122)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &213243060 stripped
@@ -1213,6 +1285,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (121)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &254324984 stripped
@@ -1320,6 +1400,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &275405680
@@ -1417,6 +1505,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (29)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &293257112 stripped
@@ -1524,6 +1620,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (116)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &310847086 stripped
@@ -1636,6 +1740,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &338018076
@@ -1733,6 +1845,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (45)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &352261258
@@ -1830,6 +1950,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &357401607
@@ -1927,6 +2055,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (27)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &373817266
@@ -2024,6 +2160,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &401128046 stripped
@@ -2131,6 +2275,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (101)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &434905776
@@ -2228,6 +2380,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (31)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &484497708 stripped
@@ -2345,6 +2505,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (60)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &511094170 stripped
@@ -2457,6 +2625,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (97)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &559596218 stripped
@@ -2569,6 +2745,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &585988262
@@ -2666,6 +2850,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (118)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &585988263 stripped
@@ -2749,6 +2941,7 @@ MonoBehaviour:
   image: {fileID: 602193981}
   animationDelay: 0.04166667
   startOnAwake: 0
+  canAnimate: 1
 --- !u!114 &602193981
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2897,6 +3090,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &677989588
@@ -2994,6 +3195,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (73)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &686344451
@@ -3091,6 +3300,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &726716128
@@ -3188,6 +3405,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (108)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &736853031
@@ -3285,6 +3510,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (123)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &736853032 stripped
@@ -3387,6 +3620,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &746597441
@@ -3484,6 +3725,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &751817033 stripped
@@ -3586,6 +3835,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (120)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &756739566 stripped
@@ -3703,6 +3960,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (34)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &784928625 stripped
@@ -3810,6 +4075,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &794912778
@@ -3907,6 +4180,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (67)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &795352893
@@ -4004,6 +4285,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (30)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &799610440
@@ -4101,6 +4390,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &805116276
@@ -4198,6 +4495,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &811005706
@@ -4295,6 +4600,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (90)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &812859426
@@ -4392,6 +4705,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &822198946
@@ -4601,6 +4922,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (39)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &838899074 stripped
@@ -4703,6 +5032,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (100)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &843851363
@@ -4800,6 +5137,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (71)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &866207135
@@ -4897,6 +5242,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (110)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &866207136 stripped
@@ -4999,6 +5352,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (84)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &879923739
@@ -5096,6 +5457,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (77)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &889055120 stripped
@@ -5198,6 +5567,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &891289082
@@ -5295,6 +5672,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (61)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1 &911955652
@@ -5391,6 +5776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   assistance: {fileID: 822198948}
+  canAssist: 1
 --- !u!1001 &922017189
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5486,6 +5872,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &925749692 stripped
@@ -5588,6 +5982,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &952248166 stripped
@@ -5690,6 +6092,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (22)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &963120165
@@ -5787,6 +6197,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (59)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &965066441
@@ -5884,6 +6302,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (91)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &966780053 stripped
@@ -5996,6 +6422,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (35)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1005581952 stripped
@@ -6108,6 +6542,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1028364829 stripped
@@ -6215,6 +6657,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (115)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1035504919 stripped
@@ -6327,6 +6777,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1077492855
@@ -6424,6 +6882,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (94)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1117659249 stripped
@@ -6531,6 +6997,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (79)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1134858429 stripped
@@ -6633,6 +7107,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1156033923
@@ -6914,6 +7396,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1205027311 stripped
@@ -7016,6 +7506,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (102)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1217216017
@@ -7113,6 +7611,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (85)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1219422600
@@ -7210,6 +7716,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (106)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1226644091
@@ -7307,6 +7821,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (96)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1231435226
@@ -7404,6 +7926,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1234045732
@@ -7501,6 +8031,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (52)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1249011887
@@ -7598,6 +8136,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (75)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1253801722
@@ -7695,6 +8241,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (107)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1255979394
@@ -7792,6 +8346,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (119)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1255979395 stripped
@@ -7894,6 +8456,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (57)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1262713890
@@ -7991,6 +8561,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (105)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1 &1289164680
@@ -8164,6 +8742,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (89)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1302615060
@@ -8261,6 +8847,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (95)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1303391532 stripped
@@ -8368,6 +8962,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1358380547 stripped
@@ -8485,6 +9087,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1423495923 stripped
@@ -8592,6 +9202,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (40)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1458459892
@@ -8689,6 +9307,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (92)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1 &1458533589
@@ -8757,6 +9383,7 @@ MonoBehaviour:
   image: {fileID: 1458533592}
   animationDelay: 0.04166667
   startOnAwake: 0
+  canAnimate: 1
 --- !u!114 &1458533592
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8890,6 +9517,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (109)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1461422680 stripped
@@ -9012,6 +9647,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1498802333 stripped
@@ -9114,6 +9757,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1508395204 stripped
@@ -9221,6 +9872,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (113)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1512558380 stripped
@@ -9323,6 +9982,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1529076759 stripped
@@ -9425,6 +10092,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (41)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1536968141
@@ -9522,6 +10197,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1542433217
@@ -9756,6 +10439,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (43)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1584578506 stripped
@@ -9858,6 +10549,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1592443309 stripped
@@ -9960,6 +10659,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1605667293
@@ -10057,6 +10764,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1605716555
@@ -10154,6 +10869,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (81)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1610745470
@@ -10251,6 +10974,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (83)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1635155409
@@ -10348,6 +11079,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (17)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1636787610 stripped
@@ -10450,6 +11189,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1653754206 stripped
@@ -10552,6 +11299,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (42)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1666190403
@@ -10649,6 +11404,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (47)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1 &1667925143
@@ -10661,7 +11424,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1667925144}
   - component: {fileID: 1667925146}
-  - component: {fileID: 1667925145}
   - component: {fileID: 1667925147}
   m_Layer: 5
   m_Name: GamePannel
@@ -10814,36 +11576,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1667925145
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1667925143}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!222 &1667925146
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11277,6 +12009,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (70)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1704433107 stripped
@@ -11601,6 +12341,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (104)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1726765606
@@ -11698,6 +12446,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (99)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1729970598
@@ -11795,6 +12551,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (98)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1736206355 stripped
@@ -11897,6 +12661,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (117)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1745410821 stripped
@@ -12009,6 +12781,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1769099056
@@ -12106,6 +12886,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (88)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1769206555 stripped
@@ -12213,6 +13001,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1802228417
@@ -12310,6 +13106,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (28)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1805782184
@@ -12407,6 +13211,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (72)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1807895819 stripped
@@ -12509,6 +13321,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1823260087
@@ -12606,6 +13426,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1835784348
@@ -12703,6 +13531,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1842225542 stripped
@@ -12805,6 +13641,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (112)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1899507277 stripped
@@ -13017,6 +13861,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1937044370 stripped
@@ -13124,6 +13976,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1941459607 stripped
@@ -13332,6 +14192,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1960442447
@@ -13429,6 +14297,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (114)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &1960442448 stripped
@@ -13507,6 +14383,7 @@ MonoBehaviour:
   image: {fileID: 1975504556}
   animationDelay: 0.04166667
   startOnAwake: 0
+  canAnimate: 1
 --- !u!114 &1975504556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13640,6 +14517,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (93)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1997396282
@@ -13737,6 +14622,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &1997824745
@@ -13834,6 +14727,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (103)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &2008697998 stripped
@@ -13941,6 +14842,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (86)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &2056861650 stripped
@@ -14126,6 +15035,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &2081742858 stripped
@@ -14233,6 +15150,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &2096073862
@@ -14498,6 +15423,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (87)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &2109428189 stripped
@@ -14600,6 +15533,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &2114698330 stripped
@@ -14707,6 +15648,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (82)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!1001 &2136142206
@@ -14804,6 +15753,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble (78)
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
 --- !u!224 &2136142207 stripped
@@ -14906,5 +15863,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bubble
       objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4919589560120533242, guid: 0683175f060d5f440ba190258e753910, type: 3}
+      propertyPath: sprites.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: dcd17f5d80a573846b65830dfe8437d2, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0683175f060d5f440ba190258e753910, type: 3}
