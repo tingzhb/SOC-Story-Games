@@ -26,6 +26,8 @@ public class EggGameController : MonoBehaviour{
 	}
 	private void SaveEgg(){
 		eggUI[savedEggs].GetComponent<AnimateOnce>().StartAnimation();
+		SoundMessage soundMessage = new(){SoundType = 6};
+		Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
 		savedEggs++;
 	}
 	private void CheckGameStatus(){

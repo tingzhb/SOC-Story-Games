@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 
 public class OnTapHold : MonoBehaviour, IPointerDownHandler, IPointerUpHandler{
-	
+	[SerializeField] private bool playSound;
 	public void OnPointerDown(PointerEventData eventData){
 		StartDrag();
 	}
@@ -19,8 +19,9 @@ public class OnTapHold : MonoBehaviour, IPointerDownHandler, IPointerUpHandler{
 	private void StopDrag(){
 		DragMessage dragMessage = new(){ };
 		Broker.InvokeSubscribers(typeof(DragMessage), dragMessage);
-		
-		SoundMessage soundMessage = new(){SoundType = 5};
-		Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
+		if (playSound){
+			SoundMessage soundMessage = new(){SoundType = 5};
+			Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
+		}
 	}
 }

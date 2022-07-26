@@ -352,6 +352,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91eaf51422ec4f22934ca0f928898a9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playSound: 1
 --- !u!114 &393925934
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -441,6 +442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91eaf51422ec4f22934ca0f928898a9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playSound: 1
 --- !u!114 &422605979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -946,6 +948,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91eaf51422ec4f22934ca0f928898a9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playSound: 1
 --- !u!114 &1094415497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1302,6 +1305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91eaf51422ec4f22934ca0f928898a9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playSound: 1
 --- !u!1 &1523682710
 GameObject:
   m_ObjectHideFlags: 0
@@ -1353,6 +1357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91eaf51422ec4f22934ca0f928898a9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playSound: 1
 --- !u!114 &1523682713
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1442,6 +1447,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91eaf51422ec4f22934ca0f928898a9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playSound: 1
 --- !u!114 &1529673443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2012,6 +2018,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!1 &1725756447
 GameObject:
   m_ObjectHideFlags: 0
@@ -2063,6 +2070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91eaf51422ec4f22934ca0f928898a9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playSound: 1
 --- !u!114 &1725756450
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2256,6 +2264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91eaf51422ec4f22934ca0f928898a9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playSound: 1
 --- !u!114 &1942438212
 MonoBehaviour:
   m_ObjectHideFlags: 0

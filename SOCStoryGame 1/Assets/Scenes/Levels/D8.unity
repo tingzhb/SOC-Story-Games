@@ -174,6 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &13840322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -356,6 +357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &170487002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -582,6 +584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &538419314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -697,6 +700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &563568312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -888,6 +892,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &630013567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1004,6 +1009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &653109437
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1149,6 +1155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &738276346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1399,6 +1406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &816461039
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1514,6 +1522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &869266284
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1630,6 +1639,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &934078675
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1825,6 +1835,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &958947079
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1981,7 +1992,6 @@ MonoBehaviour:
   tapR: {fileID: 802845686}
   wellDone: {fileID: 942260776}
   UI: {fileID: 1360567563}
-  maxProgression: 20
   steps:
   - {fileID: 1743804144}
   - {fileID: 2139394933}
@@ -2056,6 +2066,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &1101781251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2136,6 +2147,7 @@ MonoBehaviour:
   image: {fileID: 1101781253}
   animationDelay: 0.04166667
   startOnAwake: 0
+  canAnimate: 1
 --- !u!114 &1101781253
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2225,6 +2237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &1132284111
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2340,6 +2353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &1135566356
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2458,6 +2472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 0
 --- !u!114 &1192338324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2538,6 +2553,7 @@ MonoBehaviour:
   image: {fileID: 1192338326}
   animationDelay: 0.04166667
   startOnAwake: 0
+  canAnimate: 1
 --- !u!114 &1192338326
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2667,6 +2683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &1289164687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2813,6 +2830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &1293594310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3173,6 +3191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &1457729631
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3288,6 +3307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &1484379580
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3405,6 +3425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &1530322622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3524,6 +3545,7 @@ MonoBehaviour:
   image: {fileID: 1530322624}
   animationDelay: 0.04166667
   startOnAwake: 0
+  canAnimate: 1
 --- !u!1001 &1542433217
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3686,6 +3708,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &1570899142
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3801,6 +3824,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &1587972822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3916,6 +3940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &1613991766
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4031,6 +4056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &1620691368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4259,6 +4285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &1671951940
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4571,6 +4598,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!1 &1743804144
 GameObject:
   m_ObjectHideFlags: 0
@@ -4622,6 +4650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &1743804147
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5032,6 +5061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &2023299598
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5158,6 +5188,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   assistance: {fileID: 230280179}
+  canAssist: 1
 --- !u!1001 &2097215080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5273,6 +5304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 0
 --- !u!114 &2134341768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5353,6 +5385,7 @@ MonoBehaviour:
   image: {fileID: 2134341770}
   animationDelay: 0.04166667
   startOnAwake: 0
+  canAnimate: 1
 --- !u!114 &2134341770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5442,6 +5475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &2139394936
 MonoBehaviour:
   m_ObjectHideFlags: 0
