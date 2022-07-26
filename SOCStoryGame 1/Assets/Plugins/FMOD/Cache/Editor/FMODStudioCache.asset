@@ -42,11 +42,38 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Mobile/Master.strings.bank
   Name: Mobile/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637938480724720754
+  lastModified: 637943925685519465
   FileSizes:
   - Name: 
-    Value: 1534
+    Value: 1606
   Exists: 1
+--- !u!114 &-6485596639715398144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Zoo
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Zoo
+  Guid:
+    Data1: 1330001586
+    Data2: 1318863403
+    Data3: 666480004
+    Data4: 18793247
+  Banks:
+  - {fileID: 1744451996052802837}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-5157674274677391974
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,12 +241,14 @@ MonoBehaviour:
   - {fileID: -5157674274677391974}
   - {fileID: 6604601014540056680}
   - {fileID: -8872818092868815822}
+  - {fileID: 2134094435108418810}
+  - {fileID: -6485596639715398144}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1744451996052802837}
   StringsBanks:
   - {fileID: -8420594377324183803}
-  cacheTime: 637938480724720754
+  cacheTime: 637943925685519465
   cacheVersion: 131591
 --- !u!114 &280693116226823398
 MonoBehaviour:
@@ -290,7 +319,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Mobile/Master.bank
   Name: Mobile/Master
   StudioPath: bank:/Master
-  lastModified: 637938480724651842
+  lastModified: 637943925685471228
   FileSizes: []
   Exists: 1
 --- !u!114 &1829000923798338099
@@ -320,6 +349,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 14021
+--- !u!114 &2134094435108418810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/Splash
+  m_EditorClassIdentifier: 
+  Path: event:/FX/Splash
+  Guid:
+    Data1: -252105604
+    Data2: 1207001262
+    Data3: 230876044
+    Data4: 367107651
+  Banks:
+  - {fileID: 1744451996052802837}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &2159357775976366951
 MonoBehaviour:
   m_ObjectHideFlags: 0
