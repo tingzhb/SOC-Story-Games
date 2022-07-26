@@ -11590,6 +11590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   assistance: {fileID: 230280179}
+  canAssist: 1
 --- !u!224 &2076481022 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6578530933953287942, guid: 24dafdcbd3b6d2749b05fef66ce6084a, type: 3}

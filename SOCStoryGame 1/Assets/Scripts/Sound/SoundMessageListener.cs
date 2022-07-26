@@ -39,6 +39,9 @@ public class SoundMessageListener : MonoBehaviour{
 			case 7:
 				soundManager.PlayStirSound();
 				break;
+			case 8:
+				soundManager.PlayEatingSound();
+				break;
 			case 99:
 				soundManager.StopMusic();
 				break;

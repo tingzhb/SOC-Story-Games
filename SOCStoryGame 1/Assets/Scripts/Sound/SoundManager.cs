@@ -43,4 +43,7 @@ public class SoundManager : MonoBehaviour {
     public void PlayStirSound(){
         FMODUnity.RuntimeManager.PlayOneShot("event:/FX/FryingEgg/Stir");
     }
+    public void PlayEatingSound(){
+        FMODUnity.RuntimeManager.PlayOneShot("event:/FX/Eating");
+    }
 }

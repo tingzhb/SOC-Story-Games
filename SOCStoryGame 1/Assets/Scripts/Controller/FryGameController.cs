@@ -24,6 +24,10 @@ public class FryGameController : MonoBehaviour{
 		EatFry();
 	}
 	private void EatFry(){
+		SoundMessage soundMessage = new(){
+			SoundType = 8
+		};
+		Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
 		fish.GetComponent<SpriteSwitcher>().enabled = false;
 		fish.GetComponent<AnimateOnce>().StartAnimation();
 		StartCoroutine(DelayEating());
