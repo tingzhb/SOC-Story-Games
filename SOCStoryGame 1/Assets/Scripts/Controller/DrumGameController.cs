@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class DrumGameController : MonoBehaviour{
 	[SerializeField] private GameObject stickL, stickR, dog, tapL, tapR, wellDone, UI;
-	[SerializeField] private int maxProgression;
 	[SerializeField] private GameObject[] steps;
 	private AnimateOnce animateL, animateR, animateDog;
 	private int progression;
@@ -37,13 +36,16 @@ public class DrumGameController : MonoBehaviour{
 	}
 	
 	private void UpdateProgress(){
-		if (progression == maxProgression){
+		FMODUnity.RuntimeManager.PlayOneShot("event:/FX/Drums/DrumHit");
+		if (progression == steps.Length - 1){
 			StartCoroutine(DelayEnd());
 		}
-		if (progression <= maxProgression){
+		if (progression <= steps.Length){
 			animateDog.StartAnimation();
 		}
-		dog.transform.position = steps[progression].transform.position;
+		if (progression < steps.Length){
+			dog.transform.position = steps[progression].transform.position;
+		}
 	}
 	private IEnumerator DelayEnd() {
 		yield return new WaitForSeconds(0.25f);

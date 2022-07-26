@@ -311,6 +311,7 @@ GameObject:
   - component: {fileID: 1289164688}
   - component: {fileID: 1289164687}
   - component: {fileID: 1289164686}
+  - component: {fileID: 1289164689}
   m_Layer: 5
   m_Name: Drew
   m_TagString: Invalid
@@ -559,6 +560,36 @@ MonoBehaviour:
   - {fileID: 21300000, guid: cc13f8f36cc4a6547965faeffdfbf764, type: 3}
   image: {fileID: 1289164683}
   animationDelay: 0.04166667
+--- !u!114 &1289164689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289164680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CollisionTag: 
+  EventReference:
+    Guid:
+      Data1: 2112706598
+      Data2: 1097248266
+      Data3: 1045535372
+      Data4: -232680363
+    Path: event:/FX/Drums/DrumLoop
+  Event: 
+  PlayEvent: 1
+  StopEvent: 2
+  AllowFadeout: 1
+  TriggerOnce: 0
+  Preload: 0
+  Params: []
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!1001 &1542433217
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1168,6 +1199,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   assistance: {fileID: 230280179}
+  canAssist: 1
 --- !u!1001 &2097215080
 PrefabInstance:
   m_ObjectHideFlags: 0
