@@ -31,7 +31,7 @@ public class SoundMessageListener : MonoBehaviour{
 				soundManager.PlayTapSound();
 				break;
 			case 5:
-				soundManager.PlayDragSound();
+				soundManager.PlayDragEndSound();
 				break;
 			case 6:
 				soundManager.PlayPlopSound();

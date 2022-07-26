@@ -24,7 +24,7 @@ public class SoundManager : MonoBehaviour {
         FMODUnity.RuntimeManager.PlayOneShot("event:/General/Click");
     }
 
-    public void PlayDragSound(){
+    public void PlayDragEndSound(){
         FMODUnity.RuntimeManager.PlayOneShot("event:/FX/Candle");
     }
 
