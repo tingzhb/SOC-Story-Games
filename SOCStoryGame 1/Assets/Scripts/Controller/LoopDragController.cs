@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class LoopDragController : MonoBehaviour{
 	[SerializeField] private GameObject[] bounds;
-	[SerializeField] private GameObject drag;
+	[SerializeField] private GameObject drag, direction;
+	private bool completed;
 	private int turn;
 	private AnimateOnce animateOnce;
 	private void Awake(){
@@ -12,7 +13,9 @@ public class LoopDragController : MonoBehaviour{
 	}
 	
 	private void FixedUpdate(){
-		CheckLoop();
+		if (!completed){
+			CheckLoop();
+		}
 	}
 	private void CheckLoop(){
 		if (turn == 0 && Math.Abs(drag.transform.position.y - bounds[0].transform.position.y) < 30f){
@@ -29,13 +32,14 @@ public class LoopDragController : MonoBehaviour{
 		}
 		if (turn == 4 && Math.Abs(drag.transform.position.y - bounds[4].transform.position.y) < 30f){
 			turn++;
-			DisplaySuccess();
+			CheckSuccess();
 		}
 		
 	}
 
-	private void DisplaySuccess(){
-		turn = 0;
+	private void CheckSuccess(){
+		completed = true;
+		direction.SetActive(false);
 		SoundMessage soundMessage = new(){
 			SoundType = 7
 		};
@@ -46,13 +50,8 @@ public class LoopDragController : MonoBehaviour{
 	}
 
 	private IEnumerator Delay(){
-		yield return new WaitForSeconds(3f);
+		yield return new WaitForSeconds(2f);
 		CorrectMessage correctMessage = new();
 		Broker.InvokeSubscribers(typeof(CorrectMessage), correctMessage);
-	}
-
-	private void OnDisable(){
-		turn = 0;
-		animateOnce.canAnimate = true;
 	}
 }

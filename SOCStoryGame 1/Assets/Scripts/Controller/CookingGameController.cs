@@ -6,27 +6,29 @@ public class CookingGameController : MonoBehaviour{
 	[SerializeField] private GameObject[] tasks;
 	[SerializeField] private GameObject wellDone;
 	[SerializeField] private int steps;
-	private int currentTask;
+	private GameObject currentTask;
 	private void Start(){
 		Broker.Subscribe<CorrectMessage>(OnCorrectMessageReceived);
 		GetNewTask();
 	}
 	private void GetNewTask(){
-		currentTask = Random.Range(0, tasks.Length);
-		tasks[currentTask].SetActive(true);
+		var newTask = Random.Range(0, tasks.Length);
+		var spawnPoint = transform;
+		if (steps > 0){
+			currentTask = Instantiate(tasks[newTask], spawnPoint.position, Quaternion.identity, spawnPoint);
+		}
 	}
 	private void OnCorrectMessageReceived(CorrectMessage obj){
-		tasks[currentTask].SetActive(false);
-		GetNewTask();
-
+		Destroy(currentTask);
 		steps--;
 		if (steps == 0){
 			StartCoroutine(DelayEnd());
 		}
+		GetNewTask();
 	}
 
 	private IEnumerator DelayEnd(){
-		yield return new WaitForSeconds(0.1f);
+		yield return new WaitForSeconds(0.25f);
 		wellDone.SetActive(true);
 	}
 	private void OnDestroy(){
