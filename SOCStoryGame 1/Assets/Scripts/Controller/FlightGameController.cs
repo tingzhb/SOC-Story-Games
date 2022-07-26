@@ -11,6 +11,7 @@ public class FlightGameController : MonoBehaviour{
 	private void Start(){
 		Broker.Subscribe<CorrectMessage>(OnCorrectMessageReceived);
 		Broker.Subscribe<FailureMessage>(OnFailureMessageReceived);
+		executor = FindObjectOfType<Executor>();
 	}
 	private void OnFailureMessageReceived(FailureMessage obj){
 		failureCount++;
