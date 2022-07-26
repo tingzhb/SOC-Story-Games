@@ -36,6 +36,10 @@ public class LoopDragController : MonoBehaviour{
 
 	private void DisplaySuccess(){
 		turn = 0;
+		SoundMessage soundMessage = new(){
+			SoundType = 7
+		};
+		Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
 		animateOnce.StartAnimation();
 		animateOnce.canAnimate = false;
 		StartCoroutine(Delay());

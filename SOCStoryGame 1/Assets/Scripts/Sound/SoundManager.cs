@@ -35,6 +35,12 @@ public class SoundManager : MonoBehaviour {
         FMODUnity.RuntimeManager.PlayOneShot("event:/General/Victory");
     }
     public void PlayBubblePopSound(){
-        FMODUnity.RuntimeManager.PlayOneShot("event:/FX/BubblePop");
+        FMODUnity.RuntimeManager.PlayOneShot("event:/FX/BubbleBust");
+    }
+    public void PlayPlopSound(){
+        FMODUnity.RuntimeManager.PlayOneShot("event:/FX/Plopp");
+    }
+    public void PlayStirSound(){
+        FMODUnity.RuntimeManager.PlayOneShot("event:/FX/FryingEgg/Stir");
     }
 }

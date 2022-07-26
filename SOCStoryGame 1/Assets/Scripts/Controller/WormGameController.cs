@@ -46,7 +46,7 @@ public class WormGameController : MonoBehaviour {
 	
 	private void OnCorrectMessageReceived(CorrectMessage obj) {
 		SoundMessage soundMessage = new(){
-			SoundType = 3
+			SoundType = 6
 		};
 		Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
 		wormScore++;

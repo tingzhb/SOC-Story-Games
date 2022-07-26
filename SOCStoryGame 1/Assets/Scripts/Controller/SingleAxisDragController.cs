@@ -48,6 +48,10 @@ public class SingleAxisDragController : MonoBehaviour{
 	
 	private void DisplaySuccess(){
 		if (goal == 3){
+			SoundMessage soundMessage = new(){
+				SoundType = 7
+			};
+			Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
 			turn = false;
 			animateOnce.StartAnimation();
 			animateOnce.canAnimate = false;
