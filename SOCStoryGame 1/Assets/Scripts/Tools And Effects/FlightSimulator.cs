@@ -7,21 +7,22 @@ public class FlightSimulator : MonoBehaviour{
 	[SerializeField] private float movementSpeed, objectWidth, objectHeight, interval;
 	[SerializeField] private GameObject plane;
 	[SerializeField] private bool vertical, up, deadly, sensor;
-	private float height;
+	private float height, width;
 	private Executor executor;
 
 	private void Awake(){
 		height = Screen.height;
+		width = Screen.width;
 	}
 	private void Start(){
 		executor = FindObjectOfType<Executor>();
 	}
 
-	private void FixedUpdate(){
+	private void Update(){
 		if (deadly){
 			TryKillPlane();
 		}
-		transform.Translate(Vector3.left * (Time.deltaTime * movementSpeed * height));
+		transform.Translate(Vector3.left * (Time.deltaTime * movementSpeed * width));
 		if (vertical){
 			if (up){
 				transform.Translate(Vector3.down * (Time.deltaTime * movementSpeed * height));
@@ -32,7 +33,7 @@ public class FlightSimulator : MonoBehaviour{
 				StartCoroutine(MoveDown());
 			}
 		}
-		if (sensor && Math.Abs(transform.position.x - plane.transform.position.x) < objectHeight && Math.Abs(transform.position.x - plane.transform.position.x) < objectWidth){
+		if (sensor && Math.Abs(transform.position.x - plane.transform.position.x) < objectWidth){
 			sensor = false;
 			executor.Enqueue(new CorrectCommand());
 		}
