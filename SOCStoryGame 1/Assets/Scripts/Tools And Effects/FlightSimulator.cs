@@ -9,16 +9,16 @@ public class FlightSimulator : MonoBehaviour{
 	[SerializeField] private bool vertical, up, deadly, sensor;
 	private float height, width;
 	private Executor executor;
+	private BoxCollider2D boxCollider;
 
 	private void Awake(){
+		executor = FindObjectOfType<Executor>();
+		boxCollider = GetComponent<BoxCollider2D>();
 		height = Screen.height;
 		width = Screen.width;
 	}
-	private void Start(){
-		executor = FindObjectOfType<Executor>();
-	}
-
-	private void Update(){
+	
+	private void FixedUpdate(){
 		if (deadly){
 			TryKillPlane();
 		}
@@ -40,9 +40,9 @@ public class FlightSimulator : MonoBehaviour{
 	}
 
 	private void TryKillPlane(){
-		if (Math.Abs(transform.position.y - plane.transform.position.y) < objectHeight && Math.Abs(transform.position.x - plane.transform.position.x) < objectWidth){
-			executor.Enqueue(new FailureCommand());
+		if (boxCollider.bounds.Contains(plane.transform.position)){
 			deadly = false;
+			executor.Enqueue(new FailureCommand());
 		}
 	}
 
