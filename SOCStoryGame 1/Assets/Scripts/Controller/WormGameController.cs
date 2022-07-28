@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 public class WormGameController : MonoBehaviour {
 
 	[SerializeField] private GameObject[] slots;
-	[SerializeField] private GameObject wormPrefab;
+	[SerializeField] private GameObject wormPrefab, wellDone;
 	[SerializeField] private int steps;
 	private bool[] occupied;
 	private int currentWorms, spawnableWorms;
@@ -51,6 +51,7 @@ public class WormGameController : MonoBehaviour {
 		steps--;
 		
 		if (steps == 0) {
+			wellDone.SetActive(true);
 			StartCoroutine(DelayEnd());
 		}
 	}
@@ -63,7 +64,7 @@ public class WormGameController : MonoBehaviour {
 		ChangeSpawnableWorms();
 	}
 	private IEnumerator DelayEnd() {
-		yield return new WaitForSeconds(1f);
+		yield return new WaitForSeconds(1.5f);
 		executor.Enqueue(new ValidAnswerCommand());
 	}
 	private void OnDestroy(){
