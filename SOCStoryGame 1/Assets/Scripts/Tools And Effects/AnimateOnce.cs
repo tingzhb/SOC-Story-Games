@@ -10,6 +10,7 @@ public class AnimateOnce : MonoBehaviour{
 	private bool canChangeSprite;
 	private int currentSprite;
 	public bool canAnimate = true;
+	private float timePassed;
 
 	private void Awake(){
 		if (startOnAwake){
@@ -17,16 +18,26 @@ public class AnimateOnce : MonoBehaviour{
 		}
 	}
 	private void Update(){
+		timePassed += Time.deltaTime;
 		image.sprite = sprites[currentSprite];
-		if (canChangeSprite){
-			StartCoroutine(ChangeSprite());
+		if (canChangeSprite && timePassed >= animationDelay){
+			Change();
+			// StartCoroutine(ChangeSprite());
 		}
 	}
-	private IEnumerator ChangeSprite(){
-		canChangeSprite = false;
-		yield return new WaitForSeconds(animationDelay);
+	// private IEnumerator ChangeSprite(){
+	// 	canChangeSprite = false;
+	// 	yield return new WaitForSeconds(animationDelay);
+	// 	currentSprite++;
+	// 	canChangeSprite = true;
+	// 	if (currentSprite == sprites.Length){
+	// 		currentSprite = sprites.Length - 1;
+	// 		canChangeSprite = false;
+	// 	}
+	// }
+	private void Change(){
 		currentSprite++;
-		canChangeSprite = true;
+		timePassed = 0;
 		if (currentSprite == sprites.Length){
 			currentSprite = sprites.Length - 1;
 			canChangeSprite = false;

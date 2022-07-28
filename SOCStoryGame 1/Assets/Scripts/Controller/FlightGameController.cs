@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class FlightGameController : MonoBehaviour{
 	[SerializeField] private int steps;
+	[SerializeField] private GameObject wellDone;
 	private int failureCount;
 	private Executor executor;
-	
+
 	private void Start(){
 		Broker.Subscribe<CorrectMessage>(OnCorrectMessageReceived);
 		Broker.Subscribe<FailureMessage>(OnFailureMessageReceived);
@@ -22,6 +23,7 @@ public class FlightGameController : MonoBehaviour{
 	private void OnCorrectMessageReceived(CorrectMessage obj){
 		steps--;
 		if (steps == 0) {
+			wellDone.SetActive(true);
 			StartCoroutine(DelayEnd());
 		}
 	}
