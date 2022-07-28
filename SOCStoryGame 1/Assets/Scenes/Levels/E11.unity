@@ -311,7 +311,7 @@ GameObject:
   - component: {fileID: 1289164687}
   - component: {fileID: 1289164686}
   - component: {fileID: 1289164688}
-  - component: {fileID: 1289164689}
+  - component: {fileID: 1289164690}
   m_Layer: 5
   m_Name: Ollie
   m_TagString: Invalid
@@ -389,6 +389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &1289164687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -562,7 +563,7 @@ MonoBehaviour:
   animationDelay: 0.04166667
   startOnAwake: 1
   canAnimate: 1
---- !u!114 &1289164689
+--- !u!114 &1289164690
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -577,14 +578,14 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 1330001586
-      Data2: 1318863403
-      Data3: 666480004
-      Data4: 18793247
-    Path: event:/FX/Zoo
+      Data1: -144554222
+      Data2: 1115317155
+      Data3: -620069724
+      Data4: -1318394916
+    Path: event:/E/CarGoing
   Event: 
   PlayEvent: 1
-  StopEvent: 0
+  StopEvent: 2
   AllowFadeout: 1
   TriggerOnce: 0
   Preload: 0
@@ -984,6 +985,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!1001 &1805223330
 PrefabInstance:
   m_ObjectHideFlags: 0
