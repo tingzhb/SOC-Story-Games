@@ -56,7 +56,8 @@ public class PairChecker : MonoBehaviour{
 	}
 
 	private IEnumerator DelayEnd(){
-		yield return new WaitForSeconds(0.5f);
+		wellDone.SetActive(true);
+		yield return new WaitForSeconds(3f);
 		executor.Enqueue(new ValidAnswerCommand());
 
 	}

@@ -6078,6 +6078,7 @@ GameObject:
   - component: {fileID: 911955655}
   - component: {fileID: 911955654}
   - component: {fileID: 911955656}
+  - component: {fileID: 911955657}
   m_Layer: 5
   m_Name: Panel
   m_TagString: Untagged
@@ -6161,6 +6162,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   assistance: {fileID: 822198948}
   canAssist: 1
+--- !u!114 &911955657
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911955652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cdb65a55186d0447945c0446ded50c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  delay: 3
 --- !u!1001 &922017189
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16666,6 +16680,10 @@ PrefabInstance:
     - target: {fileID: 7465507843824304726, guid: 6aba94a03738a3c4cb0cbb13701870f4, type: 3}
       propertyPath: m_Name
       value: Next
+      objectReference: {fileID: 0}
+    - target: {fileID: 7465507843824304726, guid: 6aba94a03738a3c4cb0cbb13701870f4, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7465507843824304727, guid: 6aba94a03738a3c4cb0cbb13701870f4, type: 3}
       propertyPath: m_Pivot.x
