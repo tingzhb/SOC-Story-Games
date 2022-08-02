@@ -21,7 +21,6 @@ public class KickTimer : MonoBehaviour{
 		if (!kicked && timer >= startTime && timer <= endTime){
 			kicked = true;
 			kicks++;
-			Debug.Log(kicks);
 			executor.Enqueue(new CorrectCommand());
 		}
 		else{

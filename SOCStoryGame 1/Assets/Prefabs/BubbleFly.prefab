@@ -1,0 +1,207 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3941947800075237800
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3941947800075237801}
+  - component: {fileID: 3941947800075237806}
+  - component: {fileID: 3941947800075237805}
+  - component: {fileID: 3941947800075237804}
+  - component: {fileID: 3941947800075237803}
+  - component: {fileID: 3941947800075237802}
+  m_Layer: 5
+  m_Name: BubbleFly
+  m_TagString: Invalid
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3941947800075237801
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3941947800075237800}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 550, y: 100.00001}
+  m_SizeDelta: {x: 1120, y: 880}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &3941947800075237806
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3941947800075237800}
+  m_CullTransparentMesh: 1
+--- !u!114 &3941947800075237805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3941947800075237800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 24ce17b537701ec4ca8c653b8a32d012, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3941947800075237804
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3941947800075237800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 3941947800075237805}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3941947800075237803}
+        m_TargetAssemblyTypeName: OnTap, Assembly-CSharp
+        m_MethodName: Tap
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &3941947800075237803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3941947800075237800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playClickSound: 1
+--- !u!114 &3941947800075237802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3941947800075237800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d30e5b725ec479698f863716b531ebe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: 24ce17b537701ec4ca8c653b8a32d012, type: 3}
+  - {fileID: 21300000, guid: f0969b8256cf6ea40b5502b309a4b47e, type: 3}
+  - {fileID: 21300000, guid: 7357f27a6c286c54d88a1336e4ae932f, type: 3}
+  - {fileID: 21300000, guid: 5e6b6bf9c3153714fb5e8ea1b6fe874a, type: 3}
+  - {fileID: 21300000, guid: 856cda4eea6917b4e922d2c8ba230654, type: 3}
+  - {fileID: 21300000, guid: 6a39103c281a305419cf9e1142dc7e2b, type: 3}
+  - {fileID: 21300000, guid: 4740ca44257a9ba45b1d6aff0ae206d1, type: 3}
+  - {fileID: 21300000, guid: 9235948eaa10ebb48a516c8fb0f1dbad, type: 3}
+  - {fileID: 21300000, guid: f3d1c5e79d2ad7b4395ec5f854907526, type: 3}
+  - {fileID: 21300000, guid: 8d0bf5b94aeb4ee43bf418011b021218, type: 3}
+  - {fileID: 21300000, guid: c8187894e75f5764889408154169db27, type: 3}
+  - {fileID: 21300000, guid: 8b22495cbc0889c458c18a6decf3bc51, type: 3}
+  - {fileID: 21300000, guid: 203f70a435ecc36469e9c75e0d056753, type: 3}
+  - {fileID: 21300000, guid: 0bba22ffa51ccb04197f7cfdeee5fb4b, type: 3}
+  - {fileID: 21300000, guid: d3eec109d6d5d714ab16e142e7aac538, type: 3}
+  - {fileID: 21300000, guid: 53fe7af7bf4bde240bc8d377398f5368, type: 3}
+  - {fileID: 21300000, guid: bbfb0e5c766dabd43a6f072291bcaefb, type: 3}
+  - {fileID: 21300000, guid: f3b5eda1002d25d48a1bd41082e9d5bb, type: 3}
+  - {fileID: 21300000, guid: 3dc548bdfd446894dbb16a2196de2346, type: 3}
+  - {fileID: 21300000, guid: 0f47eeefaaf09264487ac6cbbb0327ef, type: 3}
+  - {fileID: 21300000, guid: f1ae18242245b574184579e8956d7557, type: 3}
+  - {fileID: 21300000, guid: 36555a9bc82b78346b0327d06a12c1e1, type: 3}
+  - {fileID: 21300000, guid: 6e0aab54549cf9140935640a4258a147, type: 3}
+  - {fileID: 21300000, guid: e0d9b44de81b6d6439b3432e8043faef, type: 3}
+  - {fileID: 21300000, guid: 9c8c31e6c426ea44794cdfb9a93a9f98, type: 3}
+  - {fileID: 21300000, guid: 115bab06ec3ece1449838f471500cdc0, type: 3}
+  - {fileID: 21300000, guid: 434f7a2727143164ba5cdffbc27b0aef, type: 3}
+  - {fileID: 21300000, guid: 5032f0e565d393d49830d2f2a3435117, type: 3}
+  - {fileID: 21300000, guid: b2d15845ec1866f47a00469571021184, type: 3}
+  - {fileID: 21300000, guid: 5a6d5abd22b0a1c43bfc63f18fa25057, type: 3}
+  - {fileID: 21300000, guid: 0a1db06503f2b4b45a05f6a139de9754, type: 3}
+  - {fileID: 21300000, guid: 11cb9ee91f0e175458477bd0001a064f, type: 3}
+  - {fileID: 21300000, guid: bdebe80fd9cf7e1458dc821cc019b3be, type: 3}
+  - {fileID: 21300000, guid: d0a1d940fb3a82a409bc818096c935a8, type: 3}
+  - {fileID: 21300000, guid: 75807e5253cfa3147b72c519ad6831c1, type: 3}
+  - {fileID: 21300000, guid: 7ab063db2fc0e9c47b8d104089074abb, type: 3}
+  - {fileID: 21300000, guid: 7eab255ff267cf34d8dcc705d8df1ab0, type: 3}
+  - {fileID: 21300000, guid: 401ba105bff023a4fbef89a5aec61e0e, type: 3}
+  - {fileID: 21300000, guid: ba624e24041e1d246bcfa7cb67858839, type: 3}
+  - {fileID: 21300000, guid: 84271f260b8d99a48bf20ec816fb28e1, type: 3}
+  image: {fileID: 3941947800075237805}
+  animationDelay: 0.04166667
+  startOnAwake: 1
+  canAnimate: 1
