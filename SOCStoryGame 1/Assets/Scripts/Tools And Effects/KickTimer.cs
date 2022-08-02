@@ -5,12 +5,21 @@ using UnityEngine;
 
 public class KickTimer : MonoBehaviour{
 	[SerializeField] private float startTime, endTime;
-	private float timer, kicks;
+	private float timer;
 	private Executor executor;
-	private bool kicked;
+	private bool kicked, canKick;
 
 	private void Awake() {
+		Broker.Subscribe<EggMessage>(OnEggMessageReceived);
 		executor = FindObjectOfType<Executor>();
+	}
+	private void OnEggMessageReceived(EggMessage obj){
+		if (obj.Saved){
+			canKick = true;
+		}
+		else{
+			canKick = false;
+		}
 	}
 
 	private void Update(){
@@ -18,12 +27,11 @@ public class KickTimer : MonoBehaviour{
 	}
 
 	public void TryKick(){
-		if (!kicked && timer >= startTime && timer <= endTime){
+		if (!kicked && canKick){
 			kicked = true;
-			kicks++;
 			executor.Enqueue(new CorrectCommand());
 		}
-		else{
+		else {
 			kicked = true;
 			executor.Enqueue(new FailureCommand());
 		}

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 269429705018785369}
   - component: {fileID: 269429705018785368}
   - component: {fileID: 269429705018785375}
-  - component: {fileID: 269429705018785371}
+  - component: {fileID: 2901465528337402758}
   m_Layer: 5
   m_Name: Bar
   m_TagString: Invalid
@@ -149,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playClickSound: 1
---- !u!114 &269429705018785371
+--- !u!114 &2901465528337402758
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,7 +158,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 269429705018785372}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37acb0583bdd53940b2dc557e8d6fd3d, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c2d83c88b0c44309f59728b4604f66d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:
@@ -191,8 +191,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: c45c4694b7efe0b47a413f12d38944d9, type: 3}
   - {fileID: 21300000, guid: c45c4694b7efe0b47a413f12d38944d9, type: 3}
   - {fileID: 21300000, guid: c45c4694b7efe0b47a413f12d38944d9, type: 3}
-  - {fileID: 21300000, guid: c45c4694b7efe0b47a413f12d38944d9, type: 3}
-  - {fileID: 21300000, guid: 4e8dda6487df8834e9bff4597c733bb5, type: 3}
   - {fileID: 21300000, guid: 4e8dda6487df8834e9bff4597c733bb5, type: 3}
   - {fileID: 21300000, guid: 60fc482c63322a24a8de65c39abc9693, type: 3}
   - {fileID: 21300000, guid: 0657c7d3a8f6b0942b42c3d471462256, type: 3}
@@ -211,8 +209,11 @@ MonoBehaviour:
   - {fileID: 21300000, guid: fe18e034a8fd4094e8d2ba7a29327fbb, type: 3}
   - {fileID: 21300000, guid: 658fd456789371143bd9d792d7b7752c, type: 3}
   - {fileID: 21300000, guid: 9fcc2147b666bfd42ac883a9a1f45579, type: 3}
+  - {fileID: 21300000, guid: 55fed99e8063ebe4eb4723a572cbc0c5, type: 3}
   image: {fileID: 269429705018785369}
   animationDelay: 0.04166667
+  startOnAwake: 1
+  canAnimate: 1
 --- !u!1 &269429705706345932
 GameObject:
   m_ObjectHideFlags: 0
@@ -227,7 +228,7 @@ GameObject:
   - component: {fileID: 269429705706345928}
   - component: {fileID: 269429705706345935}
   - component: {fileID: 269429705706345931}
-  - component: {fileID: 4599275788680459814}
+  - component: {fileID: 9043919605439705446}
   m_Layer: 5
   m_Name: Kick
   m_TagString: Untagged
@@ -376,7 +377,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startTime: 0.8
   endTime: 1.3
---- !u!114 &4599275788680459814
+--- !u!114 &9043919605439705446
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -385,7 +386,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 269429705706345932}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d30e5b725ec479698f863716b531ebe, type: 3}
+  m_Script: {fileID: 11500000, guid: 3c2d83c88b0c44309f59728b4604f66d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   sprites:

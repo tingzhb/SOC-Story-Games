@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class AnimateOnce : MonoBehaviour{
+public class AnimateOnce2 : MonoBehaviour{
 	[SerializeField] private Sprite[] sprites;
 	[SerializeField] private Image image;
 	[SerializeField] private float animationDelay;
@@ -22,6 +22,18 @@ public class AnimateOnce : MonoBehaviour{
 		image.sprite = sprites[currentSprite];
 		if (canChangeSprite && timePassed >= animationDelay){
 			Change();
+		}
+		if (currentSprite == 20){
+			EggMessage eggMessage = new(){
+				Saved = true
+			};
+			Broker.InvokeSubscribers(typeof(EggMessage), eggMessage);
+		}
+		if (currentSprite == 29){
+			EggMessage eggMessage = new(){
+				Saved = false
+			};
+			Broker.InvokeSubscribers(typeof(EggMessage),eggMessage);
 		}
 	}
 
