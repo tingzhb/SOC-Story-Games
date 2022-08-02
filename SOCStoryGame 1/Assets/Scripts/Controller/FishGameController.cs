@@ -11,7 +11,6 @@ public class FishGameController : MonoBehaviour{
 	[SerializeField] private GameObject[] fishGoals;
 	[SerializeField] private Sprite[] sprites;
 	[SerializeField] private GameObject wellDone;
-	private GameObject wellDoneInstance;
 	private bool canSpawn;
 
 	private void Start(){
@@ -34,13 +33,13 @@ public class FishGameController : MonoBehaviour{
 	private void OnSingleTapMessageReceived(SingleTapMessage obj){
 		if (obj.TappedObject == "Bubble"){
 			
-			wellDoneInstance = Instantiate(wellDone, gameObject.transform);
 			StartCoroutine(DelayFishResult());
 			if (progress < 4){
 				timer = 0;
 				StartCoroutine(DelayNewFish());
 			} else {
 				canSpawn = false;
+				wellDone.SetActive(true);
 				StartCoroutine(DelayEnd());
 			}
 			
@@ -55,7 +54,6 @@ public class FishGameController : MonoBehaviour{
 	
 	private IEnumerator DelayFishResult(){
 		yield return new WaitForSeconds(1f);
-		Destroy(wellDoneInstance);
 		fishGoals[progress].GetComponent<Image>().sprite = sprites[fishType];
 		progress++;
 	}
