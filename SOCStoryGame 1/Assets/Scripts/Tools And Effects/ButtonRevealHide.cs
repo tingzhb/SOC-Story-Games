@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -64,5 +65,10 @@ public class ButtonRevealHide : MonoBehaviour{
 		cardImage.sprite = buttonSprite;
 		Destroy(closeInstance);
 		GetComponent<Button>().interactable = true;
+	}
+
+	private void OnDestroy(){
+		Broker.Unsubscribe<CorrectMessage>(OnCorrectMessageReceived);
+		Broker.Unsubscribe<InvalidMessage>(OnInvalidMessageReceived);
 	}
 }
