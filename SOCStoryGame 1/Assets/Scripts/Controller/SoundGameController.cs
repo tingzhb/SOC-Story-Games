@@ -1,44 +1,57 @@
-using System;
 using System.Linq;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class SoundGameController : MonoBehaviour{
-	private int soundsToTest = 5, soundChoice;
-	private int[] soundBinary, soundBinaryAnswer;
+public class SoundGameController : MonoBehaviour {
+	private int soundOptions = 1, soundAnswer, maxSounds = 5;
+	private int[] soundQuestions, soundAnswers;
 	private Executor executor;
+	
 	private void Start() {
 		Broker.Subscribe<EggMessage>(OnEggMessageReceived);
 		GenerateNewSound();
 		PlaySound();
 	}
-	private void OnEggMessageReceived(EggMessage obj){
+	
+	private void OnEggMessageReceived(EggMessage obj) {
 		if (!obj.Saved){
-			soundBinaryAnswer[soundChoice] = 0;
+			soundAnswers[soundAnswer] = 0;
 		} else {
-			soundBinaryAnswer[soundChoice] = 1;
+			soundAnswers[soundAnswer] = 1;
 		}
-		soundChoice++;
-		if (soundChoice == soundsToTest){
-			if (CheckAnswer()){
-				Debug.Log("Win");
+
+		if (CheckIndividualSound()){
+			Debug.Log("Correct");
+			soundAnswer++;
+		} else {
+			Debug.Log("Lose");
+			ClearAnswers();
+			PlaySound();
+		}
+		
+		if (soundAnswer == soundOptions){
+			soundOptions++;
+			Debug.Log("Win");
+			
+			if (soundOptions > maxSounds){
+				Debug.Log("LevelEnd");
 			} else {
-				Debug.Log("Lose");
+				GenerateNewSound();
+				PlaySound();
 			}
 		}
 	}
 
-	private void GenerateNewSound(){
-		soundChoice = 0;
-		soundBinary = new int[soundsToTest];
-		soundBinaryAnswer = new int[soundsToTest];
-		for (var i = 0; i < soundBinary.Length; i++){
-			soundBinary[i] = Random.Range(0, 2);
+	private void GenerateNewSound() {
+		ClearAnswers();
+		soundQuestions = new int[soundOptions];
+		for (var i = 0; i < soundQuestions.Length; i++){
+			soundQuestions[i] = Random.Range(0, 2);
 		}
 	}
 
-	private void PlaySound(){
-		foreach (var sound in soundBinary){
+	private void PlaySound() {
+		foreach (var sound in soundQuestions){
 			if (sound == 0){
 				Debug.Log("moo");
 			} else {
@@ -47,7 +60,16 @@ public class SoundGameController : MonoBehaviour{
 		}
 	}
 
-	private bool CheckAnswer(){
-		return !soundBinaryAnswer.Where((t, i) => t != soundBinary[i]).Any();
+	private bool CheckIndividualSound(){
+		return soundQuestions[soundAnswer] == soundAnswers[soundAnswer];
+	}
+
+	private void ClearAnswers() {
+		soundAnswer = 0;
+		soundAnswers = new int[soundOptions];
+	}
+
+	private void OnDestroy() {
+		Broker.Unsubscribe<EggMessage>(OnEggMessageReceived);
 	}
 }
