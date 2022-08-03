@@ -321,6 +321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &1289164687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -872,6 +873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!1001 &1898475754
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -922,6 +924,26 @@ PrefabInstance:
     - target: {fileID: 2274891152081959538, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
+      propertyPath: voiceOver.Path
+      value: event:/C/C6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
+      propertyPath: voiceOver.Guid.Data1
+      value: -450215530
+      objectReference: {fileID: 0}
+    - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
+      propertyPath: voiceOver.Guid.Data2
+      value: 1225486392
+      objectReference: {fileID: 0}
+    - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
+      propertyPath: voiceOver.Guid.Data3
+      value: 89957772
+      objectReference: {fileID: 0}
+    - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
+      propertyPath: voiceOver.Guid.Data4
+      value: 1261497152
       objectReference: {fileID: 0}
     - target: {fileID: 2274891152081959543, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
       propertyPath: m_Name
@@ -1124,6 +1146,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   assistance: {fileID: 1531697671}
+  canAssist: 1
 --- !u!1001 &2097215080
 PrefabInstance:
   m_ObjectHideFlags: 0

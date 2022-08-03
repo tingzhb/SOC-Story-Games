@@ -363,6 +363,26 @@ PrefabInstance:
       propertyPath: levelNumber
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
+      propertyPath: voiceOver.Path
+      value: event:/F/F0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
+      propertyPath: voiceOver.Guid.Data1
+      value: 1350129516
+      objectReference: {fileID: 0}
+    - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
+      propertyPath: voiceOver.Guid.Data2
+      value: 1339108832
+      objectReference: {fileID: 0}
+    - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
+      propertyPath: voiceOver.Guid.Data3
+      value: 396715913
+      objectReference: {fileID: 0}
+    - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
+      propertyPath: voiceOver.Guid.Data4
+      value: 183387623
+      objectReference: {fileID: 0}
     - target: {fileID: 2274891152081959543, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -521,6 +541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxScaleDuration: 1
   scaleSpeed: 0.7
+  playSound: 0
 --- !u!114 &752035910
 MonoBehaviour:
   m_ObjectHideFlags: 0

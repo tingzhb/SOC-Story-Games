@@ -521,6 +521,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxScaleDuration: 1
   scaleSpeed: 0.7
+  playSound: 0
 --- !u!114 &752035910
 MonoBehaviour:
   m_ObjectHideFlags: 0

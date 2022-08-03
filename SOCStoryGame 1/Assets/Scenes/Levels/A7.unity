@@ -825,6 +825,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
+      propertyPath: playVO
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2274891152081959543, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -1673,6 +1677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxScaleDuration: 1
   scaleSpeed: 0.25
+  playSound: 1
 --- !u!114 &1671951939
 MonoBehaviour:
   m_ObjectHideFlags: 0

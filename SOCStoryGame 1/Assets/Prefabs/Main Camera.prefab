@@ -90,7 +90,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playMusic: 0
+  playVO: 1
   levelNumber: 0
+  voiceOver:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
 --- !u!114 &1478308662786058337
 MonoBehaviour:
   m_ObjectHideFlags: 0

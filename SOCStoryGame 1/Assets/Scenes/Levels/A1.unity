@@ -416,23 +416,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
       propertyPath: voiceOver.Path
-      value: event:/General/Defeat
+      value: event:/A/A01
       objectReference: {fileID: 0}
     - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
       propertyPath: voiceOver.Guid.Data1
-      value: 1426299121
+      value: 1686899953
       objectReference: {fileID: 0}
     - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
       propertyPath: voiceOver.Guid.Data2
-      value: 1324855431
+      value: 1091464086
       objectReference: {fileID: 0}
     - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
       propertyPath: voiceOver.Guid.Data3
-      value: -1328112508
+      value: 2058155919
       objectReference: {fileID: 0}
     - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
       propertyPath: voiceOver.Guid.Data4
-      value: -984367138
+      value: -1301064901
       objectReference: {fileID: 0}
     - target: {fileID: 2274891152081959543, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
       propertyPath: m_Name

@@ -349,6 +349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &157888405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -386,6 +387,7 @@ MonoBehaviour:
   image: {fileID: 157888401}
   animationDelay: 0.04166667
   startOnAwake: 0
+  canAnimate: 1
 --- !u!1001 &178962988
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -435,6 +437,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2274891152081959538, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
+      propertyPath: playVO
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2274891152081959543, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
@@ -495,6 +501,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &353296638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -748,6 +755,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &509552302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -773,6 +781,7 @@ MonoBehaviour:
   image: {fileID: 509552299}
   animationDelay: 0.04166667
   startOnAwake: 0
+  canAnimate: 1
 --- !u!1001 &686216562
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1039,6 +1048,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &792506980
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1064,6 +1074,7 @@ MonoBehaviour:
   image: {fileID: 792506977}
   animationDelay: 0.04166667
   startOnAwake: 0
+  canAnimate: 1
 --- !u!1001 &1372328705
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1132,6 +1143,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2062490275}
     m_Modifications:
+    - target: {fileID: 881397772243015450, guid: 4262c5bad01d7cb4993024a59b3f7702, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 881397773662505174, guid: 4262c5bad01d7cb4993024a59b3f7702, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6373987933270470375, guid: 4262c5bad01d7cb4993024a59b3f7702, type: 3}
       propertyPath: m_Name
       value: UI
@@ -1535,6 +1554,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!114 &1679977748
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1560,6 +1580,7 @@ MonoBehaviour:
   image: {fileID: 1679977745}
   animationDelay: 0.04166667
   startOnAwake: 0
+  canAnimate: 1
 --- !u!1 &1721982237
 GameObject:
   m_ObjectHideFlags: 0
@@ -1706,6 +1727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!1 &1914568402
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,3 +1896,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   assistance: {fileID: 686216564}
+  canAssist: 1

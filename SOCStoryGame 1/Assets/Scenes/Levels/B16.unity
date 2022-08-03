@@ -888,6 +888,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
+      propertyPath: playVO
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2274891152081959543, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
       propertyPath: m_Name
       value: Main Camera
@@ -1469,9 +1473,13 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 881397772243015450, guid: 4262c5bad01d7cb4993024a59b3f7702, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 881397773662505174, guid: 4262c5bad01d7cb4993024a59b3f7702, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 881397773662505194, guid: 4262c5bad01d7cb4993024a59b3f7702, type: 3}
       propertyPath: m_IsActive
