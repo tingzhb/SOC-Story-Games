@@ -1,4 +1,4 @@
-using System.Linq;
+using System.Collections;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -12,8 +12,7 @@ public class SoundGameController : MonoBehaviour{
 	
 	private void Start() {
 		Broker.Subscribe<EggMessage>(OnEggMessageReceived);
-		GenerateNewSound();
-		PlaySound();
+		StartCoroutine(GenerateNewSound());
 	}
 	
 	private void OnEggMessageReceived(EggMessage obj) {
@@ -24,52 +23,90 @@ public class SoundGameController : MonoBehaviour{
 		}
 
 		if (CheckIndividualSound()){
-			Debug.Log("Correct");
 			soundAnswer++;
 		} else {
-			Debug.Log("Lose");
 			ClearAnswers();
-			PlaySound();
+			StartCoroutine(Retry());
 		}
 		
 		if (soundAnswer == soundOptions){
 			soundOptions++;
 			Debug.Log("Win");
-			foreach (var image in soundImageInstances){
-				Destroy(image);
-			}
+			DestroyPreviousImages();
 			if (soundOptions > maxSounds){
 				Debug.Log("LevelEnd");
 			} else {
-				GenerateNewSound();
-				PlaySound();
+				StartCoroutine(GenerateNewSound());
 			}
 		}
 	}
-
-	private void GenerateNewSound() {
+	private IEnumerator Retry(){
+		yield return new WaitForSeconds(1f);
+		StartCoroutine(ReplaySound());
+		StartCoroutine(ReplayText());
+	}
+	private void DestroyPreviousImages(){
+		foreach (var image in soundImageInstances){
+			Destroy(image);
+		}
+	}
+	
+	private IEnumerator GenerateNewSound(){
 		ClearAnswers();
+		yield return new WaitForSeconds(1f);
 		soundQuestions = new int[soundOptions];
 		soundImageInstances = new GameObject[soundOptions];
-		for (var i = 0; i < soundQuestions.Length; i++){
+		for (int i = 0; i < soundQuestions.Length; i++){
 			var randomNumber = Random.Range(0, 2);
 			soundQuestions[i] = randomNumber;
 			
 			var spawnTransform = spawnPoints[i].transform;
 			soundImageInstances[i] = Instantiate(soundImagePrefabs[randomNumber], spawnTransform.position, Quaternion.identity, spawnTransform);
+			
+			if (randomNumber == 0){
+				PlayCowSound();
+			} else {
+				PlayCatSound();
+				
+			}
+			soundImageInstances[i].GetComponent<SoundTextShower>().ShowText();
+			
+			yield return new WaitForSeconds(0.75f);
 		}
 	}
 
-	private void PlaySound() {
+	private IEnumerator ReplayText(){
+		foreach (var gameObject in soundImageInstances){
+			gameObject.GetComponent<SoundTextShower>().ShowText();
+			yield return new WaitForSeconds(0.75f);
+		}
+	}
+
+	private IEnumerator ReplaySound() {
 		foreach (var sound in soundQuestions){
 			if (sound == 0){
-				// Send Sound Message Cow
-				Debug.Log("moo");
+				PlayCowSound();
 			} else {
-				// Send Sound Message Cat
-				Debug.Log("meow");
+				PlayCatSound();
 			}
+			yield return new WaitForSeconds(0.75f);
 		}
+	}
+
+	private void PlayCowSound(){
+		Debug.Log("Moo");
+		SoundMessage soundMessage = new(){
+			SoundType = 5
+		};
+		Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
+	}
+
+	private void PlayCatSound(){
+		Debug.Log("Meow");
+		SoundMessage soundMessage = new(){
+			SoundType = 6
+		};
+		Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
 	}
 
 	private bool CheckIndividualSound(){
@@ -80,6 +117,7 @@ public class SoundGameController : MonoBehaviour{
 		soundAnswer = 0;
 		soundAnswers = new int[soundOptions];
 	}
+	
 
 	private void OnDestroy() {
 		Broker.Unsubscribe<EggMessage>(OnEggMessageReceived);
