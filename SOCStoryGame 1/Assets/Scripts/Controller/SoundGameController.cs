@@ -5,12 +5,14 @@ using Random = UnityEngine.Random;
 public class SoundGameController : MonoBehaviour{
 	[SerializeField] private Transform[] spawnPoints;
 	[SerializeField] private GameObject[] soundImagePrefabs;
+	[SerializeField] private GameObject[] UIs;
 	private GameObject[] soundImageInstances;
 	private int soundOptions = 1, soundAnswer, maxSounds = 5;
 	private int[] soundQuestions, soundAnswers;
 	private Executor executor;
 	
-	private void Start() {
+	private void Start(){
+		executor = FindObjectOfType<Executor>();
 		Broker.Subscribe<EggMessage>(OnEggMessageReceived);
 		StartCoroutine(GenerateNewSound());
 	}
@@ -25,13 +27,14 @@ public class SoundGameController : MonoBehaviour{
 		if (CheckIndividualSound()){
 			soundAnswer++;
 		} else {
+			executor.Enqueue(new FailureCommand());
 			ClearAnswers();
 			StartCoroutine(Retry());
 		}
 		
 		if (soundAnswer == soundOptions){
+			UIs[soundOptions - 1].SetActive(true);
 			soundOptions++;
-			Debug.Log("Win");
 			DestroyPreviousImages();
 			if (soundOptions > maxSounds){
 				Debug.Log("LevelEnd");
@@ -94,7 +97,6 @@ public class SoundGameController : MonoBehaviour{
 	}
 
 	private void PlayCowSound(){
-		Debug.Log("Moo");
 		SoundMessage soundMessage = new(){
 			SoundType = 5
 		};
@@ -102,7 +104,6 @@ public class SoundGameController : MonoBehaviour{
 	}
 
 	private void PlayCatSound(){
-		Debug.Log("Meow");
 		SoundMessage soundMessage = new(){
 			SoundType = 6
 		};

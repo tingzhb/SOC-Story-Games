@@ -4,8 +4,6 @@ using UnityEngine;
 public class SoundTextShower : MonoBehaviour{
 
 	[SerializeField] private GameObject animalSound;
-	private void Awake(){ 
-	}
 
 	public void ShowText(){
 		animalSound.SetActive(true);
