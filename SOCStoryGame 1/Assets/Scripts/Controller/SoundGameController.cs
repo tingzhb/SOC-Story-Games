@@ -2,7 +2,10 @@ using System.Linq;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class SoundGameController : MonoBehaviour {
+public class SoundGameController : MonoBehaviour{
+	[SerializeField] private Transform[] spawnPoints;
+	[SerializeField] private GameObject[] soundImagePrefabs;
+	private GameObject[] soundImageInstances;
 	private int soundOptions = 1, soundAnswer, maxSounds = 5;
 	private int[] soundQuestions, soundAnswers;
 	private Executor executor;
@@ -32,7 +35,9 @@ public class SoundGameController : MonoBehaviour {
 		if (soundAnswer == soundOptions){
 			soundOptions++;
 			Debug.Log("Win");
-			
+			foreach (var image in soundImageInstances){
+				Destroy(image);
+			}
 			if (soundOptions > maxSounds){
 				Debug.Log("LevelEnd");
 			} else {
@@ -45,16 +50,23 @@ public class SoundGameController : MonoBehaviour {
 	private void GenerateNewSound() {
 		ClearAnswers();
 		soundQuestions = new int[soundOptions];
+		soundImageInstances = new GameObject[soundOptions];
 		for (var i = 0; i < soundQuestions.Length; i++){
-			soundQuestions[i] = Random.Range(0, 2);
+			var randomNumber = Random.Range(0, 2);
+			soundQuestions[i] = randomNumber;
+			
+			var spawnTransform = spawnPoints[i].transform;
+			soundImageInstances[i] = Instantiate(soundImagePrefabs[randomNumber], spawnTransform.position, Quaternion.identity, spawnTransform);
 		}
 	}
 
 	private void PlaySound() {
 		foreach (var sound in soundQuestions){
 			if (sound == 0){
+				// Send Sound Message Cow
 				Debug.Log("moo");
 			} else {
+				// Send Sound Message Cat
 				Debug.Log("meow");
 			}
 		}

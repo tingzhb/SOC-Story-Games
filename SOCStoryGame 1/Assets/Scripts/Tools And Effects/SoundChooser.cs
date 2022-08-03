@@ -7,6 +7,7 @@ public class SoundChooser : MonoBehaviour {
 			Saved = false
 		};
 		Broker.InvokeSubscribers(typeof(EggMessage), eggMessage);
+		// Send sound message
 	}
 	
 	public void ChooseCat(){
@@ -14,5 +15,6 @@ public class SoundChooser : MonoBehaviour {
 			Saved = true
 		};
 		Broker.InvokeSubscribers(typeof(EggMessage), eggMessage);
+		// Send sound message
 	}
 }

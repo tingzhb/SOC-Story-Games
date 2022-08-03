@@ -1,0 +1,205 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2315229384111970038
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2315229384111970037}
+  - component: {fileID: 2315229384111970034}
+  - component: {fileID: 2315229384111970035}
+  - component: {fileID: 2315229384111970033}
+  - component: {fileID: 2315229384111970036}
+  - component: {fileID: 2315229384111970032}
+  m_Layer: 5
+  m_Name: Cow
+  m_TagString: Invalid
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2315229384111970037
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2315229384111970038}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -206.67038, y: -269}
+  m_SizeDelta: {x: 264.5382, y: 264.5382}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2315229384111970034
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2315229384111970038}
+  m_CullTransparentMesh: 1
+--- !u!114 &2315229384111970035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2315229384111970038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: bc18c9d549dac104f9eca4833b37305e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2315229384111970033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2315229384111970038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 2315229384111970035}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2315229384111970032}
+        m_TargetAssemblyTypeName: OnTap, Assembly-CSharp
+        m_MethodName: Tap
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2315229384111970036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2315229384111970038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37acb0583bdd53940b2dc557e8d6fd3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: bc18c9d549dac104f9eca4833b37305e, type: 3}
+  - {fileID: 21300000, guid: 1d21c4918fb30f648895438208953975, type: 3}
+  - {fileID: 21300000, guid: 4e171646ac3eead478f8bc62edd7da2b, type: 3}
+  - {fileID: 21300000, guid: 491f2953294698f44ba5adb9cf45d522, type: 3}
+  - {fileID: 21300000, guid: 9e1d89a7ae7e82847b76d5ac5b84de59, type: 3}
+  - {fileID: 21300000, guid: 2e88eb0c18a316a4e9f52782dd6edc61, type: 3}
+  - {fileID: 21300000, guid: 264ac0664499acb49969a122425e80aa, type: 3}
+  - {fileID: 21300000, guid: e2c7ebb1b3a4abe47ba1fc7c27b63e18, type: 3}
+  - {fileID: 21300000, guid: 8fc23f842a8843f4890b9814f10c4e4a, type: 3}
+  - {fileID: 21300000, guid: fe3b2e673e5184143ba69c04515aeede, type: 3}
+  - {fileID: 21300000, guid: 1043a4f3e562f7e42be7b528d990d9a0, type: 3}
+  - {fileID: 21300000, guid: ab119962207cda44e82875a97b8a4ccb, type: 3}
+  - {fileID: 21300000, guid: afa624aa96323b14c8327c782b6a265e, type: 3}
+  - {fileID: 21300000, guid: 99c9fd7a1acc9b843a1bef69ea7ec079, type: 3}
+  - {fileID: 21300000, guid: cc057b2bf24169a498c98a6b33f53930, type: 3}
+  - {fileID: 21300000, guid: 000566d662c6fde4982994d624b01d3e, type: 3}
+  - {fileID: 21300000, guid: 5194d14650f7b974e8d3b6a264ebdc73, type: 3}
+  - {fileID: 21300000, guid: 362f63054cbf3d34ca5705af124319f6, type: 3}
+  - {fileID: 21300000, guid: 7f9cb873f2474734b9930713dfe732fb, type: 3}
+  - {fileID: 21300000, guid: 337ab93874bf716469a37dda362f5ff5, type: 3}
+  - {fileID: 21300000, guid: 11291f7a419052c41be785ee7e5b0756, type: 3}
+  - {fileID: 21300000, guid: 3e5e0560c753f80448e6e147307c4b3b, type: 3}
+  - {fileID: 21300000, guid: a86cb8257cb8a9846a296c083bfb866f, type: 3}
+  - {fileID: 21300000, guid: 23a70371c29ae2042a19069b1331a78d, type: 3}
+  - {fileID: 21300000, guid: 14689f45978055c4380e9d81d42b9bdd, type: 3}
+  - {fileID: 21300000, guid: 2d0b580661470aa49ba396875bc4a910, type: 3}
+  - {fileID: 21300000, guid: 6f56613220239194a89b332d52edab5b, type: 3}
+  - {fileID: 21300000, guid: 1dbe7445a9097244090908fef92925ba, type: 3}
+  - {fileID: 21300000, guid: a88b9e7104a321c4da82b7f1072bc691, type: 3}
+  - {fileID: 21300000, guid: 9be5dd466aa959c42bab05c951990e18, type: 3}
+  - {fileID: 21300000, guid: 7909f3542d29d484a833429020fe8dca, type: 3}
+  - {fileID: 21300000, guid: d4d31b731ddad204bb493e8a198c82a4, type: 3}
+  - {fileID: 21300000, guid: bb7eb952e72965e4a8f158beb3a81468, type: 3}
+  - {fileID: 21300000, guid: 98422de00ddceb34181035f51084e476, type: 3}
+  - {fileID: 21300000, guid: 810d4b39672e08a40a18b9dce9f721c5, type: 3}
+  - {fileID: 21300000, guid: 820ce8b96745607479965fdf23800520, type: 3}
+  - {fileID: 21300000, guid: 639b61314120ec0468709691c792f119, type: 3}
+  - {fileID: 21300000, guid: 6facc631be3cd684da374132d393055d, type: 3}
+  - {fileID: 21300000, guid: a25671cb66054db4ca9741d23f57f515, type: 3}
+  - {fileID: 21300000, guid: a4701dabcc28cf44a8fd24f6914f477c, type: 3}
+  image: {fileID: 2315229384111970035}
+  animationDelay: 0.04166667
+--- !u!114 &2315229384111970032
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2315229384111970038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playClickSound: 1
