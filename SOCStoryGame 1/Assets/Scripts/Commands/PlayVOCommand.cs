@@ -12,7 +12,7 @@ public class PlayVOCommand : ICommand {
 	}
 	private void PlayVO(){
 		SoundMessage soundMessage = new(){
-			SoundType = 2
+			SoundType = 98
 		};
 		Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
 	}

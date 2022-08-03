@@ -45,6 +45,9 @@ public class SoundMessageListener : MonoBehaviour{
 			case 99:
 				soundManager.StopMusic();
 				break;
+			default:
+				Debug.Log("Ignored");
+				break;
 		}
 	}
 }

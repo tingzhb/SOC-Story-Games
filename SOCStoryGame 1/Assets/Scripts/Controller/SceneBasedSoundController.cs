@@ -1,14 +1,22 @@
+using FMOD.Studio;
 using UnityEngine;
 
 public class SceneBasedSoundController : MonoBehaviour{
-	[SerializeField] private bool playMusic;
+	[SerializeField] private bool playMusic, playVO;
 	[SerializeField] private int levelNumber;
+	[SerializeField] private FMODUnity.EventReference voiceOver;
+	private EventInstance voiceOverInstance;
+	private bool voiceOverPlaying;
 	private void Awake() {
-		Broker.Subscribe<SoundMessage>(OnSoundMessageReceived);
+		if (playVO){
+			Broker.Subscribe<SoundMessage>(OnSoundMessageReceived);
+			PlayVoiceOver();
+		}
 	}
 
 	private void Start(){
 		if (playMusic){
+			voiceOverPlaying = true;
 			SoundMessage soundMessage = new(){
 				SoundType = 0,
 				CurrentLevel = levelNumber
@@ -19,10 +27,26 @@ public class SceneBasedSoundController : MonoBehaviour{
 
 	private void OnSoundMessageReceived(SoundMessage obj){
 		if (obj.SoundType == 98){
-			Debug.Log("Replaying VO");
+			PlayVoiceOver();
 		}
 	}
+	private void PlayVoiceOver(){
+		if (!voiceOverPlaying){
+			voiceOverInstance = FMODUnity.RuntimeManager.CreateInstance(voiceOver);
+			voiceOverInstance.start();
+			voiceOverPlaying = true;
+		}
+		else {
+			StopVoiceOver();
+		}
+	}
+	private void StopVoiceOver(){
+		voiceOverInstance.stop(STOP_MODE.ALLOWFADEOUT);
+		voiceOverPlaying = false;
+	}
+	
 	private void OnDestroy(){
+		StopVoiceOver();
 		Broker.Unsubscribe<SoundMessage>(OnSoundMessageReceived);
 	}
 }
