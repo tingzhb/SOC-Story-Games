@@ -7004,6 +7004,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91eaf51422ec4f22934ca0f928898a9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playSound: 0
 --- !u!114 &1289164692
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8303,6 +8304,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2062490275}
     m_Modifications:
+    - target: {fileID: 881397772243015450, guid: 4262c5bad01d7cb4993024a59b3f7702, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 881397773662505174, guid: 4262c5bad01d7cb4993024a59b3f7702, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6373987933270470375, guid: 4262c5bad01d7cb4993024a59b3f7702, type: 3}
       propertyPath: m_Name
       value: UI
@@ -9415,6 +9424,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11698537eba328049a837757b0e321f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playClickSound: 1
 --- !u!224 &1730893992 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 6578530933953287942, guid: 24dafdcbd3b6d2749b05fef66ce6084a, type: 3}
@@ -10443,6 +10453,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2274891152081959538, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
+      propertyPath: playVO
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2274891152081959543, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}

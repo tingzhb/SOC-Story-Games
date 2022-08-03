@@ -743,23 +743,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
       propertyPath: voiceOver.Path
-      value: event:/FX/BirthdayCelebration
+      value: event:/A/A24
       objectReference: {fileID: 0}
     - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
       propertyPath: voiceOver.Guid.Data1
-      value: 291940733
+      value: 58984248
       objectReference: {fileID: 0}
     - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
       propertyPath: voiceOver.Guid.Data2
-      value: 1075433570
+      value: 1170846492
       objectReference: {fileID: 0}
     - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
       propertyPath: voiceOver.Guid.Data3
-      value: -2021684556
+      value: 1134321567
       objectReference: {fileID: 0}
     - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
       propertyPath: voiceOver.Guid.Data4
-      value: 606047361
+      value: -847962179
       objectReference: {fileID: 0}
     - target: {fileID: 2274891152081959543, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
       propertyPath: m_Name

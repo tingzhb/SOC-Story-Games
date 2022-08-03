@@ -5,12 +5,15 @@ using UnityEngine.UIElements;
 public class OnAwakeTransform : MonoBehaviour{
 	private float currentScale, scaleDuration;
 	[SerializeField] private float maxScaleDuration, scaleSpeed;
+	[SerializeField] private bool playSound = true;
 
 	private void Start(){
-		SoundMessage soundMessage = new(){
-			SoundType = 2
-		};
-		Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
+		if (playSound){
+			SoundMessage soundMessage = new(){
+				SoundType = 2
+			};
+			Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
+		}
 	}
 	
 	private void FixedUpdate() {

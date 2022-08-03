@@ -2,7 +2,7 @@ using FMOD.Studio;
 using UnityEngine;
 
 public class SceneBasedSoundController : MonoBehaviour{
-	[SerializeField] private bool playMusic, playVO;
+	[SerializeField] private bool playMusic, playVO = true;
 	[SerializeField] private int levelNumber;
 	[SerializeField] private FMODUnity.EventReference voiceOver;
 	private EventInstance voiceOverInstance;
