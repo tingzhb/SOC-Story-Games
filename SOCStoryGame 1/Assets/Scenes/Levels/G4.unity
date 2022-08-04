@@ -524,11 +524,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1737475333
-      Data2: 1121298866
-      Data3: -557706602
-      Data4: -2011191487
-    Path: event:/FX/Eating
+      Data1: -2095003489
+      Data2: 1093798000
+      Data3: -7444850
+      Data4: 1358911259
+    Path: event:/FX/Eating Delleyd 0.7
   Event: 
   PlayEvent: 1
   StopEvent: 0

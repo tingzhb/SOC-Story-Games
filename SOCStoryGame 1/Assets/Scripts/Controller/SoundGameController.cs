@@ -56,7 +56,7 @@ public class SoundGameController : MonoBehaviour{
 	
 	private IEnumerator GenerateNewSound(){
 		ClearAnswers();
-		yield return new WaitForSeconds(1f);
+		yield return new WaitForSeconds(2f);
 		soundQuestions = new int[soundOptions];
 		soundImageInstances = new GameObject[soundOptions];
 		for (int i = 0; i < soundQuestions.Length; i++){
@@ -74,14 +74,14 @@ public class SoundGameController : MonoBehaviour{
 			}
 			soundImageInstances[i].GetComponent<SoundTextShower>().ShowText();
 			
-			yield return new WaitForSeconds(0.75f);
+			yield return new WaitForSeconds(1f);
 		}
 	}
 
 	private IEnumerator ReplayText(){
 		foreach (var gameObject in soundImageInstances){
 			gameObject.GetComponent<SoundTextShower>().ShowText();
-			yield return new WaitForSeconds(0.75f);
+			yield return new WaitForSeconds(1f);
 		}
 	}
 
@@ -92,20 +92,20 @@ public class SoundGameController : MonoBehaviour{
 			} else {
 				PlayCatSound();
 			}
-			yield return new WaitForSeconds(0.75f);
+			yield return new WaitForSeconds(1f);
 		}
 	}
 
 	private void PlayCowSound(){
 		SoundMessage soundMessage = new(){
-			SoundType = 5
+			SoundType = 10
 		};
 		Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
 	}
 
 	private void PlayCatSound(){
 		SoundMessage soundMessage = new(){
-			SoundType = 6
+			SoundType = 9
 		};
 		Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
 	}

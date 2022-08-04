@@ -26,7 +26,7 @@ public class SoundChooser : MonoBehaviour{
 			Broker.InvokeSubscribers(typeof(EggMessage), eggMessage);
 		
 			SoundMessage soundMessage = new(){
-				SoundType = 5
+				SoundType = 10
 			};
 			Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
 		}
@@ -40,7 +40,7 @@ public class SoundChooser : MonoBehaviour{
 			Broker.InvokeSubscribers(typeof(EggMessage), eggMessage);
 		
 			SoundMessage soundMessage = new(){
-				SoundType = 6
+				SoundType = 9
 			};
 			Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);	
 		}

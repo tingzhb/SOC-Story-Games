@@ -42,6 +42,12 @@ public class SoundMessageListener : MonoBehaviour{
 			case 8:
 				soundManager.PlayEatingSound();
 				break;
+			case 9:
+				soundManager.PlayCatSound();
+				break;
+			case 10:
+				soundManager.PlayCowSound();
+				break;
 			case 99:
 				soundManager.StopMusic();
 				break;

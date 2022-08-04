@@ -150,10 +150,10 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Mobile/Master.strings.bank
   Name: Mobile/Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637951605604219407
+  lastModified: 637952189928860253
   FileSizes:
   - Name: 
-    Value: 5106
+    Value: 5154
   Exists: 1
 --- !u!114 &-8383346640320510803
 MonoBehaviour:
@@ -1046,6 +1046,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4181
+--- !u!114 &-3009394360334006075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/FX/CatMeow
+  m_EditorClassIdentifier: 
+  Path: event:/FX/CatMeow
+  Guid:
+    Data1: -738019449
+    Data2: 1246569009
+    Data3: 1143988156
+    Data4: 1337552
+  Banks:
+  - {fileID: 1744451996052802837}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &-2936455841159047608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1686,12 +1713,13 @@ MonoBehaviour:
   - {fileID: -6579946288763047799}
   - {fileID: -5242019413868558150}
   - {fileID: 6656423590734011706}
+  - {fileID: -3009394360334006075}
   EditorParameters: []
   MasterBanks:
   - {fileID: 1744451996052802837}
   StringsBanks:
   - {fileID: -8420594377324183803}
-  cacheTime: 637951605604219407
+  cacheTime: 637952189928860253
   cacheVersion: 131591
 --- !u!114 &57359044360371719
 MonoBehaviour:
@@ -2032,7 +2060,7 @@ MonoBehaviour:
   Path: Assets/StreamingAssets/Mobile/Master.bank
   Name: Mobile/Master
   StudioPath: bank:/Master
-  lastModified: 637951605604169397
+  lastModified: 637952189928820248
   FileSizes: []
   Exists: 1
 --- !u!114 &1829000923798338099

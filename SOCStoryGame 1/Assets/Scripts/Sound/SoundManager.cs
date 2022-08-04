@@ -46,4 +46,10 @@ public class SoundManager : MonoBehaviour {
     public void PlayEatingSound(){
         FMODUnity.RuntimeManager.PlayOneShot("event:/FX/Eating");
     }
+    public void PlayCatSound(){
+        FMODUnity.RuntimeManager.PlayOneShot("event:/FX/CatMeow");
+    }
+    public void PlayCowSound(){
+        FMODUnity.RuntimeManager.PlayOneShot("event:/FX/CowMoo");
+    }
 }
