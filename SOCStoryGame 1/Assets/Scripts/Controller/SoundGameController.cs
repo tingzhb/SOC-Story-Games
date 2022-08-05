@@ -1,6 +1,5 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Apple.ReplayKit;
 using Random = UnityEngine.Random;
 
 public class SoundGameController : MonoBehaviour{
