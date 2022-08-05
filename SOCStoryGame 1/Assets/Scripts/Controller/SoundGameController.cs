@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Apple.ReplayKit;
 using Random = UnityEngine.Random;
 
 public class SoundGameController : MonoBehaviour{
@@ -10,6 +11,7 @@ public class SoundGameController : MonoBehaviour{
 	private int soundOptions = 1, soundAnswer, maxSounds = 5;
 	private int[] soundQuestions, soundAnswers;
 	private Executor executor;
+	private bool started;
 	
 	private void Start(){
 		executor = FindObjectOfType<Executor>();
@@ -17,7 +19,9 @@ public class SoundGameController : MonoBehaviour{
 		StartCoroutine(GenerateNewSound());
 	}
 	
-	private void OnEggMessageReceived(EggMessage obj) {
+	private void OnEggMessageReceived(EggMessage obj){
+		if (!started)
+			return;
 		if (!obj.Saved){
 			soundAnswers[soundAnswer] = 0;
 		} else {
@@ -42,6 +46,10 @@ public class SoundGameController : MonoBehaviour{
 				StartCoroutine(GenerateNewSound());
 			}
 		}
+
+	}
+	public void Replay(){
+		StartCoroutine(Retry());
 	}
 	private IEnumerator Retry(){
 		yield return new WaitForSeconds(1f);
@@ -49,6 +57,10 @@ public class SoundGameController : MonoBehaviour{
 		StartCoroutine(ReplayText());
 	}
 	private void DestroyPreviousImages(){
+		StartCoroutine(DelayDestroy());
+	}
+	private IEnumerator DelayDestroy(){
+		yield return new WaitForSeconds(1);
 		foreach (var image in soundImageInstances){
 			Destroy(image);
 		}
@@ -57,6 +69,7 @@ public class SoundGameController : MonoBehaviour{
 	private IEnumerator GenerateNewSound(){
 		ClearAnswers();
 		yield return new WaitForSeconds(2f);
+		started = true;
 		soundQuestions = new int[soundOptions];
 		soundImageInstances = new GameObject[soundOptions];
 		for (int i = 0; i < soundQuestions.Length; i++){
