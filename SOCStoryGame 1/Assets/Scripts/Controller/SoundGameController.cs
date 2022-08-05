@@ -81,6 +81,7 @@ public class SoundGameController : MonoBehaviour{
 	private IEnumerator ReplayText(){
 		foreach (var gameObject in soundImageInstances){
 			gameObject.GetComponent<SoundTextShower>().ShowText();
+			gameObject.GetComponent<AnimateOnce>().StartAnimation();
 			yield return new WaitForSeconds(1f);
 		}
 	}
