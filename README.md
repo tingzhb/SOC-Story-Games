@@ -1,25 +1,25 @@
 # Alphabet Explorer
-In partnership with School Of Concepts.
-
 ![1](/Images/01.png)
 
-
-A mobile game for young children which teaches them basic English skills in a fun and interactive way.
-
-![3](/Images/03.png)
+In partnership with School Of Concepts. A mobile game for young children which teaches them basic English skills in a fun and interactive way.
 
 Follow the adventures of Olle, Chloe and Drew and help them along with their journey. The game features the letters A to G in a series of interactive stories and numerous minigames.
+
+Android Build: [AlphabetExplorer.apk](https://www.dropbox.com/s/v1b9krmciwv34zt/Alphabet%20Explorer.apk?dl=0) (300MB)
+
 
 ## Team
 Project Manager & Game Engineer: Benjamin Ting (Forsbergs Skola)
 
-Art & Game Design: Jason Ng (School of Concepts)
+Art & Game Design: School of Concepts
 
 Sound & Music: Troy Davis & Robert Larsson (Forsbergs Skola)
 
 Voice Acting: Jenny Berglund
 
+
 ## Screenshots
+![3](/Images/03.png)
 ![4](/Images/04.png)
 ![10](/Images/10.png)
 ![5](/Images/05.png)
