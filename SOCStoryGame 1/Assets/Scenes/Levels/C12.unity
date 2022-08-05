@@ -228,7 +228,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -570, y: -115.92528}
+  m_AnchoredPosition: {x: -570, y: -166.92526}
   m_SizeDelta: {x: 1200, y: 560}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1289164683
@@ -965,23 +965,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
       propertyPath: voiceOver.Path
-      value: event:/C/C7
+      value: event:/C/C12
       objectReference: {fileID: 0}
     - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
       propertyPath: voiceOver.Guid.Data1
-      value: 1383258237
+      value: -462738564
       objectReference: {fileID: 0}
     - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
       propertyPath: voiceOver.Guid.Data2
-      value: 1130480822
+      value: 1331968510
       objectReference: {fileID: 0}
     - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
       propertyPath: voiceOver.Guid.Data3
-      value: 747428250
+      value: -2026095688
       objectReference: {fileID: 0}
     - target: {fileID: 2274891152081959539, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
       propertyPath: voiceOver.Guid.Data4
-      value: 945809085
+      value: -330525301
       objectReference: {fileID: 0}
     - target: {fileID: 2274891152081959543, guid: 1507a019ef31fba4098436b4cadc015d, type: 3}
       propertyPath: m_Name
