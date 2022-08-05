@@ -4,7 +4,7 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour {
     [SerializeField] private FMODUnity.EventReference[] levelMusic;
     [SerializeField] private FMODUnity.EventReference ambientMusic;
-    private EventInstance levelMuiscInstance, ambientMusicInstance;
+    private EventInstance levelMuiscInstance, ambientMusicInstance, cowInstance, catInstance;
     
     public void PlayAmbientMusic(){
         ambientMusicInstance = FMODUnity.RuntimeManager.CreateInstance(ambientMusic);
@@ -46,9 +46,15 @@ public class SoundManager : MonoBehaviour {
         FMODUnity.RuntimeManager.PlayOneShot("event:/FX/Eating");
     }
     public void PlayCatSound(){
-        FMODUnity.RuntimeManager.PlayOneShot("event:/FX/CatMeow");
+        catInstance.stop(STOP_MODE.ALLOWFADEOUT);
+        cowInstance.stop(STOP_MODE.ALLOWFADEOUT);
+        catInstance = FMODUnity.RuntimeManager.CreateInstance("event:/FX/CatMeow");
+        catInstance.start();
     }
     public void PlayCowSound(){
-        FMODUnity.RuntimeManager.PlayOneShot("event:/FX/CowMoo");
+        catInstance.stop(STOP_MODE.ALLOWFADEOUT);
+        cowInstance.stop(STOP_MODE.ALLOWFADEOUT);
+        cowInstance = FMODUnity.RuntimeManager.CreateInstance("event:/FX/CowMoo");
+        cowInstance.start();
     }
 }

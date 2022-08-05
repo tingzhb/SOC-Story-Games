@@ -7,6 +7,7 @@ public class SoundGameController : MonoBehaviour{
 	[SerializeField] private Transform[] spawnPoints;
 	[SerializeField] private GameObject[] soundImagePrefabs;
 	[SerializeField] private GameObject[] UIs;
+	[SerializeField] private GameObject wellDone;
 	private GameObject[] soundImageInstances;
 	private int soundOptions = 1, soundAnswer, maxSounds = 5;
 	private int[] soundQuestions, soundAnswers;
@@ -41,15 +42,23 @@ public class SoundGameController : MonoBehaviour{
 			soundOptions++;
 			DestroyPreviousImages();
 			if (soundOptions > maxSounds){
-				Debug.Log("LevelEnd");
+				wellDone.SetActive(true);
+				StartCoroutine(DelayEnd());
 			} else {
 				StartCoroutine(GenerateNewSound());
 			}
 		}
+	}
+
+	private IEnumerator DelayEnd(){
+		yield return new WaitForSeconds(2);
+		executor.Enqueue(new ValidAnswerCommand());
 
 	}
 	public void Replay(){
-		StartCoroutine(Retry());
+		if (started){
+			StartCoroutine(Retry());
+		}
 	}
 	private IEnumerator Retry(){
 		yield return new WaitForSeconds(1f);
