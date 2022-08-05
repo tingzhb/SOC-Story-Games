@@ -7,6 +7,8 @@ Follow the adventures of Olle, Chloe and Drew and help them along with their jou
 
 Android Build: [AlphabetExplorer.apk](https://www.dropbox.com/s/v1b9krmciwv34zt/Alphabet%20Explorer.apk?dl=0) (300MB)
 
+WebGL: [itch.io](https://tingzhb.itch.io/exploration-play-alphabet-explorer)
+
 
 ## Team
 Project Manager & Game Engineer: Benjamin Ting (Forsbergs Skola)
