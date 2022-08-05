@@ -1,6 +1,9 @@
 # Alphabet Explorer
 In partnership with School Of Concepts.
 
+![1](/Images/01.png)
+
+
 A mobile game for young children which teaches them basic English skills in a fun and interactive way.
 
 Follow the adventures of Olle, Chloe and Drew and help them along with their journey. The game features the letters A to G in a series of interactive stories and numerous minigames.
