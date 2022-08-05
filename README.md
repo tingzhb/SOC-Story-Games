@@ -6,7 +6,7 @@ In partnership with School Of Concepts.
 
 A mobile game for young children which teaches them basic English skills in a fun and interactive way.
 
-![2](/Images/02.png)
+![3](/Images/03.png)
 
 Follow the adventures of Olle, Chloe and Drew and help them along with their journey. The game features the letters A to G in a series of interactive stories and numerous minigames.
 
