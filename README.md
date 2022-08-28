@@ -7,7 +7,7 @@ Follow the adventures of Olle, Chloe and Drew and help them along with their jou
 
 Android Build: [AlphabetExplorer.apk](https://www.dropbox.com/s/v1b9krmciwv34zt/Alphabet%20Explorer.apk?dl=0) (300MB)
 
-WebGL: [itch.io](https://tingzhb.itch.io/exploration-play-alphabet-explorer)
+Desktop Web Browser Build: [itch.io](https://tingzhb.itch.io/exploration-play-alphabet-explorer)
 
 
 ## Team
@@ -19,6 +19,8 @@ Sound & Music: Troy Davis & Robert Larsson (Forsbergs Skola)
 
 Voice Acting: Jenny Berglund
 
+## Gameplay Video 
+[YouTube](https://youtu.be/cV9mxqOuaEg)
 
 ## Screenshots
 ![3](/Images/03.png)
