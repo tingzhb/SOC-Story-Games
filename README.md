@@ -19,8 +19,11 @@ Sound & Music: Troy Davis & Robert Larsson (Forsbergs Skola)
 
 Voice Acting: Jenny Berglund
 
-## Gameplay Video 
-[YouTube](https://youtu.be/cV9mxqOuaEg)
+## Videos 
+[Gameplay Video on YouTube](https://youtu.be/cV9mxqOuaEg)
+
+![1](https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1920,f_auto,q_60/433019/375073_39609.gif)
+![2](https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1920,f_auto,q_60/433019/548679_196721.gif)
 
 ## Screenshots
 ![3](/Images/03.png)
