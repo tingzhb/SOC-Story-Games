@@ -6,6 +6,7 @@ public class PairChecker : MonoBehaviour{
 	private string previousCardName, newCardName;
 	private int progress, turn;
 	private Executor executor;
+	[SerializeField] private float delay;
 	private void Start(){
 		executor = FindObjectOfType<Executor>();
 		Broker.Subscribe<CardMessage>(OnCardMessageReceived);
@@ -42,9 +43,15 @@ public class PairChecker : MonoBehaviour{
 	
 	private void CheckForCompletion(){
 		if (progress == 6){
-			wellDone.SetActive(true);
-			StartCoroutine(DelayEnd());
+			StartCoroutine(DelayWellDone());
 		}
+	}
+
+	private IEnumerator DelayWellDone(){
+		yield return new WaitForSeconds(delay);
+		wellDone.SetActive(true);
+		StartCoroutine(DelayEnd());
+
 	}
 
 	private void SendCorrectMessage(){

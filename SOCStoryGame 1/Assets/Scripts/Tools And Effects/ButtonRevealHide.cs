@@ -7,6 +7,7 @@ public class ButtonRevealHide : MonoBehaviour{
 	[SerializeField] private GameObject close, open;
 	[SerializeField] private string objectName;
 	[SerializeField] private Sprite cardSprite, buttonSprite;
+	[SerializeField] private float revealDelay = 0.15f, hideDelay = 0.125f;
 	private GameObject closeInstance, openInstance;
 	private bool hidden = true;
 	private Image cardImage;
@@ -53,15 +54,15 @@ public class ButtonRevealHide : MonoBehaviour{
 	}
 	
 	private IEnumerator DelayReveal(){
-		yield return new WaitForSeconds(0.15f);
+		yield return new WaitForSeconds(revealDelay);
 		Destroy(openInstance);
 	}
 
 	private IEnumerator DelayHide(){
-		yield return new WaitForSeconds(0.5f);
+		yield return new WaitForSeconds(1f);
 		var parent = transform;
 		closeInstance = Instantiate(close, parent.position, Quaternion.identity, parent);
-		yield return new WaitForSeconds(0.125f);
+		yield return new WaitForSeconds(hideDelay);
 		cardImage.sprite = buttonSprite;
 		Destroy(closeInstance);
 		GetComponent<Button>().interactable = true;
