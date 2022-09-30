@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class DolphinKiller : MonoBehaviour {
@@ -10,9 +11,14 @@ public class DolphinKiller : MonoBehaviour {
 		Broker.Unsubscribe<FailureMessage>(OnFailureMessageReceived);
 	}
 	private void OnFailureMessageReceived(FailureMessage obj){
-		Destroy(gameObject);
+		StartCoroutine(DelayKill());
 	}
 	private void OnCorrectMessageReceived(CorrectMessage obj){
+		StartCoroutine(DelayKill());
+	}
+
+	private IEnumerator DelayKill(){
+		yield return new WaitForSeconds(0.5f);
 		Destroy(gameObject);
 	}
 }

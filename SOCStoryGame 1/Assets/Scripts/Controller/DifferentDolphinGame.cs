@@ -1,6 +1,6 @@
-using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Random = System.Random;
 
@@ -9,7 +9,10 @@ public class DifferentDolphinGame : MonoBehaviour{
 	[SerializeField] private GameObject[] dolphinSlots;
 	[SerializeField] private Sprite[] dolphinOptions;
 	[SerializeField] private GameObject correctDolphin;
-	private int randomCorrectImage;
+	[SerializeField] private GameObject[] progressSlots;
+	[SerializeField] private Sprite[] progressStatus;
+	
+	private int randomCorrectImage, progression, corrects, wrongs;
 	
 	
 	private void Awake(){ 
@@ -24,10 +27,42 @@ public class DifferentDolphinGame : MonoBehaviour{
 
 	}
 	private void OnFailureMessageReceived(FailureMessage obj){
-		SpawnDolphins();
+		wrongs++;
+		progressSlots[progression].GetComponent<Image>().sprite = progressStatus[1];
+		progression++;
+		CheckProgression();
+		StartCoroutine(DelaySpawn());
 	}
 	private void OnCorrectMessageReceived(CorrectMessage obj){
+		corrects++;
+		progressSlots[progression].GetComponent<Image>().sprite = progressStatus[0];
+		progression++;
+		CheckProgression();
 		SpawnDolphins();
+	}
+
+	private IEnumerator DelaySpawn(){
+		yield return new WaitForSeconds(0.5f);
+		StartCoroutine(DelaySpawn());
+	}
+
+	private IEnumerator DelayRoundEnd(){
+		yield return new WaitForSeconds(0.5f);
+		
+		if (corrects >= wrongs){
+			SuccessMessage successMessage = new();
+			Broker.InvokeSubscribers(typeof(SuccessMessage), successMessage);
+		}
+		else{
+			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+		}
+	}
+
+	private void CheckProgression(){
+		if (progression != 5)
+			return;
+		
+		StartCoroutine(DelayRoundEnd());
 	}
 
 	private void SpawnDolphins(){
