@@ -16,13 +16,13 @@ public class DifferentDolphinGame : MonoBehaviour{
 	
 	
 	private void Awake(){ 
-		Broker.Subscribe<CorrectMessage>(OnCorrectMessageReceived);
+		Broker.Subscribe<ExecuteOnceMessage>(OnExecuteOnceMessageReceived);
 		Broker.Subscribe<FailureMessage>(OnFailureMessageReceived);
 		SpawnDolphins();
 	}
 
 	private void OnDisable(){
-		Broker.Unsubscribe<CorrectMessage>(OnCorrectMessageReceived);
+		Broker.Unsubscribe<ExecuteOnceMessage>(OnExecuteOnceMessageReceived);
 		Broker.Unsubscribe<FailureMessage>(OnFailureMessageReceived);
 
 	}
@@ -33,7 +33,7 @@ public class DifferentDolphinGame : MonoBehaviour{
 		CheckProgression();
 		StartCoroutine(DelaySpawn());
 	}
-	private void OnCorrectMessageReceived(CorrectMessage obj){
+	private void OnExecuteOnceMessageReceived(ExecuteOnceMessage obj){
 		corrects++;
 		progressSlots[progression].GetComponent<Image>().sprite = progressStatus[0];
 		progression++;

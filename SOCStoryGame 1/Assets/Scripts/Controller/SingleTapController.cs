@@ -3,43 +3,60 @@ using UnityEngine;
 
 public class SingleTapController : MonoBehaviour {
 
-	private Executor executor;
 	private void Awake() {
-		executor = FindObjectOfType<Executor>();
 		Broker.Subscribe<SingleTapMessage>(OnSingleTapMessageReceived);
+	}
+
+	void OnDisable(){
+		Broker.Unsubscribe<SingleTapMessage>(OnSingleTapMessageReceived);
 	}
 	private void OnSingleTapMessageReceived(SingleTapMessage obj) {
 		ValidateTap(obj.TappedObject);
 	}
 	private void ValidateTap(string tappedObject){
+		Debug.Log(tappedObject);
 		switch (tappedObject){
 			case "Valid":
-				executor.Enqueue(new ValidAnswerCommand());
+				SuccessMessage successMessage = new() {};
+				Broker.InvokeSubscribers(typeof(SuccessMessage), successMessage);				
 				break;
 			case "Invalid":
-				executor.Enqueue(new InvalidAnswerCommand());
+				InvalidMessage invalidMessage = new(){ };
+				Broker.InvokeSubscribers(typeof(InvalidMessage), invalidMessage);
 				break;
 			case "Failure":
-				executor.Enqueue(new FailureCommand());
+				FailureMessage failureMessage = new(){ };
+				Broker.InvokeSubscribers(typeof(FailureMessage), failureMessage);				
 				break;
 			case "Exit":
-				executor.Enqueue(new ExitCommand());
+				ExitMessage exitMessage = new(){ };
+				Broker.InvokeSubscribers(typeof(ExitMessage), exitMessage);
 				break;
 			case "Back":
-				executor.Enqueue(new BackCommand());
+				BackMessage backMessage = new();
+				Broker.InvokeSubscribers(typeof(BackMessage), backMessage);				
 				break;
 			case "Sound":
-				executor.Enqueue(new PlayVOCommand());
+				SoundMessage soundMessage = new(){
+					SoundType = 98
+				};
+				Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);				
 				break;
 			case "Bubble":
-				executor.Enqueue(new CorrectCommand());
+				ExecuteOnceMessage executeOnceMessage = new();
+				Broker.InvokeSubscribers(typeof(ExecuteOnceMessage), executeOnceMessage);				
 				break;
 			case "StickL":
-				executor.Enqueue(new StickLCommand());
+				StickMessage stickLMessage = new(){
+					IsLeft = true
+				};
+				Broker.InvokeSubscribers(typeof(StickMessage), stickLMessage);				
 				break;
 			case "StickR":
-				executor.Enqueue(new StickRCommand());
-				break;
+				StickMessage stickRMessage = new(){
+					IsLeft = false
+				};
+				Broker.InvokeSubscribers(typeof(StickMessage), stickRMessage);							break;
 		}
 	}
 }

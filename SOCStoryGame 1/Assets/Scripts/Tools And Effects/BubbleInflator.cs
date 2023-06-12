@@ -8,11 +8,7 @@ public class BubbleInflator : MonoBehaviour{
 	[SerializeField] private Sprite[] sprites;
 	[SerializeField] private Image image;
 	private int progress;
-	private Executor executor;
-
-	private void Awake(){
-		executor = FindObjectOfType<Executor>();
-	}
+	
 	private void Update(){
 		if (progress >= sprites.Length){
 			var transformation = 500 * Time.deltaTime;
@@ -34,6 +30,6 @@ public class BubbleInflator : MonoBehaviour{
 	}
 	private IEnumerator WaitForFloat(){
 		yield return new WaitForSeconds(2);
-		executor.Enqueue(new CorrectCommand());
-	}
+		ExecuteOnceMessage executeOnceMessage = new();
+		Broker.InvokeSubscribers(typeof(ExecuteOnceMessage), executeOnceMessage);	}
 }

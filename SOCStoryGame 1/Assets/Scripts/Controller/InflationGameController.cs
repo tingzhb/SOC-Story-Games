@@ -11,20 +11,22 @@ public class InflationGameController : MonoBehaviour {
 	[SerializeField] private GameObject chloe, wellDone;
 	private GameObject chloeInstance;
 	private int bubbleScore;
-	private Executor executor;
 
 	private void Awake(){
-		executor = FindObjectOfType<Executor>();
 		bubbleScore = 0;
-		Broker.Subscribe<CorrectMessage>(OnCorrectMessageReceived);
+		Broker.Subscribe<ExecuteOnceMessage>(OnExecuteOnceMessageReceived);
 		CreateChloe();
+	}
+	
+	private void OnDisable(){
+		Broker.Unsubscribe<ExecuteOnceMessage>(OnExecuteOnceMessageReceived);
 	}
 	
 	private void CreateChloe(){
 		var spawnPoint = transform;
 		chloeInstance = Instantiate(chloe, spawnPoint.position, Quaternion.identity, spawnPoint);
 	}
-	private void OnCorrectMessageReceived(CorrectMessage obj){
+	private void OnExecuteOnceMessageReceived(ExecuteOnceMessage obj){
 		Destroy(chloeInstance);
 		CreateChloe();
 		bubbleUI[bubbleScore].sprite = bubbleDone;
@@ -37,10 +39,8 @@ public class InflationGameController : MonoBehaviour {
 	}
 	private IEnumerator DelayEnd(){
 		yield return new WaitForSeconds(2.5f);
-		executor.Enqueue(new ValidAnswerCommand());
-	}
-
-	private void OnDestroy(){
-		Broker.Unsubscribe<CorrectMessage>(OnCorrectMessageReceived);
+		SuccessMessage successMessage = new() {};
+		Broker.InvokeSubscribers(typeof(SuccessMessage), successMessage);
+		
 	}
 }

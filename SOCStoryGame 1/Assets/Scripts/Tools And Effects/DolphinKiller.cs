@@ -3,17 +3,17 @@ using UnityEngine;
 
 public class DolphinKiller : MonoBehaviour {
 	private void Awake(){
-		Broker.Subscribe<CorrectMessage>(OnCorrectMessageReceived);
+		Broker.Subscribe<ExecuteOnceMessage>(OnExecuteOnceMessageReceived);
 		Broker.Subscribe<FailureMessage>(OnFailureMessageReceived);
 	}
 	private void OnDisable(){
-		Broker.Unsubscribe<CorrectMessage>(OnCorrectMessageReceived);
+		Broker.Unsubscribe<ExecuteOnceMessage>(OnExecuteOnceMessageReceived);
 		Broker.Unsubscribe<FailureMessage>(OnFailureMessageReceived);
 	}
 	private void OnFailureMessageReceived(FailureMessage obj){
 		StartCoroutine(DelayKill());
 	}
-	private void OnCorrectMessageReceived(CorrectMessage obj){
+	private void OnExecuteOnceMessageReceived(ExecuteOnceMessage obj){
 		StartCoroutine(DelayKill());
 	}
 

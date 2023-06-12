@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -5,11 +6,12 @@ public class PairChecker : MonoBehaviour{
 	[SerializeField] private GameObject wellDone;
 	private string previousCardName, newCardName;
 	private int progress, turn;
-	private Executor executor;
 	[SerializeField] private float delay;
-	private void Start(){
-		executor = FindObjectOfType<Executor>();
+	private void Awake(){
 		Broker.Subscribe<CardMessage>(OnCardMessageReceived);
+	}
+	void OnDisable(){
+		Broker.Unsubscribe<CardMessage>(OnCardMessageReceived);
 	}
 	private void OnCardMessageReceived(CardMessage obj){
 		switch (turn){
@@ -22,7 +24,7 @@ public class PairChecker : MonoBehaviour{
 				turn--;
 				newCardName = obj.CardName;
 				if (previousCardName == newCardName){
-					SendCorrectMessage();
+					SendExecuteOnceMessage();
 					CheckForCompletion();
 				} else{
 					HideCards();
@@ -54,22 +56,18 @@ public class PairChecker : MonoBehaviour{
 
 	}
 
-	private void SendCorrectMessage(){
+	private void SendExecuteOnceMessage(){
 		progress++;
-		CorrectMessage correctMessage = new(){
+		ExecuteOnceMessage executeOnceMessage = new(){
 			Name = previousCardName
 		};
-		Broker.InvokeSubscribers(typeof(CorrectMessage), correctMessage);
+		Broker.InvokeSubscribers(typeof(ExecuteOnceMessage), executeOnceMessage);
 	}
 
 	private IEnumerator DelayEnd(){
 		wellDone.SetActive(true);
 		yield return new WaitForSeconds(3f);
-		executor.Enqueue(new ValidAnswerCommand());
-
-	}
-
-	private void OnDestroy(){
-		Broker.Unsubscribe<CardMessage>(OnCardMessageReceived);
+		SuccessMessage successMessage = new() {};
+		Broker.InvokeSubscribers(typeof(SuccessMessage), successMessage);
 	}
 }

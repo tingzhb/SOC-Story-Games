@@ -13,6 +13,11 @@ public class SceneBasedSoundController : MonoBehaviour{
 			PlayVoiceOver();
 		}
 	}
+	
+	private void OnDisable(){
+		StopVoiceOver();
+		Broker.Unsubscribe<SoundMessage>(OnSoundMessageReceived);
+	}
 
 	private void Start(){
 		if (playMusic){
@@ -43,10 +48,5 @@ public class SceneBasedSoundController : MonoBehaviour{
 	private void StopVoiceOver(){
 		voiceOverInstance.stop(STOP_MODE.ALLOWFADEOUT);
 		voiceOverPlaying = false;
-	}
-	
-	private void OnDestroy(){
-		StopVoiceOver();
-		Broker.Unsubscribe<SoundMessage>(OnSoundMessageReceived);
 	}
 }

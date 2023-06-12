@@ -6,11 +6,13 @@ using UnityEngine.SceneManagement;
 public class FryGameController : MonoBehaviour{
 	private int friesEaten;
 	private float timer;
-	private Executor executor;
 	[SerializeField] private GameObject fish;
 	private void Awake(){
-		executor = FindObjectOfType<Executor>();
-		Broker.Subscribe<CorrectMessage>(OnCorrectMessageReceived);
+		Broker.Subscribe<ExecuteOnceMessage>(OnExecuteOnceMessageReceived);
+	}
+	
+	private void OnDisable(){
+		Broker.Unsubscribe<ExecuteOnceMessage>(OnExecuteOnceMessageReceived);
 	}
 
 	private void Update(){
@@ -20,7 +22,7 @@ public class FryGameController : MonoBehaviour{
 		}
 	}
 	
-	private void OnCorrectMessageReceived(CorrectMessage obj){
+	private void OnExecuteOnceMessageReceived(ExecuteOnceMessage obj){
 		EatFry();
 	}
 	private void EatFry(){
@@ -40,7 +42,9 @@ public class FryGameController : MonoBehaviour{
 	
 	private IEnumerator DelayEnd(){
 		yield return new WaitForSeconds(0.5f);
-		executor.Enqueue(new ValidAnswerCommand());
+		SuccessMessage successMessage = new() {};
+		Broker.InvokeSubscribers(typeof(SuccessMessage), successMessage);
+		
 	}
 
 	private IEnumerator DelayEating(){
@@ -50,9 +54,5 @@ public class FryGameController : MonoBehaviour{
 	
 	public void RestartGame(){
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-	}
-
-	private void OnDestroy(){
-		Broker.Unsubscribe<CorrectMessage>(OnCorrectMessageReceived);
 	}
 }

@@ -10,11 +10,14 @@ public class DrumGameController : MonoBehaviour{
 	private int progression;
 	private bool leftTurn = true;
 	
-	private void Start(){
+	private void Awake(){
 		Broker.Subscribe<StickMessage>(OnStickMessageReceived);
 		animateL = stickL.GetComponent<AnimateOnce>();
 		animateR = stickR.GetComponent<AnimateOnce>();
 		animateDog = dog.GetComponent<AnimateOnce>();
+	}
+	private void OnDisable(){ 
+		Broker.Unsubscribe<StickMessage>(OnStickMessageReceived);
 	}
 	private void OnStickMessageReceived(StickMessage obj){
 		if (leftTurn && obj.IsLeft){
@@ -53,7 +56,5 @@ public class DrumGameController : MonoBehaviour{
 		wellDone.SetActive(true);
 	}
 
-	private void OnDestroy(){
-		Broker.Unsubscribe<StickMessage>(OnStickMessageReceived);
-	}
+
 }

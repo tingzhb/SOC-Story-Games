@@ -7,11 +7,14 @@ public class EggGameController : MonoBehaviour{
 	[SerializeField] private GameObject[] eggUI;
 	[SerializeField] private GameObject failureUI;
 	private int savedEggs, brokenEggs;
-	private Executor executor;
-	private void Start(){
-		executor = FindObjectOfType<Executor>();
+	private void Awake(){
 		Broker.Subscribe<EggMessage>(OnEggMessageReceived);
 	}
+
+	void OnDisable(){
+		Broker.Unsubscribe<EggMessage>(OnEggMessageReceived);
+	}
+
 	private void OnEggMessageReceived(EggMessage obj){
 		if (obj.Saved){
 			SaveEgg();
@@ -32,19 +35,18 @@ public class EggGameController : MonoBehaviour{
 	}
 	private void CheckGameStatus(){
 		if (savedEggs == 5){
-			executor.Enqueue(new ValidAnswerCommand());
+			SuccessMessage successMessage = new() {};
+			Broker.InvokeSubscribers(typeof(SuccessMessage), successMessage);
+			
 		}
 		if (brokenEggs >= 4){
 			failureUI.SetActive(true);
-			executor.Enqueue(new FailureCommand());
+			FailureMessage failureMessage = new(){ };
+			Broker.InvokeSubscribers(typeof(FailureMessage), failureMessage);				
 			brokenEggs = -2;
 		}
 	}
 	public void RestartGame(){
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-	}
-
-	private void OnDestroy(){
-		Broker.Unsubscribe<EggMessage>(OnEggMessageReceived);
 	}
 }

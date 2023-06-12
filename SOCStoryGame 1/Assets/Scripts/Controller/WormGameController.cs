@@ -11,15 +11,17 @@ public class WormGameController : MonoBehaviour {
 	[SerializeField] private int steps;
 	private bool[] occupied;
 	private int currentWorms, spawnableWorms;
-	private Executor executor;
 	public WormGameController(){
 		occupied = new[] {false, false, false, false, false, false, false, false, false};
 	}
 
-	private void Start(){
-		executor = FindObjectOfType<Executor>();
-		Broker.Subscribe<CorrectMessage>(OnCorrectMessageReceived);
+	private void Awake(){
+		Broker.Subscribe<ExecuteOnceMessage>(OnExecuteOnceMessageReceived);
 		ChangeSpawnableWorms();
+	}
+	
+	private void OnDisable(){
+		Broker.Unsubscribe<ExecuteOnceMessage>(OnExecuteOnceMessageReceived);
 	}
 
 	private void Update(){
@@ -43,7 +45,7 @@ public class WormGameController : MonoBehaviour {
 		}
 	}
 	
-	private void OnCorrectMessageReceived(CorrectMessage obj) {
+	private void OnExecuteOnceMessageReceived(ExecuteOnceMessage obj) {
 		SoundMessage soundMessage = new(){
 			SoundType = 6
 		};
@@ -65,9 +67,7 @@ public class WormGameController : MonoBehaviour {
 	}
 	private IEnumerator DelayEnd() {
 		yield return new WaitForSeconds(1.5f);
-		executor.Enqueue(new ValidAnswerCommand());
-	}
-	private void OnDestroy(){
-		Broker.Unsubscribe<CorrectMessage>(OnCorrectMessageReceived);
+		SuccessMessage successMessage = new() {};
+		Broker.InvokeSubscribers(typeof(SuccessMessage), successMessage);
 	}
 }

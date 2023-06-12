@@ -6,8 +6,11 @@ using UnityEngine.UI;
 public class PlaneDamage : MonoBehaviour{
 	[SerializeField] private Image image;
 
-	private void Start(){
+	private void Awake(){
 		Broker.Subscribe<FailureMessage>(OnFailureMessageReceived);
+	}	
+	private void OnDisable(){ 
+		Broker.Unsubscribe<FailureMessage>(OnFailureMessageReceived);
 	}
 	private void OnFailureMessageReceived(FailureMessage obj){
 		image.color = Color.red;
@@ -19,7 +22,5 @@ public class PlaneDamage : MonoBehaviour{
 		image.color = Color.white;
 	}
 
-	private void OnDestroy(){
-		Broker.Unsubscribe<FailureMessage>(OnFailureMessageReceived);
-	}
+
 }

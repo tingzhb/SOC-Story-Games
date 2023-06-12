@@ -13,9 +13,18 @@ public class ProgressController : MonoBehaviour{
 		Broker.Subscribe<ExitMessage>(OnExitMessageReceived);
 		Broker.Subscribe<BackMessage>(OnBackMessageReceived);
 		Broker.Subscribe<InvalidMessage>(OnInvalidMessageReceived);
-		Broker.Subscribe<CorrectMessage>(OnCorrectMessageReceived);
+		Broker.Subscribe<ExecuteOnceMessage>(OnCorrectMessageReceived);
 	}
-	private void OnCorrectMessageReceived(CorrectMessage obj){
+	
+	private void Disable(){
+		Broker.Unsubscribe<SuccessMessage>(OnSuccessMessageReceived);
+		Broker.Unsubscribe<FailureMessage>(OnFailureMessageReceived);
+		Broker.Unsubscribe<ExitMessage>(OnExitMessageReceived);
+		Broker.Unsubscribe<BackMessage>(OnBackMessageReceived);
+		Broker.Unsubscribe<InvalidMessage>(OnInvalidMessageReceived);
+		Broker.Unsubscribe<ExecuteOnceMessage>(OnCorrectMessageReceived);
+	}
+	private void OnCorrectMessageReceived(ExecuteOnceMessage obj){
 		invalidCount = 0;
 	}
 

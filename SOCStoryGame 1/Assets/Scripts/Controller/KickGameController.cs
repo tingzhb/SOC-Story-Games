@@ -14,13 +14,15 @@ public class KickGameController : MonoBehaviour {
 	private GameObject barInstance;
 	private int ballScore;
 	private float timePassed;
-	private Executor executor;
 
 	private void Awake(){
-		executor = FindObjectOfType<Executor>();
 		ballScore = 0;
-		Broker.Subscribe<CorrectMessage>(OnCorrectMessageReceived);
+		Broker.Subscribe<ExecuteOnceMessage>(OnExecuteOnceMessageReceived);
 		CreateBar();
+	}
+
+	void OnDisable(){
+		Broker.Unsubscribe<ExecuteOnceMessage>(OnExecuteOnceMessageReceived);
 	}
 
 	private void Update(){
@@ -36,7 +38,7 @@ public class KickGameController : MonoBehaviour {
 		var spawnPoint = transform;
 		barInstance = Instantiate(bar, spawnPoint.position, Quaternion.identity, spawnPoint);
 	}
-	private void OnCorrectMessageReceived(CorrectMessage obj){
+	private void OnExecuteOnceMessageReceived(ExecuteOnceMessage obj){
 		ballUI[ballScore].sprite = ballDone;
 		ballScore++;
 		SoundMessage soundMessage = new(){
@@ -52,10 +54,8 @@ public class KickGameController : MonoBehaviour {
 	}
 	private IEnumerator DelayEnd(){
 		yield return new WaitForSeconds(2.5f);
-		executor.Enqueue(new ValidAnswerCommand());
+		SuccessMessage successMessage = new() {};
+		Broker.InvokeSubscribers(typeof(SuccessMessage), successMessage);
 	}
-
-	private void OnDestroy(){
-		Broker.Unsubscribe<CorrectMessage>(OnCorrectMessageReceived);
-	}
+	
 }

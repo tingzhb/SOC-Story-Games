@@ -13,11 +13,14 @@ public class FishGameController : MonoBehaviour{
 	[SerializeField] private GameObject wellDone;
 	private bool canSpawn;
 
-	private void Start(){
+	private void Awake(){
 		Broker.Subscribe<SingleTapMessage>(OnSingleTapMessageReceived);
 		StartCoroutine(DelayNewFish());
 	}
-
+	private void OnDisable(){ 
+		Broker.Unsubscribe<SingleTapMessage>(OnSingleTapMessageReceived);
+	}
+	
 	private void Update(){
 		timer += Time.deltaTime;
 		if (timer > 6){
@@ -28,7 +31,8 @@ public class FishGameController : MonoBehaviour{
 			Instantiate(fishes[fishType], gameObject.transform);
 			canSpawn = false;
 		}
-	}
+	}	
+
 	
 	private void OnSingleTapMessageReceived(SingleTapMessage obj){
 		if (obj.TappedObject == "Bubble"){
@@ -64,7 +68,5 @@ public class FishGameController : MonoBehaviour{
 		Broker.InvokeSubscribers(typeof(SuccessMessage), successMessage);
 	}
 
-	private void OnDestroy(){
-		Broker.Unsubscribe<SingleTapMessage>(OnSingleTapMessageReceived);
-	}
+
 }

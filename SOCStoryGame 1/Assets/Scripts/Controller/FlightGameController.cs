@@ -7,12 +7,16 @@ public class FlightGameController : MonoBehaviour{
 	[SerializeField] private int steps;
 	[SerializeField] private GameObject wellDone;
 	private int failureCount;
-	private Executor executor;
 
-	private void Start(){
-		Broker.Subscribe<CorrectMessage>(OnCorrectMessageReceived);
+	private void Awake(){
+		Broker.Subscribe<ExecuteOnceMessage>(OnExecuteOnceMessageReceived);
 		Broker.Subscribe<FailureMessage>(OnFailureMessageReceived);
-		executor = FindObjectOfType<Executor>();
+	}
+
+	void OnDisable(){
+		Time.timeScale = 1;
+		Broker.Unsubscribe<ExecuteOnceMessage>(OnExecuteOnceMessageReceived);
+		Broker.Unsubscribe<FailureMessage>(OnFailureMessageReceived);
 	}
 	private void OnFailureMessageReceived(FailureMessage obj){
 		failureCount++;
@@ -20,7 +24,7 @@ public class FlightGameController : MonoBehaviour{
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 		}
 	}
-	private void OnCorrectMessageReceived(CorrectMessage obj){
+	private void OnExecuteOnceMessageReceived(ExecuteOnceMessage obj){
 		steps--;
 		if (steps == 0) {
 			wellDone.SetActive(true);
@@ -30,10 +34,6 @@ public class FlightGameController : MonoBehaviour{
 	
 	private IEnumerator DelayEnd() {
 		yield return new WaitForSeconds(1.5f);
-		executor.Enqueue(new ValidAnswerCommand());
-	}
-	private void OnDestroy(){
-		Time.timeScale = 1;
-		Broker.Unsubscribe<CorrectMessage>(OnCorrectMessageReceived);
-	}
+		SuccessMessage successMessage = new() {};
+		Broker.InvokeSubscribers(typeof(SuccessMessage), successMessage);	}
 }
