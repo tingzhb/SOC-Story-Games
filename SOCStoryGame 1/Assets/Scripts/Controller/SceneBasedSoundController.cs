@@ -1,3 +1,4 @@
+using System.Collections;
 using FMOD.Studio;
 using UnityEngine;
 
@@ -30,6 +31,21 @@ public class SceneBasedSoundController : MonoBehaviour{
 		}
 	}
 
+	void FixedUpdate(){
+		if (!voiceOverPlaying) return;
+			voiceOverInstance.getPlaybackState(out var newState);
+		if (newState == PLAYBACK_STATE.STOPPED){
+			StartCoroutine(DelaySceneChange());
+		}
+	}
+
+	IEnumerator DelaySceneChange(){
+		voiceOverPlaying = false;
+		yield return new WaitForSeconds(2);
+		SuccessMessage successMessage = new();
+		Broker.InvokeSubscribers(typeof(SuccessMessage), successMessage);
+	}
+	
 	private void OnSoundMessageReceived(SoundMessage obj){
 		if (obj.SoundType == 98){
 			PlayVoiceOver();
@@ -46,7 +62,7 @@ public class SceneBasedSoundController : MonoBehaviour{
 		}
 	}
 	private void StopVoiceOver(){
-		voiceOverInstance.stop(STOP_MODE.ALLOWFADEOUT);
+		voiceOverInstance.setPaused(true);
 		voiceOverPlaying = false;
 	}
 }

@@ -7,11 +7,9 @@ public class SoundMessageListener : MonoBehaviour{
 	private void Awake(){
 		Broker.Subscribe<SoundMessage>(OnSoundMessageReceived);
 		soundManager = GetComponent<SoundManager>();
-	}
-
-	private void Start(){
 		soundManager.PlayAmbientMusic();
 	}
+	
 	private void OnSoundMessageReceived(SoundMessage obj){
 		switch (obj.SoundType){
 			case 0:
