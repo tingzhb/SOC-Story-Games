@@ -7,7 +7,7 @@ public class OnAwakeTransform : MonoBehaviour{
 	[SerializeField] private float maxScaleDuration, scaleSpeed;
 	[SerializeField] private bool playSound = true;
 
-	private void Start(){
+	private void Awake(){
 		if (playSound){
 			SoundMessage soundMessage = new(){
 				SoundType = 2

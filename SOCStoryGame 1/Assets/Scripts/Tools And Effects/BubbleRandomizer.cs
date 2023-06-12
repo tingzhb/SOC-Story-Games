@@ -9,11 +9,9 @@ public class BubbleRandomizer : MonoBehaviour{
 	[SerializeField] private float movementSpeed;
 	private TextMeshProUGUI textComp;
 	private float height;
-
-	private void Awake(){
-		height = Screen.height;
-	}
+	
 	private void Start(){
+		height = Screen.height;
 		textComp = GetComponentInChildren<TextMeshProUGUI>();
 		var randomChar = Random.Range(0, characters.Length);
 		textComp.text = characters[randomChar].ToString();

@@ -4,16 +4,18 @@ using UnityEngine;
 public class FryUIUpdater : MonoBehaviour{
 	private TextMeshProUGUI textDisplay;
 	private int friesEaten;
-	private void Start(){
+	private void Awake(){
 		textDisplay = GetComponent<TextMeshProUGUI>();
-		Broker.Subscribe<CorrectMessage>(OnCorrectMessageReceived);
+		Broker.Subscribe<ExecuteOnceMessage>(OnExecuteOnceMessageReceived);
 	}
-	private void OnCorrectMessageReceived(CorrectMessage obj){
+	
+	private void OnDisable(){
+		Broker.Unsubscribe<ExecuteOnceMessage>(OnExecuteOnceMessageReceived);
+	}
+	private void OnExecuteOnceMessageReceived(ExecuteOnceMessage obj){
 		friesEaten++;
 		textDisplay.text = $"{friesEaten}/10";
 	}
 	
-	private void OnDestroy(){
-		Broker.Unsubscribe<CorrectMessage>(OnCorrectMessageReceived);
-	}
+
 }

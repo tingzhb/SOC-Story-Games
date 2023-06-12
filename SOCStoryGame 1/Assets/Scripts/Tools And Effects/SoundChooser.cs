@@ -8,6 +8,10 @@ public class SoundChooser : MonoBehaviour{
 	private void Awake(){
 		Broker.Subscribe<FailureMessage>(OnFailureMessageReceived);
 	}
+
+	void OnDisable(){
+		Broker.Unsubscribe<FailureMessage>(OnFailureMessageReceived);
+	}
 	private void OnFailureMessageReceived(FailureMessage obj){
 		canClick = false;
 		StartCoroutine(HoldClick());

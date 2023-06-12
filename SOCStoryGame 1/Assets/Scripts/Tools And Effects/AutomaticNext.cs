@@ -6,16 +6,12 @@ using UnityEngine;
 public class AutomaticNext : MonoBehaviour{
 	[SerializeField] private float delay;
 	private float timer;
-	private Executor executor;
-
-	private void Awake(){
-		executor = FindObjectOfType<Executor>();
-	}
-
+	
 	private void Update(){
 		timer += Time.deltaTime;
 		if (timer >= delay){
-			executor.Enqueue(new ValidAnswerCommand());
+			SuccessMessage successMessage = new() {};
+			Broker.InvokeSubscribers(typeof(SuccessMessage), successMessage);
 			timer = 0;
 		}
 	}

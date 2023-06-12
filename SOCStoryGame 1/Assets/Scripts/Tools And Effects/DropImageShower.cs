@@ -11,7 +11,10 @@
 		 boxCollider = GetComponent<BoxCollider2D>();
 		 imageResponse = GetComponent<Image>();
 		 Broker.Subscribe<DragMessage>(OnDragMessageReceived);
-
+	 }
+	 
+	 private void OnDisable(){
+		 Broker.Unsubscribe<DragMessage>(OnDragMessageReceived);
 	 }
 	 private void OnDragMessageReceived(DragMessage obj){
 		 if (!success && boxCollider.bounds.Contains(shape.transform.position)) {
@@ -23,10 +26,7 @@
 	 }
 	 private void ReportSuccess(){
 		 Debug.Log("Success");
-		 CorrectMessage correctMessage = new();
-		 Broker.InvokeSubscribers(typeof(CorrectMessage), correctMessage);
-	 }
-	 private void OnDestroy(){
-		 Broker.Unsubscribe<DragMessage>(OnDragMessageReceived);
+		 ExecuteOnceMessage executeOnceMessage = new();
+		 Broker.InvokeSubscribers(typeof(ExecuteOnceMessage), executeOnceMessage);
 	 }
  }

@@ -11,11 +11,14 @@ public class BubbleGameController : MonoBehaviour {
 	private int bubbleCount;
 	private float currentGameDuration;
 
-	private void Start(){
+	private void Awake(){
 		bubbleCount = 0;
-		Broker.Subscribe<CorrectMessage>(OnCorrectMessageReceived);
+		Broker.Subscribe<ExecuteOnceMessage>(OnExecuteOnceMessageReceived);
 	}
 
+	void OnDisable(){
+		Broker.Unsubscribe<ExecuteOnceMessage>(OnExecuteOnceMessageReceived);
+	}
 	private void Update() {
 		if (currentGameDuration > gameDuration && bubbleCount < 3) {
 			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -23,7 +26,7 @@ public class BubbleGameController : MonoBehaviour {
 			currentGameDuration += Time.deltaTime;
 		}
 	}
-	private void OnCorrectMessageReceived(CorrectMessage obj) {
+	private void OnExecuteOnceMessageReceived(ExecuteOnceMessage obj) {
 		stars[bubbleCount].GetComponent<AnimateOnce>().StartAnimation();
 		bubbleCount++;
 		SoundMessage soundMessage = new(){
@@ -35,9 +38,5 @@ public class BubbleGameController : MonoBehaviour {
 			UI.SetActive(false);
 			wellDone.SetActive(true);
 		}
-	}
-
-	private void OnDestroy(){
-		Broker.Unsubscribe<CorrectMessage>(OnCorrectMessageReceived);
 	}
 }

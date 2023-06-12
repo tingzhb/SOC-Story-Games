@@ -4,10 +4,8 @@ using UnityEngine;
 public class DragDropGameController : MonoBehaviour {
 
 	private int itemCount;
-	private Executor executor;
 
 	private void Start(){
-		executor = FindObjectOfType<Executor>();
 		Broker.Subscribe<InPlaceMessage>(OnInPlaceMessageReceived);
 	}
 	private void OnInPlaceMessageReceived(InPlaceMessage obj){
@@ -19,8 +17,8 @@ public class DragDropGameController : MonoBehaviour {
 	
 	private IEnumerator DelayEnd() {
 		yield return new WaitForSeconds(1.5f);
-		executor.Enqueue(new ValidAnswerCommand());
-	}
+		SuccessMessage successMessage = new() {};
+		Broker.InvokeSubscribers(typeof(SuccessMessage), successMessage);	}
 	private void OnDestroy(){
 		Broker.Unsubscribe<InPlaceMessage>(OnInPlaceMessageReceived);
 	}

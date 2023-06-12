@@ -20,8 +20,8 @@ public class FriFaller : MonoBehaviour{
 
 	private void TrySaveFry(){
 		if (Math.Abs(transform.position.x - safeZone.transform.position.x) < 10 && Math.Abs(transform.position.y - fish.transform.position.y) < 75){
-			CorrectMessage correctMessage = new();
-			Broker.InvokeSubscribers(typeof(CorrectMessage), correctMessage);
+			ExecuteOnceMessage executeOnceMessage = new();
+			Broker.InvokeSubscribers(typeof(ExecuteOnceMessage), executeOnceMessage);
 			Destroy(gameObject);
 		}
 	}

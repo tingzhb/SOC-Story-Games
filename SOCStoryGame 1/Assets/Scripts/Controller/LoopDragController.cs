@@ -51,7 +51,7 @@ public class LoopDragController : MonoBehaviour{
 
 	private IEnumerator Delay(){
 		yield return new WaitForSeconds(2f);
-		CorrectMessage correctMessage = new();
-		Broker.InvokeSubscribers(typeof(CorrectMessage), correctMessage);
+		ExecuteOnceMessage executeOnceMessage = new();
+		Broker.InvokeSubscribers(typeof(ExecuteOnceMessage), executeOnceMessage);
 	}
 }

@@ -13,8 +13,12 @@ public class FishTranslator : MonoBehaviour{
 	private void Awake(){
 		sWidth = Screen.width;
 		Broker.Subscribe<SingleTapMessage>(OnSingleTapMessageReceived);
-
 	}
+	
+	private void OnDisable(){
+		Broker.Unsubscribe<SingleTapMessage>(OnSingleTapMessageReceived);
+	}
+	
 	private void Update(){
 		timer += Time.deltaTime;
 		if (fish.transform.position.x < stopPoint.transform.position.x && timer < 5){
@@ -44,7 +48,5 @@ public class FishTranslator : MonoBehaviour{
 		yield return new WaitForSeconds(1);
 		Destroy(gameObject);
 	}
-	private void OnDestroy(){
-		Broker.Unsubscribe<SingleTapMessage>(OnSingleTapMessageReceived);
-	}
+
 }

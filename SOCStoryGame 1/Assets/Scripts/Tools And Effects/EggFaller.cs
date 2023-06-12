@@ -10,8 +10,6 @@ public class EggFaller : MonoBehaviour{
 
 	private void Awake(){
 		height = Screen.height;
-	}
-	private void Start(){
 		animateOnce = gameObject.GetComponentInChildren<AnimateOnce>();
 	}
 	private void FixedUpdate(){

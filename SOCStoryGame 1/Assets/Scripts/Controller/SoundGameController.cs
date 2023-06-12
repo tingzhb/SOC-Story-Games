@@ -10,13 +10,15 @@ public class SoundGameController : MonoBehaviour{
 	private GameObject[] soundImageInstances;
 	private int soundOptions = 1, soundAnswer, maxSounds = 5;
 	private int[] soundQuestions, soundAnswers;
-	private Executor executor;
 	private bool started;
 	
-	private void Start(){
-		executor = FindObjectOfType<Executor>();
+	private void Awake(){
 		Broker.Subscribe<EggMessage>(OnEggMessageReceived);
 		StartCoroutine(GenerateNewSound());
+	}
+	
+	private void OnDisable() {
+		Broker.Unsubscribe<EggMessage>(OnEggMessageReceived);
 	}
 	
 	private void OnEggMessageReceived(EggMessage obj){
@@ -31,8 +33,8 @@ public class SoundGameController : MonoBehaviour{
 		if (CheckIndividualSound()){
 			soundAnswer++;
 		} else {
-			executor.Enqueue(new FailureCommand());
-			ClearAnswers();
+			FailureMessage failureMessage = new(){ };
+			Broker.InvokeSubscribers(typeof(FailureMessage), failureMessage);				ClearAnswers();
 			StartCoroutine(Retry());
 		}
 		
@@ -51,8 +53,8 @@ public class SoundGameController : MonoBehaviour{
 
 	private IEnumerator DelayEnd(){
 		yield return new WaitForSeconds(2);
-		executor.Enqueue(new ValidAnswerCommand());
-
+		SuccessMessage successMessage = new() {};
+		Broker.InvokeSubscribers(typeof(SuccessMessage), successMessage);
 	}
 	public void Replay(){
 		if (started){
@@ -139,10 +141,5 @@ public class SoundGameController : MonoBehaviour{
 	private void ClearAnswers() {
 		soundAnswer = 0;
 		soundAnswers = new int[soundOptions];
-	}
-	
-
-	private void OnDestroy() {
-		Broker.Unsubscribe<EggMessage>(OnEggMessageReceived);
 	}
 }

@@ -12,12 +12,18 @@ public class ButtonRevealHide : MonoBehaviour{
 	private bool hidden = true;
 	private Image cardImage;
 
-	private void Start(){
+	private void Awake(){
 		cardImage = GetComponent<Image>();
-		Broker.Subscribe<CorrectMessage>(OnCorrectMessageReceived);
+		Broker.Subscribe<ExecuteOnceMessage>(OnExecuteOnceMessageReceived);
 		Broker.Subscribe<InvalidMessage>(OnInvalidMessageReceived);
 	}
-	private void OnCorrectMessageReceived(CorrectMessage obj){
+	
+	private void OnDisable(){
+		Broker.Unsubscribe<ExecuteOnceMessage>(OnExecuteOnceMessageReceived);
+		Broker.Unsubscribe<InvalidMessage>(OnInvalidMessageReceived);
+	}
+	
+	private void OnExecuteOnceMessageReceived(ExecuteOnceMessage obj){
 		if (obj.Name == objectName){
 			LockButton();
 		}
@@ -66,10 +72,5 @@ public class ButtonRevealHide : MonoBehaviour{
 		cardImage.sprite = buttonSprite;
 		Destroy(closeInstance);
 		GetComponent<Button>().interactable = true;
-	}
-
-	private void OnDestroy(){
-		Broker.Unsubscribe<CorrectMessage>(OnCorrectMessageReceived);
-		Broker.Unsubscribe<InvalidMessage>(OnInvalidMessageReceived);
 	}
 }

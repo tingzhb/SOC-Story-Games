@@ -4,10 +4,10 @@ public class ProgressBarUpdater : MonoBehaviour{
 	[SerializeField] private Transform[] steps;
 	[SerializeField] private GameObject icon;
 	private int stepCount;
-	private void Start(){
-		Broker.Subscribe<CorrectMessage>(OnCorrectMessageReceived);
+	private void Awake(){
+		Broker.Subscribe<ExecuteOnceMessage>(OnExecuteOnceMessageReceived);
 	}
-	private void OnCorrectMessageReceived(CorrectMessage obj){
+	private void OnExecuteOnceMessageReceived(ExecuteOnceMessage obj){
 		if (stepCount < steps.Length){
 			icon.transform.position = steps[stepCount].position;
 		}
@@ -15,6 +15,6 @@ public class ProgressBarUpdater : MonoBehaviour{
 	}
 
 	private void OnDestroy(){
-		Broker.Unsubscribe<CorrectMessage>(OnCorrectMessageReceived);
+		Broker.Unsubscribe<ExecuteOnceMessage>(OnExecuteOnceMessageReceived);
 	}
 }
