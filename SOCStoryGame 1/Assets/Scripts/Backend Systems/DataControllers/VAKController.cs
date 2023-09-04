@@ -26,6 +26,6 @@ public class VAKController : MonoBehaviour{
 
       playerVAKModel.VPercentage = vValue / total * 100;
       playerVAKModel.APercentage = aValue / total * 100;
-      playerVAKModel.KPercentage = aValue / total * 100;
+      playerVAKModel.KPercentage = kValue / total * 100;
    }
 }

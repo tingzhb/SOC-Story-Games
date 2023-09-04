@@ -12,6 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f793c2a6e51e8de4383d139db1fddcc6, type: 3}
   m_Name: PlayerVAK
   m_EditorClassIdentifier: 
-  vValue: 0
-  aValue: 0
-  kValue: 0
+  v: 2
+  a: 0
+  k: 0
+  vakTotal: 2
+  vPercentage: 100
+  aPercentage: 0
+  kPercentage: 0
