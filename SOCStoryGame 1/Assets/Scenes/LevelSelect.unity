@@ -930,7 +930,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5701949901234138052, guid: a4a94e7ed8e69334a88a2904069103bc, type: 3}
       propertyPath: m_Name
-      value: start
+      value: PP
       objectReference: {fileID: 0}
     - target: {fileID: 5701949901234138052, guid: a4a94e7ed8e69334a88a2904069103bc, type: 3}
       propertyPath: m_TagString
@@ -1863,7 +1863,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5701949901234138052, guid: a4a94e7ed8e69334a88a2904069103bc, type: 3}
       propertyPath: m_Name
-      value: start (1)
+      value: Games
       objectReference: {fileID: 0}
     - target: {fileID: 5701949901234138052, guid: a4a94e7ed8e69334a88a2904069103bc, type: 3}
       propertyPath: m_TagString
@@ -1971,11 +1971,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5701949901234138054, guid: a4a94e7ed8e69334a88a2904069103bc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: Link
+      value: GoToLevel
       objectReference: {fileID: 0}
     - target: {fileID: 5701949901234138054, guid: a4a94e7ed8e69334a88a2904069103bc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: ShowPrivacyPolicy, Assembly-CSharp
+      value: Level, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5701949901234138054, guid: a4a94e7ed8e69334a88a2904069103bc, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
@@ -2002,9 +2002,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1625220835}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8d7147221cd90049abfed657311c8ba, type: 3}
+  m_Script: {fileID: 11500000, guid: 03cc1533a7a122b4f9eae97c40ef835c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sceneName: AllGames
 --- !u!1 &1721982237
 GameObject:
   m_ObjectHideFlags: 0

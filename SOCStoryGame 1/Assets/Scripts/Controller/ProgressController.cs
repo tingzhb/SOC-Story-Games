@@ -16,7 +16,7 @@ public class ProgressController : MonoBehaviour{
 		Broker.Subscribe<ExecuteOnceMessage>(OnExecuteOnceMessageReceived);
 	}
 	
-	private void Disable(){
+	private void OnDisable(){
 		Broker.Unsubscribe<SuccessMessage>(OnSuccessMessageReceived);
 		Broker.Unsubscribe<FailureMessage>(OnFailureMessageReceived);
 		Broker.Unsubscribe<ExitMessage>(OnExitMessageReceived);
