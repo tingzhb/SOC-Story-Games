@@ -10,7 +10,7 @@ public class WormGameController : MonoBehaviour {
 	[SerializeField] private GameObject wormPrefab, wellDone;
 	[SerializeField] private int steps;
 	private bool[] occupied;
-	private int currentWorms, spawnableWorms;
+	private int currentWorms, spawnableWorms, spawnedWorms, killedWorms;
 	public WormGameController(){
 		occupied = new[] {false, false, false, false, false, false, false, false, false};
 	}
@@ -39,6 +39,7 @@ public class WormGameController : MonoBehaviour {
 		var wormLocation = slots[slotNumber].transform;
 		if (!occupied[slotNumber]){
 			currentWorms++;
+			spawnedWorms++;
 			occupied[slotNumber] = true;
 			var wormInstance = Instantiate(wormPrefab, wormLocation.position, Quaternion.identity, wormLocation);
 			StartCoroutine(DespawnWorm(wormInstance, slotNumber));
@@ -52,22 +53,32 @@ public class WormGameController : MonoBehaviour {
 		Broker.InvokeSubscribers(typeof(SoundMessage), soundMessage);
 		steps--;
 		
-		if (steps == 0) {
+		if (steps <= 0) {
 			wellDone.SetActive(true);
 			StartCoroutine(DelayEnd());
 		}
 	}
 
 	private IEnumerator DespawnWorm(GameObject wormInstance, int slotNumber){
+		killedWorms++;
 		yield return new WaitForSeconds(2.2f);
 		Destroy(wormInstance);
 		occupied[slotNumber] = false;
 		currentWorms--;
 		ChangeSpawnableWorms();
 	}
-	private IEnumerator DelayEnd() {
+	private IEnumerator DelayEnd(){
+		if (spawnedWorms == killedWorms){
+			VAKMessage vakMessage = new() {A = 1};
+			Broker.InvokeSubscribers(typeof(VAKMessage), vakMessage);
+		}
+		else{
+			VAKMessage vakMessage = new(){V = 1};
+			Broker.InvokeSubscribers(typeof(VAKMessage), vakMessage);
+		}
+		
 		yield return new WaitForSeconds(1.5f);
-		SuccessMessage successMessage = new() {};
+		SuccessMessage successMessage = new();
 		Broker.InvokeSubscribers(typeof(SuccessMessage), successMessage);
 	}
 }

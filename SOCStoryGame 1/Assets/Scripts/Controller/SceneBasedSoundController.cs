@@ -41,28 +41,37 @@ public class SceneBasedSoundController : MonoBehaviour{
 
 	IEnumerator DelaySceneChange(){
 		voiceOverPlaying = false;
-		yield return new WaitForSeconds(2);
+		yield return new WaitForSeconds(4);
 		SuccessMessage successMessage = new();
 		Broker.InvokeSubscribers(typeof(SuccessMessage), successMessage);
 	}
 	
 	private void OnSoundMessageReceived(SoundMessage obj){
 		if (obj.SoundType == 98){
-			PlayVoiceOver();
+			if (!voiceOverPlaying){
+				PlayVoiceOver();
+				VAKMessage vakMessage = new(){
+					A = 1
+				};
+				Broker.InvokeSubscribers(typeof(VAKMessage), vakMessage);
+			} else {
+				StopVoiceOver();
+			}
 		}
 	}
 	private void PlayVoiceOver(){
-		if (!voiceOverPlaying){
-			voiceOverInstance = FMODUnity.RuntimeManager.CreateInstance(voiceOver);
-			voiceOverInstance.start();
-			voiceOverPlaying = true;
-		}
-		else {
-			StopVoiceOver();
-		}
+		voiceOverInstance = FMODUnity.RuntimeManager.CreateInstance(voiceOver);
+		voiceOverInstance.start();
+		voiceOverPlaying = true;
 	}
+	
 	private void StopVoiceOver(){
 		voiceOverInstance.setPaused(true);
 		voiceOverPlaying = false;
+		
+		VAKMessage vakMessage = new(){
+			V = 1
+		};
+		Broker.InvokeSubscribers(typeof(VAKMessage), vakMessage);
 	}
 }
