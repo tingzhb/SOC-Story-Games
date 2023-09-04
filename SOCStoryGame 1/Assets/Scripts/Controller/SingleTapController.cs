@@ -14,7 +14,9 @@ public class SingleTapController : MonoBehaviour {
 		ValidateTap(obj.TappedObject);
 	}
 	private void ValidateTap(string tappedObject){
+		
 		Debug.Log(tappedObject);
+		
 		switch (tappedObject){
 			case "Valid":
 				SuccessMessage successMessage = new() {};
@@ -56,7 +58,8 @@ public class SingleTapController : MonoBehaviour {
 				StickMessage stickRMessage = new(){
 					IsLeft = false
 				};
-				Broker.InvokeSubscribers(typeof(StickMessage), stickRMessage);							break;
+				Broker.InvokeSubscribers(typeof(StickMessage), stickRMessage);							
+				break;
 		}
 	}
 }
