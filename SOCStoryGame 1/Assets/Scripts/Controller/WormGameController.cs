@@ -32,6 +32,9 @@ public class WormGameController : MonoBehaviour {
 
 	private void ChangeSpawnableWorms(){
 		spawnableWorms = Random.Range(1, 4);
+		if (spawnableWorms > steps){
+			spawnableWorms = steps;
+		}
 	}
 
 	private void SpawnWorm(){

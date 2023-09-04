@@ -56,6 +56,10 @@ public class SceneBasedSoundController : MonoBehaviour{
 				Broker.InvokeSubscribers(typeof(VAKMessage), vakMessage);
 			} else {
 				StopVoiceOver();
+				VAKMessage vakMessage = new(){
+					V = 1
+				};
+				Broker.InvokeSubscribers(typeof(VAKMessage), vakMessage);
 			}
 		}
 	}
@@ -68,10 +72,5 @@ public class SceneBasedSoundController : MonoBehaviour{
 	private void StopVoiceOver(){
 		voiceOverInstance.setPaused(true);
 		voiceOverPlaying = false;
-		
-		VAKMessage vakMessage = new(){
-			V = 1
-		};
-		Broker.InvokeSubscribers(typeof(VAKMessage), vakMessage);
 	}
 }

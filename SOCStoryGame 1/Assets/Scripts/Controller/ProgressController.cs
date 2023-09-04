@@ -52,9 +52,7 @@ public class ProgressController : MonoBehaviour{
 	}
 
 	private void OnInvalidMessageReceived(InvalidMessage obj){
-		VAKMessage vakMessage = new(){
-			K = 0.5f
-		};
+		VAKMessage vakMessage = new(){K = 0.1f};
 		Broker.InvokeSubscribers(typeof(VAKMessage), vakMessage);
 		
 		invalidCount++;
