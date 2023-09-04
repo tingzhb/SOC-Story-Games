@@ -1,3 +1,5 @@
 public class VAKMessage : IMessage{
-	public VAKModel VAKModel { get; set; }
+	public float V { get; set; }
+	public float A { get; set; }
+	public float K { get; set; }
 }

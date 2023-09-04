@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 
 public class SingleTapController : MonoBehaviour {
-
+	
 	private void Awake() {
 		Broker.Subscribe<SingleTapMessage>(OnSingleTapMessageReceived);
 	}

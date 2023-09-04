@@ -15,8 +15,17 @@ public class VAKController : MonoBehaviour{
    }
    
    void OnVAKMessageReceived(VAKMessage obj){
-      playerVAKModel.VValue += obj.VAKModel.VValue;
-      playerVAKModel.AValue += obj.VAKModel.AValue;
-      playerVAKModel.KValue += obj.VAKModel.KValue;
+      playerVAKModel.VValue += obj.V;
+      playerVAKModel.AValue += obj.A;
+      playerVAKModel.KValue += obj.K;
+      
+      Debug.Log("V Delta: " + obj.V);
+      Debug.Log("V: " + playerVAKModel.VValue);
+      
+      Debug.Log("A Delta: " + obj.A);
+      Debug.Log("A: " + playerVAKModel.AValue);
+
+      Debug.Log("K Delta: " + obj.K);
+      Debug.Log("K: " + playerVAKModel.KValue);
    }
 }
